@@ -10,6 +10,9 @@ class Graph {
     	this.vertices = v;
     	this.edges = e;
     	adj = (Bag<Integer>[]) new Bag[v];
+    	for (int i = 0; i < v; i++) {
+            adj[i] = new Bag<Integer>();
+        }
     }
     public int V() {
     	return vertices;
@@ -27,9 +30,11 @@ class Graph {
        }
         adj[v].add(w);
         adj[w].add(v);
-        System.out.println(Arrays.toString(adj));
        }
     public boolean hasEdge(int v, int w) {
+    	if (adj[v] == null) {
+    		return true;
+    	}
     	for (int i : adj[v]) {
     		if (i == w) {
     			return true;
@@ -49,23 +54,11 @@ class Graph {
         }
         return 0;
     }
-    public void matrix() {
-    	for (int v = 0; v < vertices; v++) {
-            System.out.println((v + ": "));
-            for (int w : adj[v]) {
-            System.out.print(check(v, w) + " ");
-            }
-            System.out.print("\n");
-        }
+    public Bag[] matrix() {
+    	return adj;
     }
-    public void list() {
-    	for (int v = 0; v < vertices; v++) {
-            System.out.println((v + ": "));
-            for (int w : adj[v]) {
-            System.out.println((w + " "));
-            }
-            // System.out.print("\n");
-        }
+    public Bag[] list() {
+    	return adj;
     }
 
 }
@@ -81,9 +74,9 @@ class Solution {
 		Graph g = new Graph(vertices, edges);
 		System.out.println(g.V() + " vertices, " + g.E() + " edges");
 		String[] inputs = sc.nextLine().split(",");
-		SequentialSearchST<String, Integer> st = new SequentialSearchST<String, Integer>();
+		SequentialSearchST<Integer, String> st = new SequentialSearchST<Integer, String>();
 		for (int i = 0; i < vertices; i++) {
-			st.put(inputs[i], i);
+			st.put(i, inputs[i]);
 		}
 		if (inputs.length < 2) {
 			System.out.println("No edges");
@@ -94,10 +87,32 @@ class Solution {
 		}
 		switch (format) {
 			case "Matrix":
-				g.matrix();
+				Bag<Integer>[] adj = g.matrix();
+				int[][] matrix = new int[vertices][vertices];
+				for (int i = 0; i < vertices; i++) {
+					for (int j = 0; j < vertices; j++) {
+						if (g.hasEdge(i, j)) {
+							matrix[i][j] = 1;
+						}
+					}
+				}
+				for (int i = 0; i < vertices; i++) {
+					for (int j = 0; j < vertices; j++) {
+						System.out.print(matrix[i][j] + " ");
+					}
+					System.out.println();
+				}
 				break;
 			case "List":
 				g.list();
+				adj = g.list();
+				for (int v = 0; v < vertices; v++) {
+            	System.out.print((st.get(v) + ": "));
+            		for (int w : adj[v]) {
+           	 			System.out.print((st.get(w) + " "));
+            }
+            System.out.print("\n");
+        }
 		}
 	}
 }
