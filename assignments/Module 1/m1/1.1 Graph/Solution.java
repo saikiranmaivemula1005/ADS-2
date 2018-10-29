@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 class Graph {
 	private  int vertices;
     private int edges;
@@ -77,11 +77,11 @@ class Solution {
 			st.put(i, inputs[i]);
 		}
 		if(inputs.length > 2) {
-		for (int i = 0; i < edges; i++) {
-			String[] tokens = sc.nextLine().split(" ");
-			g.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
+			for (int i = 0; i < edges; i++) {
+				String[] tokens = sc.nextLine().split(" ");
+				g.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
+			}
 		}
-	}
 		System.out.println(g.V() + " vertices, " + g.E() + " edges");
 		if (inputs.length < 2) {
 			System.out.println("No edges");
