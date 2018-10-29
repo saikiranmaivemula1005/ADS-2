@@ -21,7 +21,7 @@ class Graph {
     	return edges;
     }
     public void addEdge(int v, int w) {
-       if (hasEdge(v, w)) {
+       if (!hasEdge(v, w)) {
         edges++;
        }
        if (v == w) {
