@@ -38,19 +38,19 @@ class Graph {
     public int degree(int v) {
         return adj[v].size();
     }
-    public String toString() {
-        StringBuilder s = new StringBuilder();
-        s.append(vertices + " vertices, " + edges + " edges " + "\n");
-        
-        return s.toString();
+    public int check(int v, int w) {
+        if (hasEdge(v, w) == true) {
+        	return 1;
+        }
+        return 0;
     }
     public void matrix() {
     	for (int v = 0; v < vertices; v++) {
             System.out.println((v + ": "));
             for (int w : adj[v]) {
-            System.out.println((hasEdge(v, w) + " "));
+            System.out.print(check(v, w) + " ");
             }
-            System.out.println("\n");
+            System.out.print("\n");
         }
     }
     public void list() {
@@ -59,7 +59,7 @@ class Graph {
             for (int w : adj[v]) {
             System.out.println((w + " "));
             }
-            System.out.println("\n");
+            // System.out.print("\n");
         }
     }
 
@@ -74,7 +74,7 @@ class Solution {
 		String format = sc.nextLine();
 		int vertices = Integer.parseInt(sc.nextLine());
 		int edges = Integer.parseInt(sc.nextLine());
-		System.out.println(vertices + " vertices, " + edges + " edges");
+		System.out.println(g.V() + " vertices, " + g.E() + " edges");
 		String[] inputs = sc.nextLine().split(",");
 		SequentialSearchST<String, Integer> st = new SequentialSearchST<String, Integer>();
 		for (int i = 0; i < vertices; i++) {

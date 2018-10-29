@@ -16,7 +16,7 @@ Gujarat: Delhi Haryana
 Haryana: Gujarat Delhi
 
 Your Output: 
-13 vertices, 13 edges
+0 vertices, 0 edges
 Exception in thread "main" java.lang.NullPointerException
 	at Graph.hasEdge(Solution.java:28)
 	at Graph.addEdge(Solution.java:21)
@@ -41,7 +41,7 @@ Expected Output:
 0 0 0 0 0 0 0 0 0 1 0 1 0
 
 Your Output: 
-13 vertices, 13 edges
+0 vertices, 0 edges
 Exception in thread "main" java.lang.NullPointerException
 	at Graph.hasEdge(Solution.java:28)
 	at Graph.addEdge(Solution.java:21)
@@ -89,7 +89,7 @@ Uttarakhand: Assam
 West Bengal: Uttar Pradesh Bihar
 
 Your Output: 
-36 vertices, 78 edges
+0 vertices, 0 edges
 Exception in thread "main" java.lang.NullPointerException
 	at Graph.hasEdge(Solution.java:28)
 	at Graph.addEdge(Solution.java:21)
@@ -137,7 +137,7 @@ Expected Output:
 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0
 
 Your Output: 
-36 vertices, 78 edges
+0 vertices, 0 edges
 Exception in thread "main" java.lang.NullPointerException
 	at Graph.hasEdge(Solution.java:28)
 	at Graph.addEdge(Solution.java:21)
@@ -150,7 +150,7 @@ Expected Output:
 No edges
 
 Your Output: 
-1 vertices, 1 edges
+0 vertices, 0 edges
 No edges
 Exception in thread "main" java.lang.NullPointerException
 	at Graph.hasEdge(Solution.java:28)
@@ -164,7 +164,7 @@ Expected Output:
 No edges
 
 Your Output: 
-1 vertices, 1 edges
+0 vertices, 0 edges
 No edges
 Exception in thread "main" java.lang.NullPointerException
 	at Graph.hasEdge(Solution.java:28)
