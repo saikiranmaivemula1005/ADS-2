@@ -15,7 +15,7 @@ class Graph {
     }
     private void validateVertex(int v) {
         if (v < 0 || v >= vertices)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (vertices-1));
+            System.out.println("vertex " + v + " is not between 0 and " + (vertices-1));
     }
     public void addEdge(int v, int w) {
         validateVertex(v);

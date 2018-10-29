@@ -16,9 +16,10 @@ Gujarat: Delhi Haryana
 Haryana: Gujarat Delhi
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 0 is not between 0 and -1
-	at Graph.validateVertex(Solution.java:18)
-	at Graph.addEdge(Solution.java:21)
+vertex 0 is not between 0 and -1
+vertex 5 is not between 0 and -1
+Exception in thread "main" java.lang.NullPointerException
+	at Graph.addEdge(Solution.java:24)
 	at Solution.main(Solution.java:79)
 ----------------------------------------
 
@@ -40,9 +41,10 @@ Expected Output:
 0 0 0 0 0 0 0 0 0 1 0 1 0
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 0 is not between 0 and -1
-	at Graph.validateVertex(Solution.java:18)
-	at Graph.addEdge(Solution.java:21)
+vertex 0 is not between 0 and -1
+vertex 5 is not between 0 and -1
+Exception in thread "main" java.lang.NullPointerException
+	at Graph.addEdge(Solution.java:24)
 	at Solution.main(Solution.java:79)
 ----------------------------------------
 
@@ -87,9 +89,10 @@ Uttarakhand: Assam
 West Bengal: Uttar Pradesh Bihar
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 0 is not between 0 and -1
-	at Graph.validateVertex(Solution.java:18)
-	at Graph.addEdge(Solution.java:21)
+vertex 0 is not between 0 and -1
+vertex 5 is not between 0 and -1
+Exception in thread "main" java.lang.NullPointerException
+	at Graph.addEdge(Solution.java:24)
 	at Solution.main(Solution.java:79)
 ----------------------------------------
 
@@ -134,9 +137,10 @@ Expected Output:
 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 0 is not between 0 and -1
-	at Graph.validateVertex(Solution.java:18)
-	at Graph.addEdge(Solution.java:21)
+vertex 0 is not between 0 and -1
+vertex 5 is not between 0 and -1
+Exception in thread "main" java.lang.NullPointerException
+	at Graph.addEdge(Solution.java:24)
 	at Solution.main(Solution.java:79)
 ----------------------------------------
 
@@ -146,9 +150,10 @@ Expected Output:
 No edges
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 0 is not between 0 and -1
-	at Graph.validateVertex(Solution.java:18)
-	at Graph.addEdge(Solution.java:21)
+vertex 0 is not between 0 and -1
+vertex 0 is not between 0 and -1
+Exception in thread "main" java.lang.NullPointerException
+	at Graph.addEdge(Solution.java:24)
 	at Solution.main(Solution.java:79)
 ----------------------------------------
 
@@ -158,9 +163,10 @@ Expected Output:
 No edges
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 0 is not between 0 and -1
-	at Graph.validateVertex(Solution.java:18)
-	at Graph.addEdge(Solution.java:21)
+vertex 0 is not between 0 and -1
+vertex 0 is not between 0 and -1
+Exception in thread "main" java.lang.NullPointerException
+	at Graph.addEdge(Solution.java:24)
 	at Solution.main(Solution.java:79)
 ----------------------------------------
 
