@@ -148,10 +148,6 @@ class Solution {
 		int edges = Integer.parseInt(sc.nextLine());
 		Graph g = new Graph(vertices);
 		String[] inputs = sc.nextLine().split(",");
-		// SequentialSearchST<Integer, String> st = new SequentialSearchST<Integer, String>();
-		// for (int i = 0; i < vertices; i++) {
-		// 	st.put(i, inputs[i]);
-		// }
 		if (inputs.length > 2) {
 			for (int i = 0; i < edges; i++) {
 				String[] tokens = sc.nextLine().split(" ");
