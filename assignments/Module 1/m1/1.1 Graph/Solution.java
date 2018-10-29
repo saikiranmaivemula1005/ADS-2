@@ -23,7 +23,7 @@ class Graph {
     }
     /**
      * Constructs the object.
-     *
+     * Time complexity : O(n).
      * @param      v     integer variable.
      */
     Graph(final int v) {
@@ -36,7 +36,7 @@ class Graph {
     }
     /**
      * returns vertices.
-     *
+     * Time complexity O(1).
      * @return  vertices.
      */
     public int v() {
@@ -44,7 +44,7 @@ class Graph {
     }
     /**
      * returns edges.
-     *
+     * Time complexity : O(1).
      * @return edges.
      */
     public int e() {
@@ -52,7 +52,7 @@ class Graph {
     }
     /**
      * Adds an edge.
-     *
+     * Time complexity O(1)
      * @param      v     integer variable.
      * @param      w     integer variable.
      */
@@ -71,7 +71,7 @@ class Graph {
      *
      * @param      v     integer variable.
      * @param      w     integer variable.
-     *
+     * Time complexity O(n)
      * @return     True if has edge, False otherwise.
      */
     public boolean hasEdge(final int v, final int w) {
@@ -89,7 +89,7 @@ class Graph {
      * iterable function.
      *
      * @param      v integer variable.
-     *
+     * Time complexity : O(1)
      * @return   array.
      */
     public Iterable<Integer> adj(final int v) {
@@ -97,7 +97,7 @@ class Graph {
     }
     /**
      * matrix method.
-     *
+     * Time complexity : O(1)
      * @return   array.
      */
     public Bag[] matrix() {
@@ -105,7 +105,7 @@ class Graph {
     }
     /**
      * list method.
-     *
+     * Time complexity : O(1)
      * @return  array.
      */
     public Bag[] list() {
@@ -124,7 +124,7 @@ class Solution {
     }
     /**
      * main method.
-     *
+     *Time complexity : O(N^2)
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
@@ -179,3 +179,4 @@ class Solution {
         }
     }
 }
+
