@@ -73,12 +73,12 @@ class Solution {
 		String format = sc.nextLine();
 		int vertices = Integer.parseInt(sc.nextLine());
 		int edges = Integer.parseInt(sc.nextLine());
+		System.out.println(vertices + " vertices, " + edges + " edges");
 		String[] inputs = sc.nextLine().split(",");
 		for (int i = 0; i < edges; i++) {
 			String[] tokens = sc.nextLine().split(" ");
 			g.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
 		}
-		System.out.println(vertices + " vertices, " + edges + " edges");
 		switch (format) {
 			case "Matrix":
 				g.matrix();
