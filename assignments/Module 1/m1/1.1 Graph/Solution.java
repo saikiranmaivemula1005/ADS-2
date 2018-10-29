@@ -41,20 +41,26 @@ class Graph {
     public String toString() {
         StringBuilder s = new StringBuilder();
         s.append(vertices + " vertices, " + edges + " edges " + "\n");
-        for (int v = 0; v < vertices; v++) {
-            s.append(v + ": ");
-            for (int w : adj[v]) {
-                s.append(w + " ");
-            }
-            s.append("\n");
-        }
+        
         return s.toString();
     }
     public void matrix() {
-    	
+    	for (int v = 0; v < vertices; v++) {
+            System.out.println((v + ": "));
+            for (int w : adj[v]) {
+            System.out.println((hasEdge(v, w) + " "));
+            }
+            System.out.println("\n");
+        }
     }
     public void list() {
-    	return;
+    	for (int v = 0; v < vertices; v++) {
+            System.out.println((v + ": "));
+            for (int w : adj[v]) {
+            System.out.println((w + " "));
+            }
+            System.out.println("\n");
+        }
     }
 
 }

@@ -20,7 +20,7 @@ Your Output:
 Exception in thread "main" java.lang.NullPointerException
 	at Graph.hasEdge(Solution.java:28)
 	at Graph.addEdge(Solution.java:21)
-	at Solution.main(Solution.java:82)
+	at Solution.main(Solution.java:88)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -45,7 +45,7 @@ Your Output:
 Exception in thread "main" java.lang.NullPointerException
 	at Graph.hasEdge(Solution.java:28)
 	at Graph.addEdge(Solution.java:21)
-	at Solution.main(Solution.java:82)
+	at Solution.main(Solution.java:88)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -93,7 +93,7 @@ Your Output:
 Exception in thread "main" java.lang.NullPointerException
 	at Graph.hasEdge(Solution.java:28)
 	at Graph.addEdge(Solution.java:21)
-	at Solution.main(Solution.java:82)
+	at Solution.main(Solution.java:88)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -141,7 +141,7 @@ Your Output:
 Exception in thread "main" java.lang.NullPointerException
 	at Graph.hasEdge(Solution.java:28)
 	at Graph.addEdge(Solution.java:21)
-	at Solution.main(Solution.java:82)
+	at Solution.main(Solution.java:88)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -155,7 +155,7 @@ No edges
 Exception in thread "main" java.lang.NullPointerException
 	at Graph.hasEdge(Solution.java:28)
 	at Graph.addEdge(Solution.java:21)
-	at Solution.main(Solution.java:82)
+	at Solution.main(Solution.java:88)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -169,7 +169,7 @@ No edges
 Exception in thread "main" java.lang.NullPointerException
 	at Graph.hasEdge(Solution.java:28)
 	at Graph.addEdge(Solution.java:21)
-	at Solution.main(Solution.java:82)
+	at Solution.main(Solution.java:88)
 ----------------------------------------
 
 ########## Testcase 6: Passed ##########
