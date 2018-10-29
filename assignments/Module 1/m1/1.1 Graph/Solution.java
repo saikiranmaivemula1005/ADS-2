@@ -1,11 +1,15 @@
 import java.util.Scanner;
 class Graph {
-	private final int vertices;
+	private  int vertices;
     private int edges;
     private Bag<Integer>[] adj;
     Graph() {
-    	vertices = 0;
-    	edges = 0;
+
+    }
+    Graph(int v, int e) {
+    	this.vertices = v;
+    	this.edges = e;
+    	adj = (Bag<Integer>[]) new Bag[v];
     }
     public int V() {
     	return vertices;
@@ -70,10 +74,10 @@ class Solution {
 	}
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		Graph g = new Graph();
 		String format = sc.nextLine();
 		int vertices = Integer.parseInt(sc.nextLine());
 		int edges = Integer.parseInt(sc.nextLine());
+		Graph g = new Graph(vertices, edges);
 		System.out.println(g.V() + " vertices, " + g.E() + " edges");
 		String[] inputs = sc.nextLine().split(",");
 		SequentialSearchST<String, Integer> st = new SequentialSearchST<String, Integer>();
