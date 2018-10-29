@@ -22,7 +22,7 @@ class Graph {
     //         System.out.println("vertex " + v + " is not between 0 and " + (vertices-1));
     // }
     public void addEdge(int v, int w) {
-       if (hasEdge(v, w)) {
+       if (!hasEdge(v, w)) {
         edges++;
        }
         adj[v].add(w);
