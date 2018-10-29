@@ -22,7 +22,7 @@ class Graph {
     }
     public void addEdge(int v, int w) {
        if (!hasEdge(v, w)) {
-        edges++;
+        ++edges;
        }
        if (v == w) {
        	return;
