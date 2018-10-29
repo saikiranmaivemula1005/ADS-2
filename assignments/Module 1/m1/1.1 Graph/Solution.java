@@ -6,9 +6,9 @@ class Graph {
     Graph() {
 
     }
-    Graph(int v, int e) {
+    Graph(int v) {
     	this.vertices = v;
-    	this.edges = e;
+    	this.edges = 0;
     	adj = (Bag<Integer>[]) new Bag[v];
     	for (int i = 0; i < v; i++) {
             adj[i] = new Bag<Integer>();
@@ -70,20 +70,20 @@ class Solution {
 		String format = sc.nextLine();
 		int vertices = Integer.parseInt(sc.nextLine());
 		int edges = Integer.parseInt(sc.nextLine());
-		Graph g = new Graph(vertices, edges);
-		System.out.println(g.V() + " vertices, " + edges + " edges");
+		Graph g = new Graph(vertices);
 		String[] inputs = sc.nextLine().split(",");
 		SequentialSearchST<Integer, String> st = new SequentialSearchST<Integer, String>();
 		for (int i = 0; i < vertices; i++) {
 			st.put(i, inputs[i]);
 		}
-		if (inputs.length < 2) {
-			System.out.println("No edges");
-			return;
-		}
 		for (int i = 0; i < edges; i++) {
 			String[] tokens = sc.nextLine().split(" ");
 			g.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
+		}
+		System.out.println(g.V() + " vertices, " + g.E() + " edges");
+		if (inputs.length < 2) {
+			System.out.println("No edges");
+			return;
 		}
 		switch (format) {
 			case "Matrix":
