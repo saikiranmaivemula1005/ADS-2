@@ -80,7 +80,7 @@ public class Bag<Item> implements Iterable<Item> {
      */
     private class ListIterator implements Iterator<Item> {
         /**
-         * { var_description }
+         * { var_description }.
          */
         private Node current = first;
         /**
@@ -92,13 +92,13 @@ public class Bag<Item> implements Iterable<Item> {
             return current != null;
         }
         /**
-         * { function_description }
+         * { function_description }.
          */
         public void remove() {
             throw new UnsupportedOperationException();
         }
         /**
-         * { function_description }
+         * { function_description }.
          *
          * @return     { description_of_the_return_value }
          */
