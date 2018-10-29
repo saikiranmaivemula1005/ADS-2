@@ -17,11 +17,10 @@ Haryana: Gujarat Delhi
 
 Your Output: 
 13 vertices, 13 edges
-vertex 0 is not between 0 and -1
-vertex 5 is not between 0 and -1
 Exception in thread "main" java.lang.NullPointerException
-	at Graph.addEdge(Solution.java:24)
-	at Solution.main(Solution.java:80)
+	at Graph.hasEdge(Solution.java:28)
+	at Graph.addEdge(Solution.java:21)
+	at Solution.main(Solution.java:82)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -43,11 +42,10 @@ Expected Output:
 
 Your Output: 
 13 vertices, 13 edges
-vertex 0 is not between 0 and -1
-vertex 5 is not between 0 and -1
 Exception in thread "main" java.lang.NullPointerException
-	at Graph.addEdge(Solution.java:24)
-	at Solution.main(Solution.java:80)
+	at Graph.hasEdge(Solution.java:28)
+	at Graph.addEdge(Solution.java:21)
+	at Solution.main(Solution.java:82)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -92,11 +90,10 @@ West Bengal: Uttar Pradesh Bihar
 
 Your Output: 
 36 vertices, 78 edges
-vertex 0 is not between 0 and -1
-vertex 5 is not between 0 and -1
 Exception in thread "main" java.lang.NullPointerException
-	at Graph.addEdge(Solution.java:24)
-	at Solution.main(Solution.java:80)
+	at Graph.hasEdge(Solution.java:28)
+	at Graph.addEdge(Solution.java:21)
+	at Solution.main(Solution.java:82)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -141,11 +138,10 @@ Expected Output:
 
 Your Output: 
 36 vertices, 78 edges
-vertex 0 is not between 0 and -1
-vertex 5 is not between 0 and -1
 Exception in thread "main" java.lang.NullPointerException
-	at Graph.addEdge(Solution.java:24)
-	at Solution.main(Solution.java:80)
+	at Graph.hasEdge(Solution.java:28)
+	at Graph.addEdge(Solution.java:21)
+	at Solution.main(Solution.java:82)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -155,11 +151,11 @@ No edges
 
 Your Output: 
 1 vertices, 1 edges
-vertex 0 is not between 0 and -1
-vertex 0 is not between 0 and -1
+No edges
 Exception in thread "main" java.lang.NullPointerException
-	at Graph.addEdge(Solution.java:24)
-	at Solution.main(Solution.java:80)
+	at Graph.hasEdge(Solution.java:28)
+	at Graph.addEdge(Solution.java:21)
+	at Solution.main(Solution.java:82)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -169,28 +165,30 @@ No edges
 
 Your Output: 
 1 vertices, 1 edges
-vertex 0 is not between 0 and -1
-vertex 0 is not between 0 and -1
+No edges
 Exception in thread "main" java.lang.NullPointerException
-	at Graph.addEdge(Solution.java:24)
-	at Solution.main(Solution.java:80)
+	at Graph.hasEdge(Solution.java:28)
+	at Graph.addEdge(Solution.java:21)
+	at Solution.main(Solution.java:82)
 ----------------------------------------
 
-########## Testcase 6: Failed ##########
+########## Testcase 6: Passed ##########
 Expected Output: 
 0 vertices, 0 edges
 No edges
 
 Your Output: 
 0 vertices, 0 edges
+No edges
 ----------------------------------------
 
-########## Testcase 7: Failed ##########
+########## Testcase 7: Passed ##########
 Expected Output: 
 0 vertices, 0 edges
 No edges
 
 Your Output: 
 0 vertices, 0 edges
+No edges
 ----------------------------------------
 

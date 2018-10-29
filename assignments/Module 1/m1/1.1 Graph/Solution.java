@@ -13,34 +13,29 @@ class Graph {
     public int E() {
     	return edges;
     }
-    private void validateVertex(int v) {
-        if (v < 0 || v >= vertices)
-            System.out.println("vertex " + v + " is not between 0 and " + (vertices-1));
-    }
+    // private void validateVertex(int v) {
+    //     if (v < 0 || v >= vertices)
+    //         System.out.println("vertex " + v + " is not between 0 and " + (vertices-1));
+    // }
     public void addEdge(int v, int w) {
-        validateVertex(v);
-        validateVertex(w);
+       while (!hasEdge(v, w)) {
         edges++;
         adj[v].add(w);
         adj[w].add(v);
+       }
     }
     public boolean hasEdge(int v, int w) {
-    	return (contains(v, w));
+    	for (int i : adj[v]) {
+    		if (i == w) {
+    			return true;
+    		}
+    	}
+    	return false;
     }
     public Iterable<Integer> adj(int v) {
-        validateVertex(v);
         return adj[v];
     }
-    public boolean contains(int v, int w) {
-    	// for (int i = 0; i < adj.length; i++) {
-    	// 	if (adj[i] = w) {
-    	// 		return true;
-    	// 	}
-    	// }
-    	return true;
-    }
     public int degree(int v) {
-        validateVertex(v);
         return adj[v].size();
     }
     public String toString() {
@@ -75,6 +70,13 @@ class Solution {
 		int edges = Integer.parseInt(sc.nextLine());
 		System.out.println(vertices + " vertices, " + edges + " edges");
 		String[] inputs = sc.nextLine().split(",");
+		SequentialSearchST<String, Integer> st = new SequentialSearchST<String, Integer>();
+		for (int i = 0; i < vertices; i++) {
+			st.put(inputs[i], i);
+		}
+		if (inputs.length < 2) {
+			System.out.println("No edges");
+		}
 		for (int i = 0; i < edges; i++) {
 			String[] tokens = sc.nextLine().split(" ");
 			g.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
