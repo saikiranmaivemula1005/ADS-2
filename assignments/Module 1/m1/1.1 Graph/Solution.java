@@ -22,12 +22,12 @@ class Graph {
     //         System.out.println("vertex " + v + " is not between 0 and " + (vertices-1));
     // }
     public void addEdge(int v, int w) {
-       while (!hasEdge(v, w)) {
+       if (!hasEdge(v, w)) {
         edges++;
+       }
         adj[v].add(w);
         adj[w].add(v);
        }
-    }
     public boolean hasEdge(int v, int w) {
     	for (int i : adj[v]) {
     		if (i == w) {
