@@ -71,7 +71,7 @@ class Solution {
 		int vertices = Integer.parseInt(sc.nextLine());
 		int edges = Integer.parseInt(sc.nextLine());
 		Graph g = new Graph(vertices, edges);
-		System.out.println(g.V() + " vertices, " + g.E() + " edges");
+		System.out.println(g.V() + " vertices, " + edges + " edges");
 		String[] inputs = sc.nextLine().split(",");
 		SequentialSearchST<Integer, String> st = new SequentialSearchST<Integer, String>();
 		for (int i = 0; i < vertices; i++) {
