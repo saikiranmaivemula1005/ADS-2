@@ -20,13 +20,12 @@ class Graph {
     public int E() {
     	return edges;
     }
-    // private void validateVertex(int v) {
-    //     if (v < 0 || v >= vertices)
-    //         System.out.println("vertex " + v + " is not between 0 and " + (vertices-1));
-    // }
     public void addEdge(int v, int w) {
        if (!hasEdge(v, w)) {
         edges++;
+       }
+       if (v == w) {
+       	return;
        }
         adj[v].add(w);
         adj[w].add(v);
@@ -80,6 +79,7 @@ class Solution {
 		}
 		if (inputs.length < 2) {
 			System.out.println("No edges");
+			return;
 		}
 		for (int i = 0; i < edges; i++) {
 			String[] tokens = sc.nextLine().split(" ");
