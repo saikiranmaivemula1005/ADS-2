@@ -1,18 +1,10 @@
 Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 1\m1\1.1 Graph\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 1\m1\1.1 Graph\Bag.java:10:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 1\m1\1.1 Graph\Bag.java:14: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 1\m1\1.1 Graph\Bag.java:51: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 1\m1\1.1 Graph\Bag.java:55: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 1\m1\1.1 Graph\Bag.java:72: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 1\m1\1.1 Graph\Bag.java:77: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 1\m1\1.1 Graph\Bag.java:78:17: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 1\m1\1.1 Graph\Bag.java:80:17: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 1\m1\1.1 Graph\Bag.java:83:17: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 1\m1\1.1 Graph\Bag.java:87:17: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 1\m1\1.1 Graph\Bag.java:88: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 1\m1\1.1 Graph\Bag.java:82: First sentence should end with a period. [JavadocStyle]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 1\m1\1.1 Graph\Bag.java:94: First sentence should end with a period. [JavadocStyle]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 1\m1\1.1 Graph\Bag.java:100: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 1\m1\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
