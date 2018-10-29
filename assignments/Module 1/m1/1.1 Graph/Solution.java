@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 class Graph {
 	private  int vertices;
     private int edges;
@@ -27,6 +27,7 @@ class Graph {
        }
         adj[v].add(w);
         adj[w].add(v);
+        System.out.println(Arrays.toString(adj));
        }
     public boolean hasEdge(int v, int w) {
     	for (int i : adj[v]) {
