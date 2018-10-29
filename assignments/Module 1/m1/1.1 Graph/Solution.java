@@ -22,7 +22,7 @@ class Graph {
     }
     public void addEdge(int v, int w) {
        if (!hasEdge(v, w)) {
-        ++edges;
+        edges++;
        }
        if (v == w) {
        	return;
@@ -76,10 +76,12 @@ class Solution {
 		for (int i = 0; i < vertices; i++) {
 			st.put(i, inputs[i]);
 		}
+		if(inputs.length > 2) {
 		for (int i = 0; i < edges; i++) {
 			String[] tokens = sc.nextLine().split(" ");
 			g.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
 		}
+	}
 		System.out.println(g.V() + " vertices, " + g.E() + " edges");
 		if (inputs.length < 2) {
 			System.out.println("No edges");
