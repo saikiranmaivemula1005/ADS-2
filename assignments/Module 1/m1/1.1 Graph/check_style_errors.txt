@@ -15,18 +15,5 @@ Audit done.
 Checkstyle ends with 12 errors.
 Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 1\m1\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 1\m1\1.1 Graph\Solution.java:29:11: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 1\m1\1.1 Graph\Solution.java:42:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 1\m1\1.1 Graph\Solution.java:50:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 1\m1\1.1 Graph\Solution.java:59:25: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 1\m1\1.1 Graph\Solution.java:59:32: Parameter w should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 1\m1\1.1 Graph\Solution.java:77:28: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 1\m1\1.1 Graph\Solution.java:77:35: Parameter w should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 1\m1\1.1 Graph\Solution.java:95:34: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 1\m1\1.1 Graph\Solution.java:106:22: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 1\m1\1.1 Graph\Solution.java:106:29: Parameter w should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 1\m1\1.1 Graph\Solution.java:107:27: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 1\m1\1.1 Graph\Solution.java:154: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 1\m1\1.1 Graph\Solution.java:162: switch without "default" clause. [MissingSwitchDefault]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 1 errors.

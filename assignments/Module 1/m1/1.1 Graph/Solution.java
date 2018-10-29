@@ -26,7 +26,7 @@ class Graph {
      *
      * @param      v     integer variable.
      */
-    Graph(int v) {
+    Graph(final int v) {
         this.vertices = v;
         this.edges = 0;
         adj = (Bag<Integer>[]) new Bag[v];
@@ -39,7 +39,7 @@ class Graph {
      *
      * @return  vertices.
      */
-    public int V() {
+    public int v() {
         return vertices;
     }
     /**
@@ -47,7 +47,7 @@ class Graph {
      *
      * @return edges.
      */
-    public int E() {
+    public int e() {
         return edges;
     }
     /**
@@ -56,7 +56,7 @@ class Graph {
      * @param      v     integer variable.
      * @param      w     integer variable.
      */
-    public void addEdge(int v, int w) {
+    public void addEdge(final int v, final int w) {
         if (!hasEdge(v, w)) {
             edges++;
             adj[v].add(w);
@@ -74,7 +74,7 @@ class Graph {
      *
      * @return     True if has edge, False otherwise.
      */
-    public boolean hasEdge(int v, int w) {
+    public boolean hasEdge(final int v, final int w) {
         if (adj[v] == null) {
             return true;
         }
@@ -92,22 +92,8 @@ class Graph {
      *
      * @return   array.
      */
-    public Iterable<Integer> adj(int v) {
+    public Iterable<Integer> adj(final int v) {
         return adj[v];
-    }
-    /**
-     * to return the connection between vertices.
-     *
-     * @param      v    integer variable.
-     * @param      w    integer variable.
-     *
-     * @return  1 if there is connection, else 0.
-     */
-    public int check(int v, int w) {
-        if (hasEdge(v, w) == true) {
-            return 1;
-        }
-        return 0;
     }
     /**
      * matrix method.
@@ -151,10 +137,11 @@ class Solution {
         if (inputs.length > 2) {
             for (int i = 0; i < edges; i++) {
                 String[] tokens = sc.nextLine().split(" ");
-                g.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
+                g.addEdge(Integer.parseInt(tokens[0]),
+                 Integer.parseInt(tokens[1]));
             }
         }
-        System.out.println(g.V() + " vertices, " + g.E() + " edges");
+        System.out.println(g.v() + " vertices, " + g.e() + " edges");
         if (inputs.length < 2) {
             System.out.println("No edges");
             return;
@@ -187,6 +174,8 @@ class Solution {
                 }
                 System.out.print("\n");
             }
+            break;
+        default:
         }
     }
 }
