@@ -3,8 +3,11 @@ Expected Output:
 false
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at Solution.main(Solution.java:124)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -12,8 +15,11 @@ Expected Output:
 false
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at Solution.main(Solution.java:124)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -21,8 +27,11 @@ Expected Output:
 true
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at Solution.main(Solution.java:124)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -30,8 +39,7 @@ Expected Output:
 false
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -39,8 +47,11 @@ Expected Output:
 true
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at Solution.main(Solution.java:124)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -48,8 +59,11 @@ Expected Output:
 false
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at Solution.main(Solution.java:124)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -57,8 +71,11 @@ Expected Output:
 true
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at Solution.main(Solution.java:124)
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -66,8 +83,11 @@ Expected Output:
 true
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at Solution.main(Solution.java:124)
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -75,8 +95,11 @@ Expected Output:
 true
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at Solution.main(Solution.java:124)
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -84,8 +107,11 @@ Expected Output:
 true
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at Solution.main(Solution.java:124)
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -93,8 +119,11 @@ Expected Output:
 true
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at Solution.main(Solution.java:124)
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -102,8 +131,11 @@ Expected Output:
 true
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at Solution.main(Solution.java:124)
 ----------------------------------------
 
 ########## Testcase 12: Failed ##########
@@ -111,8 +143,11 @@ Expected Output:
 true
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at Solution.main(Solution.java:124)
 ----------------------------------------
 
 ########## Testcase 13: Failed ##########
@@ -120,8 +155,11 @@ Expected Output:
 false
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at Solution.main(Solution.java:124)
 ----------------------------------------
 
 ########## Testcase 14: Failed ##########
@@ -129,8 +167,11 @@ Expected Output:
 true
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at Solution.main(Solution.java:124)
 ----------------------------------------
 
 ########## Testcase 15: Failed ##########
@@ -138,8 +179,11 @@ Expected Output:
 false
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at Solution.main(Solution.java:124)
 ----------------------------------------
 
 ########## Testcase 16: Failed ##########
@@ -147,8 +191,11 @@ Expected Output:
 true
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at Solution.main(Solution.java:124)
 ----------------------------------------
 
 ########## Testcase 17: Failed ##########
@@ -156,8 +203,11 @@ Expected Output:
 true
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at Solution.main(Solution.java:124)
 ----------------------------------------
 
 ########## Testcase 18: Failed ##########
@@ -165,8 +215,11 @@ Expected Output:
 true
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at Solution.main(Solution.java:124)
 ----------------------------------------
 
 ########## Testcase 19: Failed ##########
@@ -174,8 +227,11 @@ Expected Output:
 true
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at Solution.main(Solution.java:124)
 ----------------------------------------
 
 ########## Testcase 20: Failed ##########
@@ -183,8 +239,11 @@ Expected Output:
 true
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at Solution.main(Solution.java:124)
 ----------------------------------------
 
 ########## Testcase 21: Failed ##########
@@ -192,8 +251,11 @@ Expected Output:
 true
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at Solution.main(Solution.java:124)
 ----------------------------------------
 
 ########## Testcase 22: Failed ##########
@@ -201,8 +263,11 @@ Expected Output:
 true
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at Solution.main(Solution.java:124)
 ----------------------------------------
 
 ########## Testcase 23: Failed ##########
@@ -210,7 +275,10 @@ Expected Output:
 true
 
 Your Output: 
-Error: Could not find or load main class Solution
-Caused by: java.lang.ClassNotFoundException: Solution
+Exception in thread "main" java.lang.NumberFormatException: For input string: ""
+	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at java.base/java.lang.Integer.parseInt(Unknown Source)
+	at Solution.main(Solution.java:124)
 ----------------------------------------
 
