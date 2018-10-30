@@ -6,11 +6,15 @@ import java.util.Scanner;
 /**
  * grid matrix.
  */
-    private boolean[][] grid;
+    private int[][] grid;
     /**
      * top variable.
      */
     private int top = 0;
+    /**
+     * integer to count.
+     */
+    private int count;
     /**
      * bottom variable.
      */
@@ -32,11 +36,11 @@ import java.util.Scanner;
      * @param n integer variable.
      */
      Percolation(final int n) {
-        size = n;
-        bottom = size * size + 1;
-        g = new Graph(size * size + 2);
-        grid = new boolean[size][size];
+        g = new Graph(n * n + 2);
+        count = 0;
+        grid = new int[n][n];
         cc = new CC(g);
+        this.size = n;
     }
 
     /**
@@ -45,7 +49,7 @@ import java.util.Scanner;
      * open method for percolation class.
      */
     public void open(final int i, final int j) {
-        grid[i - 1][j - 1] = true;
+        grid[i - 1][j - 1] = 1;
         if (i == 1) {
             g.addEdge(component(i, j), top);
         }
@@ -74,7 +78,7 @@ import java.util.Scanner;
      * @return returns true if the given block is open.
      */
     public boolean isOpen(final int i, final int j) {
-        return grid[i - 1][j - 1];
+        return grid[i - 1][j - 1] == 1;
     }
 
     /**
@@ -122,5 +126,6 @@ class Solution {
 			String[] tokens = sc.nextLine().split(" ");
 			p.open(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
 		}
+		System.out.println(p.percolates());
 	}
 }

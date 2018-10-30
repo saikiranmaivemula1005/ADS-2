@@ -7,7 +7,7 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: ""
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:123)
+	at Solution.main(Solution.java:127)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -19,7 +19,7 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: ""
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:123)
+	at Solution.main(Solution.java:127)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -31,7 +31,7 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: ""
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:123)
+	at Solution.main(Solution.java:127)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -39,7 +39,7 @@ Expected Output:
 false
 
 Your Output: 
-
+true
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -51,7 +51,7 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: ""
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:123)
+	at Solution.main(Solution.java:127)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -63,7 +63,7 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: ""
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:123)
+	at Solution.main(Solution.java:127)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -75,7 +75,7 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: ""
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:123)
+	at Solution.main(Solution.java:127)
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -87,7 +87,7 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: ""
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:123)
+	at Solution.main(Solution.java:127)
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -99,7 +99,7 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: ""
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:123)
+	at Solution.main(Solution.java:127)
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -111,7 +111,7 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: ""
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:123)
+	at Solution.main(Solution.java:127)
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -123,7 +123,7 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: ""
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:123)
+	at Solution.main(Solution.java:127)
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -135,7 +135,7 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: ""
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:123)
+	at Solution.main(Solution.java:127)
 ----------------------------------------
 
 ########## Testcase 12: Failed ##########
@@ -147,7 +147,7 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: ""
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:123)
+	at Solution.main(Solution.java:127)
 ----------------------------------------
 
 ########## Testcase 13: Failed ##########
@@ -159,7 +159,7 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: ""
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:123)
+	at Solution.main(Solution.java:127)
 ----------------------------------------
 
 ########## Testcase 14: Failed ##########
@@ -171,7 +171,7 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: ""
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:123)
+	at Solution.main(Solution.java:127)
 ----------------------------------------
 
 ########## Testcase 15: Failed ##########
@@ -183,7 +183,7 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: ""
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:123)
+	at Solution.main(Solution.java:127)
 ----------------------------------------
 
 ########## Testcase 16: Failed ##########
@@ -195,7 +195,7 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: ""
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:123)
+	at Solution.main(Solution.java:127)
 ----------------------------------------
 
 ########## Testcase 17: Failed ##########
@@ -207,7 +207,7 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: ""
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:123)
+	at Solution.main(Solution.java:127)
 ----------------------------------------
 
 ########## Testcase 18: Failed ##########
@@ -219,7 +219,7 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: ""
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:123)
+	at Solution.main(Solution.java:127)
 ----------------------------------------
 
 ########## Testcase 19: Failed ##########
@@ -231,7 +231,7 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: ""
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:123)
+	at Solution.main(Solution.java:127)
 ----------------------------------------
 
 ########## Testcase 20: Failed ##########
@@ -243,7 +243,7 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: ""
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:123)
+	at Solution.main(Solution.java:127)
 ----------------------------------------
 
 ########## Testcase 21: Failed ##########
@@ -255,7 +255,7 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: ""
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:123)
+	at Solution.main(Solution.java:127)
 ----------------------------------------
 
 ########## Testcase 22: Failed ##########
@@ -267,7 +267,7 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: ""
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:123)
+	at Solution.main(Solution.java:127)
 ----------------------------------------
 
 ########## Testcase 23: Failed ##########
@@ -279,6 +279,6 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: ""
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:123)
+	at Solution.main(Solution.java:127)
 ----------------------------------------
 
