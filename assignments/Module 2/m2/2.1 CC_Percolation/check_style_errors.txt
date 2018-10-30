@@ -19,10 +19,9 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 2\m2\2.1 CC_Percolation\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 2\m2\2.1 CC_Percolation\Solution.java:99:5: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 2\m2\2.1 CC_Percolation\Solution.java:114: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 2\m2\2.1 CC_Percolation\Solution.java:115:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 2\m2\2.1 CC_Percolation\Solution.java:118:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 2\m2\2.1 CC_Percolation\Solution.java:118:33: Parameter args should be final. [FinalParameters]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 2\m2\2.1 CC_Percolation\Solution.java:115:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 2\m2\2.1 CC_Percolation\Solution.java:118:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 2\m2\2.1 CC_Percolation\Solution.java:118:29: Parameter args should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 5 errors.

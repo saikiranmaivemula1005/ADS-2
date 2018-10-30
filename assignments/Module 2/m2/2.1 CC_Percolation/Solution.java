@@ -96,7 +96,7 @@ import java.util.Scanner;
      * @return returns true if percolation is possible.
      */
     public boolean percolates() {
-    	cc = new CC(g);
+        cc = new CC(g);
         return cc.connected(top, bottom);
     }
     /**
@@ -112,16 +112,16 @@ import java.util.Scanner;
     }
 }
 class Solution {
-	protected Solution() {
+    protected Solution() {
 
-	}
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int size = sc.nextInt();
-		Percolation p = new Percolation(size);
-		while (sc.hasNext()) {
-			p.open(sc.nextInt(), sc.nextInt());
-		}
-		System.out.println(p.percolates());
-	}
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+        Percolation p = new Percolation(size);
+        while (sc.hasNext()) {
+            p.open(sc.nextInt(), sc.nextInt());
+        }
+        System.out.println(p.percolates());
+    }
 }
