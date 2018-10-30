@@ -24,6 +24,5 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 2\m2\2.1 CC_Percolation\Solution.java:118:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 2\m2\2.1 CC_Percolation\Solution.java:121:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 2\m2\2.1 CC_Percolation\Solution.java:121:33: Parameter args should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 2\m2\2.1 CC_Percolation\Solution.java:127: Line is longer than 80 characters (found 89). [LineLength]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 6 errors.

@@ -123,8 +123,7 @@ class Solution {
 		int size = sc.nextInt();
 		Percolation p = new Percolation(size);
 		while (sc.hasNext()) {
-			String[] tokens = sc.nextLine().split(" ");
-			p.open(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
+			p.open(sc.nextInt(), sc.nextInt());
 		}
 		System.out.println(p.percolates());
 	}
