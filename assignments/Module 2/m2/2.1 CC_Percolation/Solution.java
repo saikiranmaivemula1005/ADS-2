@@ -42,6 +42,7 @@ import java.util.Scanner;
     /**
      * @param i integer variable.
      * @param j integer variable.
+     * Time complexity : O(1)
      * open method for percolation class.
      */
     public void open(final int i, final int j) {
@@ -71,6 +72,7 @@ import java.util.Scanner;
      * checks if the given block is open or not.
      * @param i integer variable.
      * @param j integer variable.
+     * Time complexity : O(1)
      * @return returns true if the given block is open.
      */
     public boolean isOpen(final int i, final int j) {
@@ -81,6 +83,7 @@ import java.util.Scanner;
      * checks if block is full or not.
      * @param i integer variable.
      * @param j integer variable.
+     * Time complexity : O(N)
      * @return returns true if the given block is full.
      */
     public boolean isFull(final int i, final int j) {
@@ -93,6 +96,7 @@ import java.util.Scanner;
 
     /**
      * checks for percolation.
+     * Time complexity : O(1)
      * @return returns true if percolation is possible.
      */
     public boolean percolates() {
@@ -104,7 +108,7 @@ import java.util.Scanner;
      *
      * @param      i  integer variable.
      * @param      j  integer variable.
-     *
+     * Time complexity : O(1)
      * @return returns the component value.
      */
     private int component(final int i, final int j) {
@@ -123,7 +127,7 @@ class Solution {
     }
     /**
      * main method.
-     *
+     * Time complexity : O(N).
      * @param      args  The arguments
      */
     public static void main(final String[] args) {

@@ -1,14 +1,7 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 2\m2\2.1 CC_Percolation\CC.java:25:8: Unused @param tag for 'G'. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 2\m2\2.1 CC_Percolation\CC.java:27:27: Expected @param tag for 'g'. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 2\m2\2.1 CC_Percolation\CC.java:41:8: Unused @param tag for 'G'. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 2\m2\2.1 CC_Percolation\CC.java:44:34: Expected @param tag for 'g'. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 2\m2\2.1 CC_Percolation\CC.java:124: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 2\m2\2.1 CC_Percolation\CC.java:125:48: '+' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 6 errors.
 Starting audit...
 Audit done.
 Starting audit...

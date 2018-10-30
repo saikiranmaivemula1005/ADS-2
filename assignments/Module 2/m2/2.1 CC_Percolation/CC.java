@@ -20,9 +20,9 @@ public class CC {
     private int count;
 
     /**
-     * Computes the connected components of the undirected graph {@code G}.
+     * Constructs the object.
      *
-     * @param G the undirected graph
+     * @param      g     { parameter_description }
      */
     public CC(final Graph g) {
         marked = new boolean[g.v()];
@@ -38,7 +38,7 @@ public class CC {
     /**
      * dfs method.
      *
-     * @param      G     { parameter_description }
+     * @param      g     { parameter_description }
      * @param      v     { parameter_description }
      */
     private void dfs(final Graph g, final int v) {
@@ -121,9 +121,9 @@ public class CC {
     private void validateVertex(final int v) {
         int markedlength = marked.length;
         if (v < 0 || v >= markedlength) {
-            throw new 
-            IllegalArgumentException("vertex " +
-             v + " is not between 0 and " + (markedlength - 1));
+            throw new
+            IllegalArgumentException("vertex "
+             + v + " is not between 0 and " + (markedlength - 1));
         }
     }
 }
