@@ -1,0 +1,216 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+false
+
+Your Output: 
+Error: Could not find or load main class Solution
+Caused by: java.lang.ClassNotFoundException: Solution
+----------------------------------------
+
+########## Testcase 1: Failed ##########
+Expected Output: 
+false
+
+Your Output: 
+Error: Could not find or load main class Solution
+Caused by: java.lang.ClassNotFoundException: Solution
+----------------------------------------
+
+########## Testcase 2: Failed ##########
+Expected Output: 
+true
+
+Your Output: 
+Error: Could not find or load main class Solution
+Caused by: java.lang.ClassNotFoundException: Solution
+----------------------------------------
+
+########## Testcase 3: Failed ##########
+Expected Output: 
+false
+
+Your Output: 
+Error: Could not find or load main class Solution
+Caused by: java.lang.ClassNotFoundException: Solution
+----------------------------------------
+
+########## Testcase 4: Failed ##########
+Expected Output: 
+true
+
+Your Output: 
+Error: Could not find or load main class Solution
+Caused by: java.lang.ClassNotFoundException: Solution
+----------------------------------------
+
+########## Testcase 5: Failed ##########
+Expected Output: 
+false
+
+Your Output: 
+Error: Could not find or load main class Solution
+Caused by: java.lang.ClassNotFoundException: Solution
+----------------------------------------
+
+########## Testcase 6: Failed ##########
+Expected Output: 
+true
+
+Your Output: 
+Error: Could not find or load main class Solution
+Caused by: java.lang.ClassNotFoundException: Solution
+----------------------------------------
+
+########## Testcase 7: Failed ##########
+Expected Output: 
+true
+
+Your Output: 
+Error: Could not find or load main class Solution
+Caused by: java.lang.ClassNotFoundException: Solution
+----------------------------------------
+
+########## Testcase 8: Failed ##########
+Expected Output: 
+true
+
+Your Output: 
+Error: Could not find or load main class Solution
+Caused by: java.lang.ClassNotFoundException: Solution
+----------------------------------------
+
+########## Testcase 9: Failed ##########
+Expected Output: 
+true
+
+Your Output: 
+Error: Could not find or load main class Solution
+Caused by: java.lang.ClassNotFoundException: Solution
+----------------------------------------
+
+########## Testcase 10: Failed ##########
+Expected Output: 
+true
+
+Your Output: 
+Error: Could not find or load main class Solution
+Caused by: java.lang.ClassNotFoundException: Solution
+----------------------------------------
+
+########## Testcase 11: Failed ##########
+Expected Output: 
+true
+
+Your Output: 
+Error: Could not find or load main class Solution
+Caused by: java.lang.ClassNotFoundException: Solution
+----------------------------------------
+
+########## Testcase 12: Failed ##########
+Expected Output: 
+true
+
+Your Output: 
+Error: Could not find or load main class Solution
+Caused by: java.lang.ClassNotFoundException: Solution
+----------------------------------------
+
+########## Testcase 13: Failed ##########
+Expected Output: 
+false
+
+Your Output: 
+Error: Could not find or load main class Solution
+Caused by: java.lang.ClassNotFoundException: Solution
+----------------------------------------
+
+########## Testcase 14: Failed ##########
+Expected Output: 
+true
+
+Your Output: 
+Error: Could not find or load main class Solution
+Caused by: java.lang.ClassNotFoundException: Solution
+----------------------------------------
+
+########## Testcase 15: Failed ##########
+Expected Output: 
+false
+
+Your Output: 
+Error: Could not find or load main class Solution
+Caused by: java.lang.ClassNotFoundException: Solution
+----------------------------------------
+
+########## Testcase 16: Failed ##########
+Expected Output: 
+true
+
+Your Output: 
+Error: Could not find or load main class Solution
+Caused by: java.lang.ClassNotFoundException: Solution
+----------------------------------------
+
+########## Testcase 17: Failed ##########
+Expected Output: 
+true
+
+Your Output: 
+Error: Could not find or load main class Solution
+Caused by: java.lang.ClassNotFoundException: Solution
+----------------------------------------
+
+########## Testcase 18: Failed ##########
+Expected Output: 
+true
+
+Your Output: 
+Error: Could not find or load main class Solution
+Caused by: java.lang.ClassNotFoundException: Solution
+----------------------------------------
+
+########## Testcase 19: Failed ##########
+Expected Output: 
+true
+
+Your Output: 
+Error: Could not find or load main class Solution
+Caused by: java.lang.ClassNotFoundException: Solution
+----------------------------------------
+
+########## Testcase 20: Failed ##########
+Expected Output: 
+true
+
+Your Output: 
+Error: Could not find or load main class Solution
+Caused by: java.lang.ClassNotFoundException: Solution
+----------------------------------------
+
+########## Testcase 21: Failed ##########
+Expected Output: 
+true
+
+Your Output: 
+Error: Could not find or load main class Solution
+Caused by: java.lang.ClassNotFoundException: Solution
+----------------------------------------
+
+########## Testcase 22: Failed ##########
+Expected Output: 
+true
+
+Your Output: 
+Error: Could not find or load main class Solution
+Caused by: java.lang.ClassNotFoundException: Solution
+----------------------------------------
+
+########## Testcase 23: Failed ##########
+Expected Output: 
+true
+
+Your Output: 
+Error: Could not find or load main class Solution
+Caused by: java.lang.ClassNotFoundException: Solution
+----------------------------------------
+
