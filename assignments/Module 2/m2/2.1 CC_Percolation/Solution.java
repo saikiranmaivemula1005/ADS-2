@@ -117,13 +117,10 @@ class Solution {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int size = sc.nextInt();
-		Graph g = new Graph();
 		Percolation p = new Percolation(size);
 		while (sc.hasNext()) {
 			String[] tokens = sc.nextLine().split(" ");
-			g.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
+			p.open(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
 		}
-		CC ccobj = new CC(g);
-		// ccobj.dfs(g, n);
 	}
 }
