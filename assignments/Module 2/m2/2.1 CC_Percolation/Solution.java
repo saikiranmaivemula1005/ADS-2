@@ -111,11 +111,22 @@ import java.util.Scanner;
         return size * (i - 1) + j;
     }
 }
+/**
+ * Class for solution.
+ */
 class Solution {
+    /**
+     * Constructs the object.
+     */
     protected Solution() {
 
     }
-    public static void main(String[] args) {
+    /**
+     * main method.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int size = sc.nextInt();
         Percolation p = new Percolation(size);

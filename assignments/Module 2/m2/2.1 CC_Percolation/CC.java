@@ -5,32 +5,32 @@ public class CC {
     /**
      * { var_description }.
      */
-    private boolean[] marked;   // marked[v] = has vertex v been marked?
+    private boolean[] marked;
     /**
      * { var_description }.
      */
-    private int[] id;           // id[v] = id of connected component containing v
+    private int[] id;
     /**
      * { var_description }.
      */
-    private int[] size;         // size[id] = number of vertices in given component
+    private int[] size;
     /**
      * { var_description }.
      */
-    private int count;          // number of connected components
+    private int count;
 
     /**
      * Computes the connected components of the undirected graph {@code G}.
      *
      * @param G the undirected graph
      */
-    public CC(final Graph G) {
-        marked = new boolean[G.v()];
-        id = new int[G.v()];
-        size = new int[G.v()];
-        for (int v = 0; v < G.v(); v++) {
+    public CC(final Graph g) {
+        marked = new boolean[g.v()];
+        id = new int[g.v()];
+        size = new int[g.v()];
+        for (int v = 0; v < g.v(); v++) {
             if (!marked[v]) {
-                dfs(G, v);
+                dfs(g, v);
                 count++;
             }
         }
@@ -41,13 +41,13 @@ public class CC {
      * @param      G     { parameter_description }
      * @param      v     { parameter_description }
      */
-    private void dfs(final Graph G, final int v) {
+    private void dfs(final Graph g, final int v) {
         marked[v] = true;
         id[v] = count;
         size[count]++;
-        for (int w : G.adj(v)) {
+        for (int w : g.adj(v)) {
             if (!marked[w]) {
-                dfs(G, w);
+                dfs(g, w);
             }
         }
     }
@@ -119,8 +119,11 @@ public class CC {
      * @param      v     { parameter_description }
      */
     private void validateVertex(final int v) {
-        int V = marked.length;
-        if (v < 0 || v >= V)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
+        int markedlength = marked.length;
+        if (v < 0 || v >= markedlength) {
+            throw new 
+            IllegalArgumentException("vertex " +
+             v + " is not between 0 and " + (markedlength - 1));
+        }
     }
 }
