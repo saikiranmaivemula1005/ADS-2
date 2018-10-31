@@ -42,7 +42,12 @@ public class Bipartite {
         }
         assert check(g);
     }
-
+    /**
+     * dfs method.
+     *
+     * @param      g  graph.
+     * @param      v  integer variable.
+     */
     private void dfs(final Graph g, final int v) { 
         marked[v] = true;
         for (int w : g.adj(v)) {
@@ -78,17 +83,22 @@ public class Bipartite {
      * Returns the side of the bipartite that vertex {@code v} is on.
      *
      * @param  v the vertex
-     * @return the side of the bipartition that vertex {@code v} is on; two vertices
-     *         are in the same side of the bipartition if and only if they have the
+     * @return the side of the bipartition that vertex 
+     * {@code v} is on; two vertices
+     *         are in the same side of the bipartition 
+     *         if and only if they have the
      *         same color
-     * @throws IllegalArgumentException unless {@code 0 <= v < V} 
-     * @throws UnsupportedOperationException if this method is called when the graph
+     * @throws IllegalArgumentException unless {@code 
+     * 0 <= v < V} 
+     * @throws UnsupportedOperationException if this
+     *  method is called when the graph
      *         is not bipartite
      */
     public boolean color(final int v) {
         validateVertex(v);
         if (!isBipartite)
-            throw new UnsupportedOperationException("graph is not bipartite");
+            throw new UnsupportedOperationException(
+                "graph is not bipartite");
         return color[v];
     }
 
