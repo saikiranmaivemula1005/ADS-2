@@ -102,7 +102,7 @@ public class Stack<Item> implements Iterable<Item> {
      * that iterates through the items in LIFO order.
      * @return iterator of item type.
      */
-    public Iterator<Item> iterator()  { 
+    public Iterator<Item> iterator()  {
         return new ListIterator();
           }
     /**
@@ -142,5 +142,6 @@ public class Stack<Item> implements Iterable<Item> {
         }
     }
 }
+
 
 
