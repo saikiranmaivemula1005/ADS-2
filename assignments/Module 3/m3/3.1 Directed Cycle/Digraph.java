@@ -104,13 +104,13 @@ public class Digraph {
      * Returns the number of directed edges incident from vertex {@code v}.
      * This is known as the <em>outdegree</em> of vertex {@code v}.
      *
-     * @param  v the vertex
+     * @param  ve the vertex
      * @return the outdegree of vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public int outdegree(final int v) {
-        validateVertex(v);
-        return adj[v].size();
+    public int outdegree(final int ve) {
+        validateVertex(ve);
+        return adj[ve].size();
     }
     /**
      * Returns the number of directed edges incident to vertex {@code v}.

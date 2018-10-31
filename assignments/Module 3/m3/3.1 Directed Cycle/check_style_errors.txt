@@ -3,9 +3,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Digraph.java:111:36: 'v' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\DirectedCycle.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
@@ -14,10 +12,6 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Stack.java:42: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Stack.java:49: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Stack.java:57:22: Parameter item should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Stack.java:103:39: '{' at column 39 should have line break after. [LeftCurly]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Stack.java:136: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Stack.java:105: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 2 errors.

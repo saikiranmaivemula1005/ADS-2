@@ -38,6 +38,7 @@ public class Stack<Item> implements Iterable<Item> {
 
    /**
      * Is the stack empty?
+     * @return true/false
      */
     public boolean isEmpty() {
         return first == null;
@@ -45,6 +46,7 @@ public class Stack<Item> implements Iterable<Item> {
 
    /**
      * Return the number of items in the stack.
+     * @return size.
      */
     public int size() {
         return n;
@@ -54,7 +56,7 @@ public class Stack<Item> implements Iterable<Item> {
      * Add the item to the stack.
      * @param item item.
      */
-    public void push(Item item) {
+    public void push(final Item item) {
         Node oldfirst = first;
         first = new Node();
         first.item = item;
@@ -100,7 +102,9 @@ public class Stack<Item> implements Iterable<Item> {
      * that iterates through the items in LIFO order.
      * @return iterator of item type.
      */
-    public Iterator<Item> iterator()  { return new ListIterator();  }
+    public Iterator<Item> iterator()  { 
+        return new ListIterator();
+          }
     /**
      * Class for list iterator.
      */
@@ -133,7 +137,7 @@ public class Stack<Item> implements Iterable<Item> {
                 throw new NoSuchElementException();
             }
             Item item = current.item;
-            current = current.next; 
+            current = current.next;
             return item;
         }
     }
