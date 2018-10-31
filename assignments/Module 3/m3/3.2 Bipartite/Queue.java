@@ -42,6 +42,7 @@ public class Queue<Item> implements Iterable<Item> {
 
     /**
       * Is the queue empty?
+      * Time Complexity : O(1).
       * @return boolean.
       */
     public boolean isEmpty() {
@@ -50,6 +51,7 @@ public class Queue<Item> implements Iterable<Item> {
 
     /**
       * Return the number of items in the queue.
+      * Time Complexity : O(1).
       * @return size.
       */
     public int size() {
@@ -59,6 +61,7 @@ public class Queue<Item> implements Iterable<Item> {
     /**
       * Return the item least recently added to the queue.
       * Throw an exception if the queue is empty.
+      * Time Complexity : O(1).
       * @return item type.
       */
     public Item peek() {
@@ -70,6 +73,7 @@ public class Queue<Item> implements Iterable<Item> {
 
     /**
       * Add the item to the queue.
+      * Time Complexity : O(1).
       * @param item item.
       */
     public void enqueue(final Item item) {
@@ -88,6 +92,7 @@ public class Queue<Item> implements Iterable<Item> {
     /**
       * Remove and return the item on the queue least recently added.
       * Throw an exception if the queue is empty.
+      * Time Complexity : O(1).
       * @return item.
       */
     public Item dequeue() {
@@ -105,6 +110,7 @@ public class Queue<Item> implements Iterable<Item> {
 
     /**
       * Return string representation.
+      * Time Complexity : O(N).
       * @return string representation.
       */
     public String toString() {
@@ -119,6 +125,7 @@ public class Queue<Item> implements Iterable<Item> {
     /**
       * Return an iterator that iterates over the
       *  items on the queue in FIFO order.
+      *  Time Complexity : O(N).
       *  @return item array.
       */
     public Iterator<Item> iterator()  {
@@ -134,7 +141,7 @@ public class Queue<Item> implements Iterable<Item> {
         private Node current = first;
         /**
          * Determines if it has next.
-         *
+         *Time Complexity : O(1).
          * @return     True if has next, False otherwise.
          */
         public boolean hasNext() {
@@ -142,13 +149,14 @@ public class Queue<Item> implements Iterable<Item> {
         }
         /**
          * remove method.
+         * Time Complexity : O(1).
          */
         public void remove() {
             throw new UnsupportedOperationException();
         }
         /**
          * next method.
-         *
+         *Time Complexity : O(N).
          * @return     { description_of_the_return_value }
          */
         public Item next() {
@@ -161,3 +169,4 @@ public class Queue<Item> implements Iterable<Item> {
         }
     }
 }
+

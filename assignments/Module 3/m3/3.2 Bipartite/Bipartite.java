@@ -26,7 +26,7 @@ public class Bipartite {
     /**
      * Determines whether an undirected graph is bipartite and finds either a
      * bipartition or an odd-length cycle.
-     *
+     *Time Complexity : O(N).
      * @param  g the graph
      */
     public Bipartite(final Graph g) {
@@ -44,7 +44,7 @@ public class Bipartite {
     }
     /**
      * dfs method.
-     *
+     *Time Complexity : O(N^2).
      * @param      g  graph.
      * @param      v  integer variable.
      */
@@ -72,7 +72,7 @@ public class Bipartite {
 
     /**
      * Returns true if the graph is bipartite.
-     *
+     *Time Complexity : O(N).
      * @return {@code true} if the graph is bipartite; {@code false} otherwise
      */
     public boolean isBipartite() {
@@ -105,7 +105,7 @@ public class Bipartite {
     /**
      * Returns an odd-length cycle if the graph is not bipartite, and
      * {@code null} otherwise.
-     *
+     *Time Complexity : O(N).
      * @return an odd-length cycle if the graph is not bipartite
      *         (and hence has an odd-length cycle), and {@code null}
      *         otherwise
@@ -117,7 +117,7 @@ public class Bipartite {
      * check method.
      *
      * @param      g  graph.
-     *
+     *Time Complexity : O(N^2).
      * @return true/false.
      */
     private boolean check(final Graph g) {
@@ -154,7 +154,7 @@ public class Bipartite {
     }
     /**
      * validate vertex method.
-     *
+     *Time Complexity : O(N).
      * @param      v  integer variable.
      */
     private void validateVertex(final int v) {
@@ -165,3 +165,5 @@ public class Bipartite {
         }
     }
 }
+
+

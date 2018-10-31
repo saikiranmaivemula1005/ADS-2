@@ -38,7 +38,7 @@ public class Graph {
 
     /**
      * Constructs the object.
-     *
+     *Time Complexity : O(N).
      * @param      ve  integer variable.
      * @param      ed   integer variable.
      */
@@ -52,6 +52,7 @@ public class Graph {
     }
    /**
      * Return the number of vertices in the graph.
+     * Time Complexity : O(1).
      * @return v
      */
     public int v() {
@@ -60,6 +61,7 @@ public class Graph {
 
    /**
      * Return the number of edges in the graph.
+     * Time Complexity : O(1).
      * @return e
      */
     public int e() {
@@ -69,7 +71,7 @@ public class Graph {
 
      /**
       * Adds an edge.
-      *
+      *Time Complexity : O(1).
       * @param      ve  integer variable.
       * @param      w   integer variable.
       */
@@ -84,31 +86,12 @@ public class Graph {
      * iterable.
      *
      * @param      ve integer variable.
-     *
+     *Time Complexity : O(N).
      * @return  array.
      */
     public Iterable<Integer> adj(final int ve) {
         return adj[ve];
     }
-
-
-   // /**
-   //   * Return a string representation of the graph.
-   //   * @return string representation.
-   //   */
-   //  public String toString() {
-   //      StringBuilder s = new StringBuilder();
-   //      String NEWLINE = System.getProperty("line.separator");
-   //      s.append(v + " vertices, " + e + " edges " + NEWLINE);
-   //      for (int i = 0; i < v; i++) {
-   //          s.append(i + ": ");
-   //          for (int w : adj[i]) {
-   //              s.append(w + " ");
-   //          }
-   //          s.append(NEWLINE);
-   //      }
-   //      return s.toString();
-   //  }
-
 }
+
 
