@@ -18,26 +18,15 @@ Audit done.
 Checkstyle ends with 13 errors.
 Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Graph.java:25: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Graph.java:46:42: 'e' hides a field. [HiddenField]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Graph.java:57: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Graph.java:57: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Graph.java:64: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Graph.java:64: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Queue.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Solution.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Solution.java:6:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Solution.java:6:33: Parameter args should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.

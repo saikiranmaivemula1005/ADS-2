@@ -22,7 +22,6 @@ public class Graph {
      * array of bag type.
      */
     private Bag<Integer>[] colour;
-    
     /**
      * Constructs the object.
      *
@@ -41,11 +40,11 @@ public class Graph {
      * Constructs the object.
      *
      * @param      ve  integer variable.
-     * @param      e   integer variable.
+     * @param      ed   integer variable.
      */
-    public Graph(final int ve, final int e) {
+    public Graph(final int ve, final int ed) {
         this(ve);
-        for (int i = 0; i < e; i++) {
+        for (int i = 0; i < ed; i++) {
             int ver = (int) (Math.random() * ve);
             int w = (int) (Math.random() * ve);
             addEdge(ver, w);
@@ -53,15 +52,17 @@ public class Graph {
     }
    /**
      * Return the number of vertices in the graph.
+     * @return v
      */
-    public int v() { 
+    public int v() {
         return v;
     }
 
    /**
      * Return the number of edges in the graph.
+     * @return e
      */
-    public int e() { 
+    public int e() {
         return e;
     }
 
