@@ -48,7 +48,7 @@ public class Bipartite {
      * @param      g  graph.
      * @param      v  integer variable.
      */
-    private void dfs(final Graph g, final int v) { 
+    private void dfs(final Graph g, final int v) {
         marked[v] = true;
         for (int w : g.adj(v)) {
             if (cycle != null) {
@@ -78,27 +78,27 @@ public class Bipartite {
     public boolean isBipartite() {
         return isBipartite;
     }
- 
     /**
      * Returns the side of the bipartite that vertex {@code v} is on.
      *
      * @param  v the vertex
-     * @return the side of the bipartition that vertex 
+     * @return the side of the bipartition that vertex
      * {@code v} is on; two vertices
      *         are in the same side of the bipartition 
      *         if and only if they have the
      *         same color
-     * @throws IllegalArgumentException unless {@code 
-     * 0 <= v < V} 
+     * @throws IllegalArgumentException unless {@code
+     * 0 <= v < V}
      * @throws UnsupportedOperationException if this
      *  method is called when the graph
      *         is not bipartite
      */
     public boolean color(final int v) {
         validateVertex(v);
-        if (!isBipartite)
+        if (!isBipartite) {
             throw new UnsupportedOperationException(
                 "graph is not bipartite");
+        }
         return color[v];
     }
 
@@ -111,17 +111,23 @@ public class Bipartite {
      *         otherwise
      */
     public Iterable<Integer> oddCycle() {
-        return cycle; 
+        return cycle;
     }
-
-    private boolean check(final Graph G) {
+    /**
+     * check method.
+     *
+     * @param      g  graph.
+     *
+     * @return true/false.
+     */
+    private boolean check(final Graph g) {
         // graph is bipartite
         if (isBipartite) {
-            for (int v = 0; v < G.v(); v++) {
-                for (int w : G.adj(v)) {
+            for (int v = 0; v < g.v(); v++) {
+                for (int w : g.adj(v)) {
                     if (color[v] == color[w]) {
                         System.err.printf(
-                            "edge %d-%d with %d and %d in same side of bipartition\n",
+            "edge %d-%d with %d and %d in same side of bipartition\n",
                              v, w, v, w);
                         return false;
                     }
@@ -153,8 +159,9 @@ public class Bipartite {
      */
     private void validateVertex(final int v) {
         int ve = marked.length;
-        if (v < 0 || v >= ve)
+        if (v < 0 || v >= ve) {
             throw new IllegalArgumentException(
                 "vertex " + v + " is not between 0 and " + (ve - 1));
+        }
     }
 }
