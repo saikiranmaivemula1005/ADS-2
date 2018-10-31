@@ -62,13 +62,15 @@ public class Queue<Item> implements Iterable<Item> {
       * @return item type.
       */
     public Item peek() {
-        if (isEmpty())
+        if (isEmpty()) {
             throw new RuntimeException("Queue underflow");
+        }
         return first.item;
     }
 
     /**
       * Add the item to the queue.
+      * @param item item.
       */
     public void enqueue(final Item item) {
         Node x = new Node();

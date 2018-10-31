@@ -1,55 +1,35 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Bipartite.java:32:22: Parameter g should be final. [FinalParameters]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Bipartite.java:46: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Bipartite.java:46:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Bipartite.java:46:22: Parameter g should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Bipartite.java:46:31: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Bipartite.java:51: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Bipartite.java:78: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Bipartite.java:83: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Bipartite.java:84: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Bipartite.java:86: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Bipartite.java:87: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Bipartite.java:90:26: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Bipartite.java:92: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Bipartite.java:106: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Bipartite.java:109:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Bipartite.java:109:27: Parameter G should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Bipartite.java:109:33: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Bipartite.java:116: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Bipartite.java:132: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Bipartite.java:144:33: Parameter v should be final. [FinalParameters]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Bipartite.java:76: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Bipartite.java:81: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Bipartite.java:82: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Bipartite.java:84: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Bipartite.java:85: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Bipartite.java:90: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Bipartite.java:104: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Bipartite.java:107:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Bipartite.java:107:39: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Bipartite.java:114: Line is longer than 80 characters (found 86). [LineLength]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Bipartite.java:146: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Bipartite.java:148:63: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Bipartite.java:148:64: '-' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 23 errors.
+Checkstyle ends with 13 errors.
 Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Graph.java:25: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Graph.java:29:28: Expected @param tag for 've'. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Graph.java:42:28: 'v' hides a field. [HiddenField]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Graph.java:42:28: Expected @param tag for 'v'. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Graph.java:42:41: 'e' hides a field. [HiddenField]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Graph.java:42:41: Expected @param tag for 'e'. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Graph.java:53: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Graph.java:53: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Graph.java:60: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Graph.java:60: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Graph.java:68:35: Expected @param tag for 've'. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Graph.java:68:49: Expected @param tag for 'w'. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Graph.java:79:44: Expected @param tag for 've'. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Graph.java:90:16: Name 'NEWLINE' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Graph.java:46:42: 'e' hides a field. [HiddenField]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Graph.java:57: Expected @return tag. [JavadocMethod]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Graph.java:57: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Graph.java:64: Expected @return tag. [JavadocMethod]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Graph.java:64: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 15 errors.
+Checkstyle ends with 7 errors.
 Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Queue.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Queue.java:65: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Queue.java:73:36: Expected @param tag for 'item'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.2 Bipartite\Solution.java:2: Missing a Javadoc comment. [JavadocType]

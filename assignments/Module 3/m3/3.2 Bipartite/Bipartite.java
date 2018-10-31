@@ -29,7 +29,7 @@ public class Bipartite {
      *
      * @param  g the graph
      */
-    public Bipartite(Graph g) {
+    public Bipartite(final Graph g) {
         isBipartite = true;
         color  = new boolean[g.v()];
         marked = new boolean[g.v()];
@@ -43,14 +43,12 @@ public class Bipartite {
         assert check(g);
     }
 
-    private void dfs(Graph g, int v) { 
+    private void dfs(final Graph g, final int v) { 
         marked[v] = true;
         for (int w : g.adj(v)) {
-
-            // short circuit if odd-length cycle found
-            if (cycle != null) return;
-
-            // found uncolored vertex, so recur
+            if (cycle != null) {
+                return;
+            }
             if (!marked[w]) {
                 edgeTo[w] = v;
                 color[w] = !color[v];
@@ -87,7 +85,7 @@ public class Bipartite {
      * @throws UnsupportedOperationException if this method is called when the graph
      *         is not bipartite
      */
-    public boolean color(int v) {
+    public boolean color(final int v) {
         validateVertex(v);
         if (!isBipartite)
             throw new UnsupportedOperationException("graph is not bipartite");
@@ -106,7 +104,7 @@ public class Bipartite {
         return cycle; 
     }
 
-    private boolean check(Graph G) {
+    private boolean check(final Graph G) {
         // graph is bipartite
         if (isBipartite) {
             for (int v = 0; v < G.v(); v++) {
@@ -129,7 +127,9 @@ public class Bipartite {
                 last = v;
             }
             if (first != last) {
-                System.err.printf("cycle begins with %d and ends with %d\n", first, last);
+                System.err.printf(
+                    "cycle begins with %d and ends with %d\n",
+                     first, last);
                 return false;
             }
         }
@@ -141,10 +141,10 @@ public class Bipartite {
      *
      * @param      v  integer variable.
      */
-    private void validateVertex(int v) {
+    private void validateVertex(final int v) {
         int ve = marked.length;
         if (v < 0 || v >= ve)
             throw new IllegalArgumentException(
-                "vertex " + v + " is not between 0 and " + (ve-1));
+                "vertex " + v + " is not between 0 and " + (ve - 1));
     }
 }

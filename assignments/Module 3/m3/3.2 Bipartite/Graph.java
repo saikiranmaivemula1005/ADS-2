@@ -23,8 +23,10 @@ public class Graph {
      */
     private Bag<Integer>[] colour;
     
-   /**
-     * Create an empty graph with V vertices.
+    /**
+     * Constructs the object.
+     *
+     * @param      ve   vertex.
      */
     public Graph(final int ve) {
         this.v = ve;
@@ -35,16 +37,18 @@ public class Graph {
         }
     }
 
-   /**
-     * Create a random graph with V vertices and E edges.
-     * Expected running time is proportional to V + E.
+    /**
+     * Constructs the object.
+     *
+     * @param      ve  integer variable.
+     * @param      e   integer variable.
      */
-    public Graph(final int v, final int e) {
-        this(v);
+    public Graph(final int ve, final int e) {
+        this(ve);
         for (int i = 0; i < e; i++) {
-            int ve = (int) (Math.random() * v);
-            int w = (int) (Math.random() * v);
-            addEdge(ve, w);
+            int ver = (int) (Math.random() * ve);
+            int w = (int) (Math.random() * ve);
+            addEdge(ver, w);
         }
     }
    /**
@@ -62,9 +66,12 @@ public class Graph {
     }
 
 
-   /**
-     * Add the edge v-w to graph.
-     */
+     /**
+      * Adds an edge.
+      *
+      * @param      ve  integer variable.
+      * @param      w   integer variable.
+      */
     public void addEdge(final int ve, final int w) {
         e++;
         adj[ve].add(w);
@@ -72,32 +79,35 @@ public class Graph {
     }
 
 
-   /**
-     * Return the list of neighbors of vertex v as in Iterable.
-     * @return array.
+    /**
+     * iterable.
+     *
+     * @param      ve integer variable.
+     *
+     * @return  array.
      */
     public Iterable<Integer> adj(final int ve) {
         return adj[ve];
     }
 
 
-   /**
-     * Return a string representation of the graph.
-     * @return string representation.
-     */
-    public String toString() {
-        StringBuilder s = new StringBuilder();
-        String NEWLINE = System.getProperty("line.separator");
-        s.append(v + " vertices, " + e + " edges " + NEWLINE);
-        for (int i = 0; i < v; i++) {
-            s.append(i + ": ");
-            for (int w : adj[i]) {
-                s.append(w + " ");
-            }
-            s.append(NEWLINE);
-        }
-        return s.toString();
-    }
+   // /**
+   //   * Return a string representation of the graph.
+   //   * @return string representation.
+   //   */
+   //  public String toString() {
+   //      StringBuilder s = new StringBuilder();
+   //      String NEWLINE = System.getProperty("line.separator");
+   //      s.append(v + " vertices, " + e + " edges " + NEWLINE);
+   //      for (int i = 0; i < v; i++) {
+   //          s.append(i + ": ");
+   //          for (int w : adj[i]) {
+   //              s.append(w + " ");
+   //          }
+   //          s.append(NEWLINE);
+   //      }
+   //      return s.toString();
+   //  }
 
 }
 
