@@ -6,7 +6,13 @@ import java.util.NoSuchElementException;
  * @param      <Item>  The item
  */
 public class Stack<Item> implements Iterable<Item> {
-    private int n;          // size of the stack
+    /**
+     * integer variable.
+     */
+    private int n;
+    /**
+     * node type.
+     */
     private Node first;     // top of stack
     /**
      * Class for node.
@@ -46,6 +52,7 @@ public class Stack<Item> implements Iterable<Item> {
 
    /**
      * Add the item to the stack.
+     * @param item item.
      */
     public void push(Item item) {
         Node oldfirst = first;
@@ -61,7 +68,6 @@ public class Stack<Item> implements Iterable<Item> {
      * @return item most recently added item to the stack.
      */
     public Item pop() {
-        if (isEmpty()) throw new RuntimeException("Stack underflow");
         Item item = first.item;        // save item to return
         first = first.next;            // delete first node
         n--;
@@ -75,7 +81,6 @@ public class Stack<Item> implements Iterable<Item> {
      * @return item most recently added item to the stack.
      */
     public Item peek() {
-        if (isEmpty()) throw new RuntimeException("Stack underflow");
         return first.item;
     }
 
@@ -85,14 +90,15 @@ public class Stack<Item> implements Iterable<Item> {
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        for (Item item : this)
+        for (Item item : this) {
             s.append(item + " ");
+        }
         return s.toString();
     }
-       
-
    /**
-     * Return an iterator to the stack that iterates through the items in LIFO order.
+     * Return an iterator to the stack
+     * that iterates through the items in LIFO order.
+     * @return iterator of item type.
      */
     public Iterator<Item> iterator()  { return new ListIterator();  }
     /**

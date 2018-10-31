@@ -3,64 +3,30 @@ Starting audit...
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Digraph.java:1:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Digraph.java:26: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Digraph.java:33:20: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Digraph.java:33:24: 'v' hides a field. [HiddenField]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Digraph.java:34: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Digraph.java:34: Line is longer than 80 characters (found 109). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Digraph.java:65:33: Parameter vertex should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Digraph.java:66: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Digraph.java:67: Line is longer than 80 characters (found 104). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Digraph.java:73:8: Unused @param tag for 'v'. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Digraph.java:75: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Digraph.java:77:25: Parameter ve should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Digraph.java:77:29: Expected @param tag for 've'. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Digraph.java:77:33: Parameter w should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Digraph.java:89: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Digraph.java:92:34: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Digraph.java:92:38: 'v' hides a field. [HiddenField]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Digraph.java:102: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Digraph.java:105:26: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Digraph.java:105:30: 'v' hides a field. [HiddenField]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Digraph.java:115: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Digraph.java:118:25: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Digraph.java:118:29: 'v' hides a field. [HiddenField]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Digraph.java:141: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Digraph.java:141: Line is longer than 80 characters (found 95). [LineLength]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Digraph.java:28:8: Unused @param tag for 'v'. [JavadocMethod]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Digraph.java:31:30: Expected @param tag for 've'. [JavadocMethod]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Digraph.java:98:44: 'v' hides a field. [HiddenField]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Digraph.java:108: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Digraph.java:111:36: 'v' hides a field. [HiddenField]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Digraph.java:120: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Digraph.java:123:35: 'v' hides a field. [HiddenField]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Digraph.java:147: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 25 errors.
+Checkstyle ends with 8 errors.
 Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\DirectedCycle.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\DirectedCycle.java:27:26: Parameter g should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\DirectedCycle.java:43:21: Parameter g should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\DirectedCycle.java:43:32: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\DirectedCycle.java:51:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\DirectedCycle.java:57:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\DirectedCycle.java:75: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\DirectedCycle.java:82: Line is longer than 80 characters (found 96). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\DirectedCycle.java:83: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\DirectedCycle.java:100: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\DirectedCycle.java:104: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\DirectedCycle.java:77: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\DirectedCycle.java:79: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Stack.java:9:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Stack.java:10:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Stack.java:36: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Stack.java:43: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Stack.java:50:22: Parameter item should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Stack.java:50:27: Expected @param tag for 'item'. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Stack.java:64: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Stack.java:78: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Stack.java:88: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Stack.java:92: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Stack.java:95: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Stack.java:97: Expected @return tag. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Stack.java:97:39: '{' at column 39 should have line break after. [LeftCurly]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Stack.java:130: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Stack.java:42: Expected @return tag. [JavadocMethod]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Stack.java:49: Expected @return tag. [JavadocMethod]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Stack.java:57:22: Parameter item should be final. [FinalParameters]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Stack.java:103:39: '{' at column 39 should have line break after. [LeftCurly]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 3\m3\3.1 Directed Cycle\Stack.java:136: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 15 errors.
+Checkstyle ends with 6 errors.
