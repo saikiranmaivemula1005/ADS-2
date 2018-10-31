@@ -84,7 +84,7 @@ public class Bipartite {
      * @param  v the vertex
      * @return the side of the bipartition that vertex
      * {@code v} is on; two vertices
-     *         are in the same side of the bipartition 
+     *         are in the same side of the bipartition
      *         if and only if they have the
      *         same color
      * @throws IllegalArgumentException unless {@code
