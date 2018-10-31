@@ -12,6 +12,10 @@ class Solution {
 			g.addEdge(sc.nextInt(), sc.nextInt());
 		}
 		Bipartite b = new Bipartite(g);
-		System.out.println(b.isBipartite());
+		if (b.isBipartite()) {
+			System.out.println("Graph is bipartite");
+		} else {
+			System.out.println("Graph is not a bipartite");
+		}
 	}
 }
