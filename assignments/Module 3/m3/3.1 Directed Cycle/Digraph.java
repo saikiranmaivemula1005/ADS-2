@@ -25,7 +25,7 @@ public class Digraph {
     /**
      * Initializes an empty digraph with <em>V</em> vertices.
      *
-     * @param  v the number of vertices
+     * @param  ve the number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
     public Digraph(final int ve) {
@@ -90,14 +90,14 @@ public class Digraph {
      * Returns the vertices adjacent from vertex
      *  {@code v} in this digraph.
      *
-     * @param  v the vertex
+     * @param  ve the vertex
      * @return the vertices adjacent from vertex
      *  {@code v} in this digraph, as an iterable
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public Iterable<Integer> adj(final int v) {
-        validateVertex(v);
-        return adj[v];
+    public Iterable<Integer> adj(final int ve) {
+        validateVertex(ve);
+        return adj[ve];
     }
 
     /**
@@ -105,7 +105,7 @@ public class Digraph {
      * This is known as the <em>outdegree</em> of vertex {@code v}.
      *
      * @param  v the vertex
-     * @return the outdegree of vertex {@code v}               
+     * @return the outdegree of vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
     public int outdegree(final int v) {
@@ -116,13 +116,13 @@ public class Digraph {
      * Returns the number of directed edges incident to vertex {@code v}.
      * This is known as the <em>indegree</em> of vertex {@code v}.
      *
-     * @param  v the vertex
-     * @return the indegree of vertex {@code v}               
+     * @param  ve the vertex
+     * @return the indegree of vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public int indegree(final int v) {
-        validateVertex(v);
-        return indegree[v];
+    public int indegree(final int ve) {
+        validateVertex(ve);
+        return indegree[ve];
     }
 
     /**
@@ -144,7 +144,7 @@ public class Digraph {
      * Returns a string representation of the graph.
      *
      * @return the number of vertices
-     *  <em>V</em>, followed by the number of edges <em>E</em>,  
+     *  <em>V</em>, followed by the number of edges <em>E</em>,
      *         followed by the <em>V</em> adjacency lists
      */
     public String toString() {

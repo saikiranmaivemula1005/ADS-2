@@ -74,9 +74,9 @@ public class DirectedCycle {
     }
 
     /**
-     * Returns a directed cycle if 
+     * Returns a directed cycle if
      * the digraph has a directed cycle, and {@code null} otherwise.
-     * @return a directed cycle (as an iterable) 
+     * @return a directed cycle (as an iterable)
      * if the digraph has a directed cycle,
      *    and {@code null} otherwise
      */
