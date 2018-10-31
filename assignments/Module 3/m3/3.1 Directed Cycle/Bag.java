@@ -8,11 +8,11 @@ import java.util.NoSuchElementException;
  */
 public class Bag<Item> implements Iterable<Item> {
     /**
-     * { var_description }.
+     * integer.
      */
     private int n;     // number of elements in bag
     /**
-     * { var_description }.
+     * node.
      */
     private Node first;    // beginning of bag
     /**
@@ -20,11 +20,11 @@ public class Bag<Item> implements Iterable<Item> {
      */
     private class Node {
         /**
-         * { var_description }.
+         * item.
          */
         private Item item;
         /**
-         * { var_description }.
+         * node.
          */
         private Node next;
     }
@@ -54,7 +54,7 @@ public class Bag<Item> implements Iterable<Item> {
     }
 
     /**
-     * { function_description }.
+     * add method.
      *
      * @param      item  The item
      */
@@ -80,7 +80,7 @@ public class Bag<Item> implements Iterable<Item> {
      */
     private class ListIterator implements Iterator<Item> {
         /**
-         * { var_description }.
+         * node.
          */
         private Node current = first;
         /**
@@ -92,15 +92,15 @@ public class Bag<Item> implements Iterable<Item> {
             return current != null;
         }
         /**
-         * { function_description }.
+         * remove method.
          */
         public void remove() {
             throw new UnsupportedOperationException();
         }
         /**
-         * { function_description }.
+         * next method.
          *
-         * @return     { description_of_the_return_value }
+         * @return  item.
          */
         public Item next() {
             if (!hasNext()) {

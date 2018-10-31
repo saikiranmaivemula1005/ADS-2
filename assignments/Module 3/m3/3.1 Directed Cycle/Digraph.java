@@ -3,12 +3,26 @@ import java.util.NoSuchElementException;
  * Class for digraph.
  */
 public class Digraph {
+    /**
+     * string for new line.
+     */
     private static final String NEWLINE = System.getProperty("line.separator");
-
-    private final int v;           // number of vertices in this digraph
-    private int e;                 // number of edges in this digraph
-    private Bag<Integer>[] adj;    // adj[v] = adjacency list for vertex v
-    private int[] indegree;        // indegree[v] = indegree of vertex v
+    /**
+     * integer variable.
+     */
+    private final int v;
+    /**
+     * integer variable.
+     */
+    private int e;
+    /**
+     * matrix of bag type.
+     */
+    private Bag<Integer>[] adj;
+    /**
+     * integer array.
+     */
+    private int[] indegree;
     
     /**
      * Initializes an empty digraph with <em>V</em> vertices.
@@ -43,9 +57,11 @@ public class Digraph {
     public int e() {
         return e;
     }
-
-
-    // throw an IllegalArgumentException unless {@code 0 <= v < V}
+    /**
+     * validate vertex method.
+     *
+     * @param      vertex  The vertex
+     */
     private void validateVertex(int vertex) {
         if (vertex < 0 || vertex >= v)
             throw new IllegalArgumentException("vertex " + vertex + " is not between 0 and " + (v - 1));

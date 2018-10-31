@@ -46,7 +46,9 @@ public class DirectedCycle {
         for (int w : g.adj(v)) {
 
             // short circuit if directed cycle found
-            if (cycle != null) return;
+            if (cycle != null) {
+                return;
+            }
 
             // found new vertex, so recur
             else if (!marked[w]) {
@@ -84,9 +86,11 @@ public class DirectedCycle {
     public Iterable<Integer> cycle() {
         return cycle;
     }
-
-
-    // certify that digraph has a directed cycle if it reports one
+    /**
+     * check method.
+     *
+     * @return true or false.
+     */
     private boolean check() {
 
         if (hasCycle()) {
@@ -101,8 +105,6 @@ public class DirectedCycle {
                 return false;
             }
         }
-
-
         return true;
     }
 }
