@@ -1,28 +1,49 @@
-
+/**
+ * Class for directed cycle.
+ */
 public class DirectedCycle {
-    private boolean[] marked;        // marked[v] = has vertex v been marked?
-    private int[] edgeTo;            // edgeTo[v] = previous vertex on path to v
-    private boolean[] onStack;       // onStack[v] = is vertex on the stack?
-    private Stack<Integer> cycle;    // directed cycle (or null if no such cycle)
+    /**
+     * marked array of boolean type.
+     */
+    private boolean[] marked;
+    /**
+     * edgeTo array of integer type.
+     */
+    private int[] edgeTo;
+    /**
+     * onStack array of boolean type.
+     */
+    private boolean[] onStack;
+    /**
+     * directed cycle.
+     */
+    private Stack<Integer> cycle;
 
     /**
      * Determines whether the digraph {@code G} has a directed cycle and, if so,
      * finds such a cycle.
-     * @param G the digraph
+     * @param g the digraph
      */
-    public DirectedCycle(Digraph G) {
-        marked  = new boolean[G.V()];
-        onStack = new boolean[G.V()];
-        edgeTo  = new int[G.V()];
-        for (int v = 0; v < G.V(); v++)
-            if (!marked[v] && cycle == null) dfs(G, v);
+    public DirectedCycle(Digraph g) {
+        marked  = new boolean[g.v()];
+        onStack = new boolean[g.v()];
+        edgeTo  = new int[g.v()];
+        for (int i = 0; i < g.v(); i++) {
+            if (!marked[i] && cycle == null) {
+                dfs(g, i);
+            }
+        }
     }
-
-    // check that algorithm computes either the topological order or finds a directed cycle
-    public void dfs(Digraph G, int v) {
+    /**
+     * dfs method.
+     *
+     * @param      g digraph
+     * @param      v integer variable.
+     */
+    public void dfs(Digraph g, int v) {
         onStack[v] = true;
         marked[v] = true;
-        for (int w : G.adj(v)) {
+        for (int w : g.adj(v)) {
 
             // short circuit if directed cycle found
             if (cycle != null) return;
@@ -30,7 +51,7 @@ public class DirectedCycle {
             // found new vertex, so recur
             else if (!marked[w]) {
                 edgeTo[w] = v;
-                dfs(G, w);
+                dfs(g, w);
             }
 
             // trace back directed cycle
