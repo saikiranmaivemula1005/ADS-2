@@ -22,7 +22,7 @@ public class DirectedCycle {
     /**
      * Determines whether the digraph {@code G} has a directed cycle and, if so,
      * finds such a cycle.
-     * Time complexity : O(N).
+     * Time complexity : O(V).
      * @param g the digraph
      */
     public DirectedCycle(final Digraph g) {
@@ -37,7 +37,7 @@ public class DirectedCycle {
     }
     /**
      * dfs method.
-     *Time complexity : O(N).
+     *Time complexity : O(V).
      * @param      g digraph
      * @param      v integer variable.
      */
@@ -78,7 +78,7 @@ public class DirectedCycle {
     /**
      * Returns a directed cycle if
      * the digraph has a directed cycle, and {@code null} otherwise.
-     * Time complexity : O(N).
+     * Time complexity : O(V).
      * @return a directed cycle (as an iterable)
      * if the digraph has a directed cycle,
      *    and {@code null} otherwise
@@ -88,7 +88,7 @@ public class DirectedCycle {
     }
     /**
      * check method.
-     *Time complexity : O(N).
+     *Time complexity : O(V).
      * @return true or false.
      */
     private boolean check() {

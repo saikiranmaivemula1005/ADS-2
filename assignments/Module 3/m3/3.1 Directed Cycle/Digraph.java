@@ -24,7 +24,7 @@ public class Digraph {
     private int[] indegree;
     /**
      * Initializes an empty digraph with <em>V</em> vertices.
-     * Time complexity : O(N).
+     * Time complexity : O(V).
      * @param  ve the number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
@@ -89,7 +89,7 @@ public class Digraph {
     /**
      * Returns the vertices adjacent from vertex
      *  {@code v} in this digraph.
-     *Time complexity : O(N).
+     *Time complexity : O(V).
      * @param  ve the vertex
      * @return the vertices adjacent from vertex
      *  {@code v} in this digraph, as an iterable
@@ -127,7 +127,7 @@ public class Digraph {
 
     /**
      * Returns the reverse of the digraph.
-     *Time complexity : O(N^2).
+     *Time complexity : O(V^2).
      * @return the reverse of the digraph
      */
     public Digraph reverse() {
@@ -142,7 +142,7 @@ public class Digraph {
 
     /**
      * Returns a string representation of the graph.
-     *Time complexity : O(N^2).
+     *Time complexity : O(V^2).
      * @return the number of vertices
      *  <em>V</em>, followed by the number of edges <em>E</em>,
      *         followed by the <em>V</em> adjacency lists
