@@ -1,3 +1,4 @@
+
 /**
  * Class for directed cycle.
  */
@@ -18,7 +19,6 @@ public class DirectedCycle {
      * directed cycle.
      */
     private Stack<Integer> cycle;
-
     /**
      * Determines whether the digraph {@code G} has a directed cycle and, if so,
      * finds such a cycle.
@@ -64,7 +64,6 @@ public class DirectedCycle {
         }
         onStack[v] = false;
     }
-
     /**
      * Does the digraph have a directed cycle?
      * Time complexity : O(1).
@@ -74,7 +73,6 @@ public class DirectedCycle {
     public boolean hasCycle() {
         return cycle != null;
     }
-
     /**
      * Returns a directed cycle if
      * the digraph has a directed cycle, and {@code null} otherwise.
@@ -111,3 +109,4 @@ public class DirectedCycle {
         return true;
     }
 }
+
