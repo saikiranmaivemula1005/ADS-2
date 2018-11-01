@@ -23,7 +23,7 @@ class Graph {
     }
     /**
      * Constructs the object.
-     * Time complexity : O(n).
+     * Time complexity : O(V).
      * @param      v     integer variable.
      */
     Graph(final int v) {
@@ -52,7 +52,7 @@ class Graph {
     }
     /**
      * Adds an edge.
-     * Time complexity O(1)
+     * Time complexity O(V)
      * @param      v     integer variable.
      * @param      w     integer variable.
      */
@@ -71,7 +71,7 @@ class Graph {
      *
      * @param      v     integer variable.
      * @param      w     integer variable.
-     * Time complexity O(n)
+     * Time complexity O(V)
      * @return     True if has edge, False otherwise.
      */
     public boolean hasEdge(final int v, final int w) {
@@ -124,7 +124,7 @@ class Solution {
     }
     /**
      * main method.
-     *Time complexity : O(N^2)
+     *Time complexity : O(V^2)
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
