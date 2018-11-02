@@ -41,8 +41,8 @@ class Solution {
                     try {
                         w.sap(tokens[0], tokens[1]);
                         System.out.println("distance = "
-                         + w.distance(tokens[0], tokens[1]) +
-                          ", ancestor = " + w.sap(tokens[0], tokens[1]));
+                         + w.distance(tokens[0], tokens[1])
+                          + ", ancestor = " + w.sap(tokens[0], tokens[1]));
 
                     } catch (Exception e) {
                         System.out.println("IllegalArgumentException");
@@ -55,4 +55,5 @@ class Solution {
         }
     }
 }
+
 
