@@ -14,13 +14,16 @@ class Solution {
 				System.out.println("Cycle detected");
 				return;
 			}
-			w.checkMultipleRoots();
+			
+			if (inputType.equals("Graph")) {
+				w.checkMultipleRoots();
 			if (w.hasMultipleRoots) {
 				
 				return;
-			}
-			if (inputType.equals("Graph")) {
+			}else{
+				
 				System.out.println(w.dg);
+			}
 			}
 			if (inputType.equals("Queries")) {
 				while (sc.hasNextLine()) {
