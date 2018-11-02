@@ -18,49 +18,54 @@ public class WordNet {
      */
     public WordNet(final String synsets, final String hypernyms) {
         try {
-        File fileOne = new File("C:\\Users\\sai kiranmai\\Documents\\ADS-2\\assignments\\Module 4\\m4\\Code Camp - WordNet\\WordNet\\Files" + "\\" + synsets);
-        Scanner fOne = new Scanner(fileOne);
-        File fileTwo = new File("C:\\Users\\sai kiranmai\\Documents\\ADS-2\\assignments\\Module 4\\m4\\Code Camp - WordNet\\WordNet\\Files" + "\\" + hypernyms);
-        Scanner fTwo = new Scanner(fileTwo);
-           while (fOne.hasNext()) {
-            String[] tokens = fOne.nextLine().split(",");
-            h2.put(Integer.parseInt(tokens[0]), tokens[1]);
-            String[] words = tokens[1].split(" ");
-            for (int i = 0; i < words.length; i++) {
-                if (h.containsKey(words[i])) {
-                    ArrayList arraylist = h.get(words[i]);
-                    arraylist.add(tokens[0]);
-                } else {
-                    ArrayList<Integer> arraylist = new ArrayList<Integer>();
-                    arraylist.add(Integer.parseInt(tokens[0]));
-                    h.put(words[i], arraylist);
+            File fileOne = new File("C:\\Users\\sai kiranmai\\Documents\\ADS-2\\assignments\\Module 4\\m4\\Code Camp - WordNet\\WordNet\\Files" + "\\" + synsets);
+            Scanner fOne = new Scanner(fileOne);
+            File fileTwo = new File("C:\\Users\\sai kiranmai\\Documents\\ADS-2\\assignments\\Module 4\\m4\\Code Camp - WordNet\\WordNet\\Files" + "\\" + hypernyms);
+            Scanner fTwo = new Scanner(fileTwo);
+            while (fOne.hasNext()) {
+                String[] tokens = fOne.nextLine().split(",");
+                h2.put(Integer.parseInt(tokens[0]), tokens[1]);
+                String[] words = tokens[1].split(" ");
+                for (int i = 0; i < words.length; i++) {
+                    if (h.containsKey(words[i])) {
+                        ArrayList arraylist = h.get(words[i]);
+                        arraylist.add(tokens[0]);
+                    } else {
+                        ArrayList<Integer> arraylist = new ArrayList<Integer>();
+                        arraylist.add(Integer.parseInt(tokens[0]));
+                        h.put(words[i], arraylist);
+                    }
                 }
             }
-        }
-        dg = new Digraph(h.size());
-        while (fTwo.hasNextLine()) {
-            String[] tokens = fTwo.nextLine().split(",");
-            for (int i = 1; i < tokens.length; i++) {
-                dg.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[i]));
+            dg = new Digraph(h.size());
+            while (fTwo.hasNextLine()) {
+                String[] tokens = fTwo.nextLine().split(",");
+                for (int i = 1; i < tokens.length; i++) {
+                    dg.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[i]));
+                }
+                DirectedCycle dc = new DirectedCycle(dg);
+                if (dc.hasCycle()) {
+                    hasCycle = true;
+                }
             }
-            // DirectedCycle dc = new DirectedCycle(dg);
-            // if (dc.hasCycle()) {
-            //     hasCycle = true;
-            // }
-            // int roots = 0;
-            // for (int i = 0; i < dg.v(); i++) {
-            //     if (dg.adj(i).hasNext()) {
-            //         roots++;
-            //     }
-            // }
-        }
-    
-    } catch(Exception e) {
-        System.out.println(e);
-    }
-}
-     
 
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+    }
+
+    public void checkMultipleRoots() {
+        int roots = 0;
+        for (int i = 0; i < dg.v(); i++) {
+            if (dg.outdegree(i) == 0) {
+                roots++;
+            }
+        }
+        if (roots < 1) {
+            hasMultipleRoots = true;
+            System.out.println("Multiple roots");
+        }
+    }
     // returns all WordNet nouns
     // public Iterable<String> nouns()
 
