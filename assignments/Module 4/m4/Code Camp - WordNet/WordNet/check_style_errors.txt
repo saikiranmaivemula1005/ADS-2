@@ -16,7 +16,5 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\WordNet.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\WordNet.java:68: Line is longer than 80 characters (found 142). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\WordNet.java:70: Line is longer than 80 characters (found 143). [LineLength]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 1 errors.
