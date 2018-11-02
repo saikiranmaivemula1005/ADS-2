@@ -256,11 +256,11 @@ Your Output:
 
 ----------------------------------------
 
-########## Testcase 14: Failed ##########
+########## Testcase 14: Passed ##########
 Expected Output: 
 Cycle detected
 
 Your Output: 
-cycle detected
+Cycle detected
 ----------------------------------------
 

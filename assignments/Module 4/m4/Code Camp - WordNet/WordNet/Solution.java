@@ -11,7 +11,7 @@ class Solution {
 			WordNet w = new WordNet(synset, hypernyms);
 			String inputType = sc.nextLine();
 			if (w.hasCycle) {
-				System.out.println("cycle detected");
+				System.out.println("Cycle detected");
 				return;
 			}
 			if (w.hasMultipleRoots) {
