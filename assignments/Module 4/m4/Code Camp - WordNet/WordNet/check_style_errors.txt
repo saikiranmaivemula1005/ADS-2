@@ -41,45 +41,8 @@ Audit done.
 Checkstyle ends with 36 errors.
 Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:7:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:9:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:10:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:11:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:12:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:17:8: Unused @param tag for 'V'. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:20:20: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:20:24: Expected @param tag for 'v'. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:21: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:21: Line is longer than 80 characters (found 109). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:35: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:38: Line is longer than 80 characters (found 96). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:39: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:40: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:42:20: Parameter in should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:45: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:45: Line is longer than 80 characters (found 120). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:51:17: 'edges' hides a field. [HiddenField]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:52: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:52: Line is longer than 80 characters (found 114). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:59: Line is longer than 80 characters (found 97). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:66:8: Unused @param tag for 'G'. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:68:20: Parameter g should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:68:28: Expected @param tag for 'g'. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:71: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:105:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:105:33: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:106: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:107: Line is longer than 80 characters (found 106). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:115: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:117:25: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:117:32: Parameter w should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:129: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:132:34: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:145:26: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:158:25: Parameter v should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\Digraph.java:180: Line is longer than 80 characters (found 93). [LineLength]
 Audit done.
-Checkstyle ends with 38 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
