@@ -5,15 +5,15 @@ public class SAP {
     /**
      * digraph.
      */
-    Digraph dg;
+    private Digraph dg;
     /**
      * distance.
      */
-    int distance = Integer.MAX_VALUE;
+    private int distance = Integer.MAX_VALUE;
     /**
      * ancestor.
      */
-    int ancestor1 = -1;
+    private int ancestor1 = -1;
     /**
      * Constructs the object.
      *

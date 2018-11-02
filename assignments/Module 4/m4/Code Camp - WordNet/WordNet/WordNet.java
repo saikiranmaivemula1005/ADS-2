@@ -18,19 +18,43 @@ public class WordNet {
     /**
      * digraph.
      */
-    Digraph dg;
+    private Digraph dg;
     /**
      * SAP variable.
      */
-    SAP sap;
+    private SAP sap;
     /**
      * has cycle variable.
      */
-    boolean hasCycle = false;
+    private boolean hasCycle = false;
     /**
      * has multiple roots variable.
      */
-    boolean hasMultipleRoots = false;
+    private boolean hasMultipleRoots = false;
+    /**
+     * Gets the digraph.
+     *
+     * @return     The digraph.
+     */
+    public Digraph getDigraph() {
+        return this.dg;
+    }
+    /**
+     * get hasCycle.
+     *
+     * @return   boolean.
+     */
+    public boolean gethasCycle() {
+        return this.hasCycle;
+    }
+    /**
+     * hasmultipleroots.
+     *
+     * @return  boolean.
+     */
+    public boolean gethasMultipleRoots() {
+        return this.hasMultipleRoots;
+    }
     /**
      * Constructs the object.
      *

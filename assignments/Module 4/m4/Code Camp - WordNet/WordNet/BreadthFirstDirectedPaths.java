@@ -47,7 +47,7 @@ public class BreadthFirstDirectedPaths {
      *         {@code sources} satisfies {@code 0 <= v < V}
      */
     public BreadthFirstDirectedPaths(final
-                                     Digraph g, final Iterable<Integer> sources) {
+        Digraph g, final Iterable<Integer> sources) {
         marked = new boolean[g.v()];
         distTo = new int[g.v()];
         edgeTo = new int[g.v()];

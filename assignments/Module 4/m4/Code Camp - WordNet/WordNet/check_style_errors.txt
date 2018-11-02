@@ -1,9 +1,7 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:50: Line is longer than 80 characters (found 82). [LineLength]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
@@ -12,11 +10,8 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\SAP.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\SAP.java:8:13: Variable 'dg' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\SAP.java:12:9: Variable 'distance' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\SAP.java:16:9: Variable 'ancestor1' must be private and have accessor methods. [VisibilityModifier]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
@@ -25,11 +20,7 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\WordNet.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\WordNet.java:12:41: Variable 'h' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\WordNet.java:17:30: Variable 'h2' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\WordNet.java:21:13: Variable 'dg' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\WordNet.java:25:9: Variable 'sap' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\WordNet.java:29:13: Variable 'hasCycle' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\WordNet.java:33:13: Variable 'hasMultipleRoots' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\WordNet.java:43: Line is longer than 80 characters (found 142). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\WordNet.java:45: Line is longer than 80 characters (found 143). [LineLength]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\WordNet.java:67: Line is longer than 80 characters (found 142). [LineLength]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\WordNet.java:69: Line is longer than 80 characters (found 143). [LineLength]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 5 errors.

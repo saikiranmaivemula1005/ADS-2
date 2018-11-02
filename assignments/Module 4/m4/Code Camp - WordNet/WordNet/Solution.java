@@ -21,18 +21,18 @@ class Solution {
         try {
             WordNet w = new WordNet(synset, hypernyms);
             String inputType = sc.nextLine();
-            if (w.hasCycle) {
+            if (w.gethasCycle()) {
                 System.out.println("Cycle detected");
                 return;
             }
 
             if (inputType.equals("Graph")) {
                 w.checkMultipleRoots();
-                if (w.hasMultipleRoots) {
+                if (w.gethasMultipleRoots()) {
                     return;
                 } else {
 
-                    System.out.println(w.dg);
+                    System.out.println(w.getDigraph());
                 }
             }
             if (inputType.equals("Queries")) {
