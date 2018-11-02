@@ -1,11 +1,9 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:41: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:111: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:164: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:50: Line is longer than 80 characters (found 82). [LineLength]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
@@ -33,6 +31,5 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\WordNet.java:33:13: Variable 'hasMultipleRoots' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\WordNet.java:43: Line is longer than 80 characters (found 142). [LineLength]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\WordNet.java:45: Line is longer than 80 characters (found 143). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\WordNet.java:67: Line is longer than 80 characters (found 89). [LineLength]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 9 errors.

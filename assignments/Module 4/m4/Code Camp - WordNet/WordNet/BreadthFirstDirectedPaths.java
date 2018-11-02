@@ -38,7 +38,7 @@ public class BreadthFirstDirectedPaths {
     }
 
     /**
-     * Computes the shortest path from 
+     * Computes the shortest path from
      * any one of the source vertices in {@code sources}
      * to every other vertex in graph {@code G}.
      * @param g the digraph
@@ -47,7 +47,7 @@ public class BreadthFirstDirectedPaths {
      *         {@code sources} satisfies {@code 0 <= v < V}
      */
     public BreadthFirstDirectedPaths(final
-     Digraph g, final Iterable<Integer> sources) {
+                                     Digraph g, final Iterable<Integer> sources) {
         marked = new boolean[g.v()];
         distTo = new int[g.v()];
         edgeTo = new int[g.v()];
@@ -87,7 +87,7 @@ public class BreadthFirstDirectedPaths {
      * @param      sources  The sources
      */
     private void bfs(final Digraph g,
-     final Iterable<Integer> sources) {
+                     final Iterable<Integer> sources) {
         Queue<Integer> q = new Queue<Integer>();
         for (int s : sources) {
             marked[s] = true;
@@ -108,7 +108,7 @@ public class BreadthFirstDirectedPaths {
     }
 
     /**
-     * Is there a directed path from the 
+     * Is there a directed path from the
      * source {@code s} (or sources) to vertex {@code v}?
      * @param v the vertex
      * @return {@code true} if there is a directed path, {@code false} otherwise
@@ -161,8 +161,8 @@ public class BreadthFirstDirectedPaths {
     private void validateVertex(final int v) {
         int ve = marked.length;
         if (v < 0 || v >= ve) {
-            throw new IllegalArgumentException("vertex " 
-                + v + " is not between 0 and " + (v - 1));
+            throw new IllegalArgumentException("vertex "
+             + v + " is not between 0 and " + (v - 1));
         }
     }
     /**
