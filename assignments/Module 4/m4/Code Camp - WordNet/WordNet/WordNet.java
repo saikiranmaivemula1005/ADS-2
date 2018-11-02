@@ -57,11 +57,11 @@ public class WordNet {
     public void checkMultipleRoots() {
         int roots = 0;
         for (int i = 0; i < dg.v(); i++) {
-            if (dg.outdegree(i) > 0) {
+            if (dg.outdegree(i) = 0) {
                 roots++;
             }
         }
-        if (roots > 1) {
+        if (roots != 1) {
             hasMultipleRoots = true;
             System.out.println("Multiple roots");
         }
