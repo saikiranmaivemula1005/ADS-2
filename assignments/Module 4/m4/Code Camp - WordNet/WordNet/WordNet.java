@@ -10,11 +10,11 @@ public class WordNet {
      * hash map.
      */
     private HashMap<String, ArrayList<Integer>> h = new
-     HashMap<String, ArrayList<Integer>>();
-     /**
-      * hashmap.
-      */
-    private HashMap<Integer, String> h2 = new 
+    HashMap<String, ArrayList<Integer>>();
+    /**
+     * hashmap.
+     */
+    private HashMap<Integer, String> h2 = new
     HashMap<Integer, String>();
     /**
      * digraph.
@@ -68,7 +68,7 @@ public class WordNet {
                 "C:\\Users\\sai kiranmai\\Documents\\ADS-2\\assignments\\Module 4\\m4\\Code Camp - WordNet\\WordNet\\Files" + "\\" + synsets);
             Scanner fOne = new Scanner(fileOne);
             File fileTwo = new File("C:\\Users\\sai kiranmai\\Documents\\ADS-2\\assignments\\Module 4\\m4\\Code Camp - WordNet\\WordNet\\Files"
-                  + "\\" + hypernyms);
+                                    + "\\" + hypernyms);
             Scanner fTwo = new Scanner(fileTwo);
             while (fOne.hasNextLine()) {
                 String[] tokens = fOne.nextLine().split(",");
@@ -90,7 +90,7 @@ public class WordNet {
                 String[] tokens = fTwo.nextLine().split(",");
                 for (int i = 1; i < tokens.length; i++) {
                     dg.addEdge(Integer.parseInt(tokens[0]),
-                     Integer.parseInt(tokens[i]));
+                               Integer.parseInt(tokens[i]));
                 }
             }
         } catch (Exception e) {
@@ -139,7 +139,7 @@ public class WordNet {
      *
      * @return distance between nouns.
      */
-        public int distance(final String nounA, final String nounB) {
+    public int distance(final String nounA, final String nounB) {
         ArrayList id1 = h.get(nounA);
         ArrayList id2 = h.get(nounB);
         sap = new SAP(dg);
