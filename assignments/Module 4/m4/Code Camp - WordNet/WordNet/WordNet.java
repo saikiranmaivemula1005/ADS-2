@@ -43,10 +43,10 @@ public class WordNet {
             for (int i = 1; i < tokens.length; i++) {
                 dg.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[i]));
             }
-            DirectedCycle dc = new DirectedCycle(dg);
-            if (dc.hasCycle()) {
-                hasCycle = true;
-            }
+            // DirectedCycle dc = new DirectedCycle(dg);
+            // if (dc.hasCycle()) {
+            //     hasCycle = true;
+            // }
             // int roots = 0;
             // for (int i = 0; i < dg.v(); i++) {
             //     if (dg.adj(i).hasNext()) {
