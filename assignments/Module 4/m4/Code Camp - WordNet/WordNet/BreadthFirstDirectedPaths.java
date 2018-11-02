@@ -20,8 +20,9 @@ public class BreadthFirstDirectedPaths {
     private int[] distTo;      // distTo[v] = length of shortest s->v path
 
     /**
-     * Computes the shortest path from {@code s} and every other vertex in graph {@code G}.
-     * @param G the digraph
+     * Computes the shortest path from
+     *  {@code s} and every other vertex in graph {@code G}.
+     * @param g the digraph
      * @param s the source vertex
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
@@ -29,26 +30,30 @@ public class BreadthFirstDirectedPaths {
         marked = new boolean[g.v()];
         distTo = new int[g.v()];
         edgeTo = new int[g.v()];
-        for (int v = 0; v < g.v(); v++)
+        for (int v = 0; v < g.v(); v++) {
             distTo[v] = INFINITY;
+        }
         validateVertex(s);
         bfs(g, s);
     }
 
     /**
-     * Computes the shortest path from any one of the source vertices in {@code sources}
+     * Computes the shortest path from 
+     * any one of the source vertices in {@code sources}
      * to every other vertex in graph {@code G}.
-     * @param G the digraph
+     * @param g the digraph
      * @param sources the source vertices
      * @throws IllegalArgumentException unless each vertex {@code v} in
      *         {@code sources} satisfies {@code 0 <= v < V}
      */
-    public BreadthFirstDirectedPaths(final Digraph g, final Iterable<Integer> sources) {
+    public BreadthFirstDirectedPaths(final
+     Digraph g, final Iterable<Integer> sources) {
         marked = new boolean[g.v()];
         distTo = new int[g.v()];
         edgeTo = new int[g.v()];
-        for (int v = 0; v < g.v(); v++)
+        for (int v = 0; v < g.v(); v++) {
             distTo[v] = INFINITY;
+        }
         validateVertices(sources);
         bfs(g, sources);
     }
@@ -81,7 +86,8 @@ public class BreadthFirstDirectedPaths {
      * @param      g  digraph.
      * @param      sources  The sources
      */
-    private void bfs(final Digraph g, final Iterable<Integer> sources) {
+    private void bfs(final Digraph g,
+     final Iterable<Integer> sources) {
         Queue<Integer> q = new Queue<Integer>();
         for (int s : sources) {
             marked[s] = true;
@@ -102,7 +108,8 @@ public class BreadthFirstDirectedPaths {
     }
 
     /**
-     * Is there a directed path from the source {@code s} (or sources) to vertex {@code v}?
+     * Is there a directed path from the 
+     * source {@code s} (or sources) to vertex {@code v}?
      * @param v the vertex
      * @return {@code true} if there is a directed path, {@code false} otherwise
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
@@ -134,11 +141,14 @@ public class BreadthFirstDirectedPaths {
     public Iterable<Integer> pathTo(final int v) {
         validateVertex(v);
 
-        if (!hasPathTo(v)) return null;
+        if (!hasPathTo(v)) {
+            return null;
+        }
         Stack<Integer> path = new Stack<Integer>();
         int x;
-        for (x = v; distTo[x] != 0; x = edgeTo[x])
+        for (x = v; distTo[x] != 0; x = edgeTo[x]) {
             path.push(x);
+        }
         path.push(x);
         return path;
     }
@@ -150,8 +160,10 @@ public class BreadthFirstDirectedPaths {
      */
     private void validateVertex(final int v) {
         int ve = marked.length;
-        if (v < 0 || v >= ve)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (v - 1));
+        if (v < 0 || v >= ve) {
+            throw new IllegalArgumentException("vertex " 
+                + v + " is not between 0 and " + (v - 1));
+        }
     }
     /**
      * validate vertices.
@@ -165,7 +177,8 @@ public class BreadthFirstDirectedPaths {
         int ve = marked.length;
         for (int v : vertices) {
             if (v < 0 || v >= v) {
-                throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (ve - 1));
+                throw new IllegalArgumentException("vertex "
+                 + v + " is not between 0 and " + (ve - 1));
             }
         }
     }
