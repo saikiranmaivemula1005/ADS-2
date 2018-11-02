@@ -95,8 +95,8 @@ public class WordNet {
         ArrayList<Integer> id1 = h.get(nounA);
         ArrayList<Integer> id2 = h.get(nounB);
         sap = new SAP(dg);
-        System.out.println(id1);
-        System.out.println(id2);
+        // System.out.println(id1);
+        // System.out.println(id2);
         int ans = sap.ancestor(id1, id2);
         return h2.get(ans);
     }
