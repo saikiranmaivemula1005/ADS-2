@@ -6,11 +6,30 @@ import java.util.Scanner;
  * Class for word net.
  */
 public class WordNet {
-    HashMap<String, ArrayList<Integer>> h = new HashMap<String, ArrayList<Integer>>();
+    /**
+     * hash map.
+     */
+    HashMap<String, ArrayList<Integer>> h = new
+     HashMap<String, ArrayList<Integer>>();
+     /**
+      * hashmap.
+      */
     HashMap<Integer, String> h2 = new HashMap<Integer, String>();
+    /**
+     * digraph.
+     */
     Digraph dg;
+    /**
+     * SAP variable.
+     */
     SAP sap;
+    /**
+     * has cycle variable.
+     */
     boolean hasCycle = false;
+    /**
+     * has multiple roots variable.
+     */
     boolean hasMultipleRoots = false;
     /**
      * Constructs the object.
@@ -20,9 +39,13 @@ public class WordNet {
      */
     public WordNet(final String synsets, final String hypernyms) {
         try {
-            File fileOne = new File("C:\\Users\\sai kiranmai\\Documents\\ADS-2\\assignments\\Module 4\\m4\\Code Camp - WordNet\\WordNet\\Files" + "\\" + synsets);
+            File fileOne = new File(
+                "C:\\Users\\sai kiranmai\\Documents\\ADS-2\\assignments\\Module" 
+                 + "\\m4\\Code Camp - WordNet\\WordNet\\Files" + "\\" + synsets);
             Scanner fOne = new Scanner(fileOne);
-            File fileTwo = new File("C:\\Users\\sai kiranmai\\Documents\\ADS-2\\assignments\\Module 4\\m4\\Code Camp - WordNet\\WordNet\\Files" + "\\" + hypernyms);
+            File fileTwo = new File("C:\\Users\\sai kiranmai\\Documents"
+                 + "\\ADS-2\\assignments\\Module 4\\m4\\Code Camp - WordNet\\WordNet\\Files"
+                  + "\\" + hypernyms);
             Scanner fTwo = new Scanner(fileTwo);
             while (fOne.hasNextLine()) {
                 String[] tokens = fOne.nextLine().split(",");
@@ -54,7 +77,9 @@ public class WordNet {
             hasCycle = true;
         }
     }
-
+    /**
+     * check multiple roots method.
+     */
     public void checkMultipleRoots() {
         int roots = 0;
         for (int i = 0; i < dg.v(); i++) {
@@ -67,10 +92,13 @@ public class WordNet {
             System.out.println("Multiple roots");
         }
     }
-    // returns all WordNet nouns
-    // public Iterable<String> nouns()
-
-    // // is the word a WordNet noun?
+    /**
+     * Determines if noun.
+     *
+     * @param      word  The word
+     *
+     * @return     True if noun, False otherwise.
+     */
     public boolean isNoun(final String word) {
         // for (String s : h.getKeys()) {
         //     if (s.equals(word)) {
@@ -79,17 +107,28 @@ public class WordNet {
         // }
         return true;
     }
-
-    // // distance between nounA and nounB (defined below)
-    public int distance(final String nounA, final String nounB) {
+    /**
+     * distance.
+     *
+     * @param      nounA  The noun a
+     * @param      nounB  The noun b
+     *
+     * @return distance between nouns.
+     */
+        public int distance(final String nounA, final String nounB) {
         ArrayList id1 = h.get(nounA);
         ArrayList id2 = h.get(nounB);
         sap = new SAP(dg);
         return sap.length(id1, id2);
     }
-
-    // // a synset (second field of synsets.txt) that is the common ancestor of nounA and nounB
-    // // in a shortest ancestral path (defined below)
+    /**
+     * sap method.
+     *
+     * @param      nounA  The noun a
+     * @param      nounB  The noun b
+     *
+     * @return string.
+     */
     public String sap(final String nounA, final String nounB) {
         ArrayList<Integer> id1 = h.get(nounA);
         ArrayList<Integer> id2 = h.get(nounB);
