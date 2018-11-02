@@ -61,7 +61,7 @@ public class WordNet {
                 roots++;
             }
         }
-        if (roots < 1) {
+        if (roots > 1) {
             hasMultipleRoots = true;
             System.out.println("Multiple roots");
         }
