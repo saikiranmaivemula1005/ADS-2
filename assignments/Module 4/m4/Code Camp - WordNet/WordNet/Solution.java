@@ -16,6 +16,7 @@ class Solution {
 			}
 			if (w.hasMultipleRoots) {
 				w.checkMultipleRoots();
+				System.out.println("Multiple roots");
 				return;
 			}
 			if (inputType.equals("Graph")) {
