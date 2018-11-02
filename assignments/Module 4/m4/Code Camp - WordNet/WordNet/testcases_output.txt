@@ -36,21 +36,17 @@ Your Output:
 14: 13
 ----------------------------------------
 
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 distance = 7, ancestor = entity
 distance = 10, ancestor = entity
 
 Your Output: 
-Exception
-Exception
 distance = 7, ancestor = entity
-Exception
-Exception
 distance = 10, ancestor = entity
 ----------------------------------------
 
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 distance = 7, ancestor = macromolecule supermolecule
 distance = 7, ancestor = macromolecule supermolecule
@@ -60,45 +56,27 @@ distance = 7, ancestor = lipid lipide lipoid
 distance = 1, ancestor = animal_oil
 
 Your Output: 
-Exception
-Exception
 distance = 7, ancestor = macromolecule supermolecule
-Exception
-Exception
 distance = 7, ancestor = macromolecule supermolecule
-Exception
-Exception
 distance = 9, ancestor = macromolecule supermolecule
-Exception
-Exception
 distance = 8, ancestor = macromolecule supermolecule
-Exception
-Exception
 distance = 7, ancestor = lipid lipide lipoid
-Exception
-Exception
 distance = 1, ancestor = animal_oil
 ----------------------------------------
 
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 distance = 3, ancestor = wax
 distance = 13, ancestor = thing
 distance = 2, ancestor = wax
 
 Your Output: 
-Exception
-Exception
 distance = 3, ancestor = wax
-Exception
-Exception
 distance = 13, ancestor = thing
-Exception
-Exception
 distance = 2, ancestor = wax
 ----------------------------------------
 
-########## Testcase 4: Failed ##########
+########## Testcase 4: Passed ##########
 Expected Output: 
 distance = 0, ancestor = b
 distance = 0, ancestor = c
@@ -107,24 +85,14 @@ distance = 0, ancestor = e
 distance = 0, ancestor = f
 
 Your Output: 
-Exception
-Exception
 distance = 0, ancestor = b
-Exception
-Exception
 distance = 0, ancestor = c
-Exception
-Exception
 distance = 0, ancestor = d
-Exception
-Exception
 distance = 0, ancestor = e
-Exception
-Exception
 distance = 0, ancestor = f
 ----------------------------------------
 
-########## Testcase 5: Failed ##########
+########## Testcase 5: Passed ##########
 Expected Output: 
 distance = 1, ancestor = b
 distance = 2, ancestor = c
@@ -138,39 +106,19 @@ distance = 2, ancestor = j
 distance = 1, ancestor = k
 
 Your Output: 
-Exception
-Exception
 distance = 1, ancestor = b
-Exception
-Exception
 distance = 2, ancestor = c
-Exception
-Exception
 distance = 4, ancestor = c
-Exception
-Exception
 distance = 3, ancestor = c
-Exception
-Exception
 distance = 4, ancestor = c
-Exception
-Exception
 distance = 4, ancestor = c
-Exception
-Exception
 distance = 3, ancestor = c
-Exception
-Exception
 distance = 3, ancestor = i
-Exception
-Exception
 distance = 2, ancestor = j
-Exception
-Exception
 distance = 1, ancestor = k
 ----------------------------------------
 
-########## Testcase 6: Failed ##########
+########## Testcase 6: Passed ##########
 Expected Output: 
 distance = 1, ancestor = b
 distance = 2, ancestor = c
@@ -181,30 +129,16 @@ distance = 3, ancestor = h
 distance = 1, ancestor = h
 
 Your Output: 
-Exception
-Exception
 distance = 1, ancestor = b
-Exception
-Exception
 distance = 2, ancestor = c
-Exception
-Exception
 distance = 2, ancestor = h
-Exception
-Exception
 distance = 5, ancestor = h
-Exception
-Exception
 distance = 4, ancestor = h
-Exception
-Exception
 distance = 3, ancestor = h
-Exception
-Exception
 distance = 1, ancestor = h
 ----------------------------------------
 
-########## Testcase 7: Failed ##########
+########## Testcase 7: Passed ##########
 Expected Output: 
 distance = 1, ancestor = b
 distance = 1, ancestor = c
@@ -218,35 +152,15 @@ distance = 3, ancestor = f
 distance = 4, ancestor = f
 
 Your Output: 
-Exception
-Exception
 distance = 1, ancestor = b
-Exception
-Exception
 distance = 1, ancestor = c
-Exception
-Exception
 distance = 1, ancestor = d
-Exception
-Exception
 distance = 1, ancestor = e
-Exception
-Exception
 distance = 2, ancestor = f
-Exception
-Exception
 distance = 3, ancestor = f
-Exception
-Exception
 distance = 3, ancestor = f
-Exception
-Exception
 distance = 3, ancestor = f
-Exception
-Exception
 distance = 3, ancestor = f
-Exception
-Exception
 distance = 4, ancestor = f
 ----------------------------------------
 
@@ -302,21 +216,19 @@ Your Output:
 5:
 ----------------------------------------
 
-########## Testcase 11: Failed ##########
+########## Testcase 11: Passed ##########
 Expected Output: 
 IllegalArgumentException
 
 Your Output: 
-Exception
 IllegalArgumentException
 ----------------------------------------
 
-########## Testcase 12: Failed ##########
+########## Testcase 12: Passed ##########
 Expected Output: 
 IllegalArgumentException
 
 Your Output: 
-Exception
 IllegalArgumentException
 ----------------------------------------
 

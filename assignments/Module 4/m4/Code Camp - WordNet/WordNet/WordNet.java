@@ -90,9 +90,9 @@ public class WordNet {
     // // a synset (second field of synsets.txt) that is the common ancestor of nounA and nounB
     // // in a shortest ancestral path (defined below)
     public String sap(final String nounA, final String nounB) {
-        if (!isNoun(nounA) || isNoun(nounB)) {
-            System.out.println("Exception");
-        }
+        // if (!isNoun(nounA) || isNoun(nounB)) {
+        //     System.out.println("Exception");
+        // }
         ArrayList id1 = h.get(nounA);
         ArrayList id2 = h.get(nounB);
         sap = new SAP(dg);
