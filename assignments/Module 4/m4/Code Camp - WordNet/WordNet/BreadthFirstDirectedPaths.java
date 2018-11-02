@@ -13,14 +13,14 @@ public class BreadthFirstDirectedPaths {
      * @param s the source vertex
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public BreadthFirstDirectedPaths(Digraph G, int s) {
-        marked = new boolean[G.V()];
-        distTo = new int[G.V()];
-        edgeTo = new int[G.V()];
-        for (int v = 0; v < G.V(); v++)
+    public BreadthFirstDirectedPaths(Digraph g, int s) {
+        marked = new boolean[g.v()];
+        distTo = new int[g.v()];
+        edgeTo = new int[g.v()];
+        for (int v = 0; v < g.v(); v++)
             distTo[v] = INFINITY;
         validateVertex(s);
-        bfs(G, s);
+        bfs(g, s);
     }
 
     /**
@@ -31,25 +31,25 @@ public class BreadthFirstDirectedPaths {
      * @throws IllegalArgumentException unless each vertex {@code v} in
      *         {@code sources} satisfies {@code 0 <= v < V}
      */
-    public BreadthFirstDirectedPaths(Digraph G, Iterable<Integer> sources) {
-        marked = new boolean[G.V()];
-        distTo = new int[G.V()];
-        edgeTo = new int[G.V()];
-        for (int v = 0; v < G.V(); v++)
+    public BreadthFirstDirectedPaths(Digraph g, Iterable<Integer> sources) {
+        marked = new boolean[g.v()];
+        distTo = new int[g.v()];
+        edgeTo = new int[g.v()];
+        for (int v = 0; v < g.v(); v++)
             distTo[v] = INFINITY;
         validateVertices(sources);
-        bfs(G, sources);
+        bfs(g, sources);
     }
 
     // BFS from single source
-    private void bfs(Digraph G, int s) {
+    private void bfs(Digraph g, int s) {
         Queue<Integer> q = new Queue<Integer>();
         marked[s] = true;
         distTo[s] = 0;
         q.enqueue(s);
         while (!q.isEmpty()) {
             int v = q.dequeue();
-            for (int w : G.adj(v)) {
+            for (int w : g.adj(v)) {
                 if (!marked[w]) {
                     edgeTo[w] = v;
                     distTo[w] = distTo[v] + 1;
@@ -61,7 +61,7 @@ public class BreadthFirstDirectedPaths {
     }
 
     // BFS from multiple sources
-    private void bfs(Digraph G, Iterable<Integer> sources) {
+    private void bfs(Digraph g, Iterable<Integer> sources) {
         Queue<Integer> q = new Queue<Integer>();
         for (int s : sources) {
             marked[s] = true;
@@ -70,7 +70,7 @@ public class BreadthFirstDirectedPaths {
         }
         while (!q.isEmpty()) {
             int v = q.dequeue();
-            for (int w : G.adj(v)) {
+            for (int w : g.adj(v)) {
                 if (!marked[w]) {
                     edgeTo[w] = v;
                     distTo[w] = distTo[v] + 1;
@@ -125,9 +125,9 @@ public class BreadthFirstDirectedPaths {
 
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
     private void validateVertex(int v) {
-        int V = marked.length;
-        if (v < 0 || v >= V)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
+        int ve = marked.length;
+        if (v < 0 || v >= ve)
+            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (v - 1));
     }
 
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
@@ -135,10 +135,10 @@ public class BreadthFirstDirectedPaths {
         if (vertices == null) {
             throw new IllegalArgumentException("argument is null");
         }
-        int V = marked.length;
+        int ve = marked.length;
         for (int v : vertices) {
-            if (v < 0 || v >= V) {
-                throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
+            if (v < 0 || v >= v) {
+                throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (ve - 1));
             }
         }
     }
