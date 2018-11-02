@@ -17,13 +17,12 @@ class Solution {
 			
 			if (inputType.equals("Graph")) {
 				w.checkMultipleRoots();
-			if (w.hasMultipleRoots) {
-				
-				return;
-			}else{
-				
-				System.out.println(w.dg);
-			}
+				if (w.hasMultipleRoots) {
+					return;
+				}else{
+
+					System.out.println(w.dg);
+				}
 			}
 			if (inputType.equals("Queries")) {
 				while (sc.hasNextLine()) {

@@ -22,14 +22,14 @@ public class WordNet {
             Scanner fOne = new Scanner(fileOne);
             File fileTwo = new File("C:\\Users\\sai kiranmai\\Documents\\ADS-2\\assignments\\Module 4\\m4\\Code Camp - WordNet\\WordNet\\Files" + "\\" + hypernyms);
             Scanner fTwo = new Scanner(fileTwo);
-            while (fOne.hasNext()) {
+            while (fOne.hasNextLine()) {
                 String[] tokens = fOne.nextLine().split(",");
                 h2.put(Integer.parseInt(tokens[0]), tokens[1]);
                 String[] words = tokens[1].split(" ");
                 for (int i = 0; i < words.length; i++) {
                     if (h.containsKey(words[i])) {
-                        ArrayList arraylist = h.get(words[i]);
-                        arraylist.add(tokens[0]);
+                        ArrayList<Integer> arraylist = h.get(words[i]);
+                        arraylist.add(Integer.parseInt(tokens[0]));
                     } else {
                         ArrayList<Integer> arraylist = new ArrayList<Integer>();
                         arraylist.add(Integer.parseInt(tokens[0]));
@@ -43,14 +43,13 @@ public class WordNet {
                 for (int i = 1; i < tokens.length; i++) {
                     dg.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[i]));
                 }
-                DirectedCycle dc = new DirectedCycle(dg);
-                if (dc.hasCycle()) {
-                    hasCycle = true;
-                }
             }
-
         } catch (Exception e) {
             System.out.println(e);
+        }
+        DirectedCycle dc = new DirectedCycle(dg);
+        if (dc.hasCycle()) {
+            hasCycle = true;
         }
     }
 
@@ -93,9 +92,11 @@ public class WordNet {
         // if (!isNoun(nounA) || isNoun(nounB)) {
         //     System.out.println("Exception");
         // }
-        ArrayList id1 = h.get(nounA);
-        ArrayList id2 = h.get(nounB);
+        ArrayList<Integer> id1 = h.get(nounA);
+        ArrayList<Integer> id2 = h.get(nounB);
         sap = new SAP(dg);
+        System.out.println(id1);
+        System.out.println(id2);
         int ans = sap.ancestor(id1, id2);
         return h2.get(ans);
     }
