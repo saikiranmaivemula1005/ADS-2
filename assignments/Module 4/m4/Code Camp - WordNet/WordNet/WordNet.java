@@ -1,5 +1,7 @@
-import java.util.*;
-import java.io.*;
+import java.util.ArrayList;
+import java.io.File;
+import java.util.HashMap;
+import java.util.Scanner;
 /**
  * Class for word net.
  */
@@ -89,9 +91,6 @@ public class WordNet {
     // // a synset (second field of synsets.txt) that is the common ancestor of nounA and nounB
     // // in a shortest ancestral path (defined below)
     public String sap(final String nounA, final String nounB) {
-        // if (!isNoun(nounA) || isNoun(nounB)) {
-        //     System.out.println("Exception");
-        // }
         ArrayList<Integer> id1 = h.get(nounA);
         ArrayList<Integer> id2 = h.get(nounB);
         sap = new SAP(dg);
