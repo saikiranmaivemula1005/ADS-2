@@ -14,9 +14,9 @@ class Solution {
 				System.out.println("Cycle detected");
 				return;
 			}
+			w.checkMultipleRoots();
 			if (w.hasMultipleRoots) {
-				w.checkMultipleRoots();
-				System.out.println(w.hasMultipleRoots);
+				
 				return;
 			}
 			if (inputType.equals("Graph")) {

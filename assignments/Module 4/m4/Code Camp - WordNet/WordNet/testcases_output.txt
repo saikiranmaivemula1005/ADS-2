@@ -36,17 +36,16 @@ Your Output:
 14: 13
 ----------------------------------------
 
-########## Testcase 1: Passed ##########
+########## Testcase 1: Failed ##########
 Expected Output: 
 distance = 7, ancestor = entity
 distance = 10, ancestor = entity
 
 Your Output: 
-distance = 7, ancestor = entity
-distance = 10, ancestor = entity
+Multiple roots
 ----------------------------------------
 
-########## Testcase 2: Passed ##########
+########## Testcase 2: Failed ##########
 Expected Output: 
 distance = 7, ancestor = macromolecule supermolecule
 distance = 7, ancestor = macromolecule supermolecule
@@ -56,24 +55,17 @@ distance = 7, ancestor = lipid lipide lipoid
 distance = 1, ancestor = animal_oil
 
 Your Output: 
-distance = 7, ancestor = macromolecule supermolecule
-distance = 7, ancestor = macromolecule supermolecule
-distance = 9, ancestor = macromolecule supermolecule
-distance = 8, ancestor = macromolecule supermolecule
-distance = 7, ancestor = lipid lipide lipoid
-distance = 1, ancestor = animal_oil
+Multiple roots
 ----------------------------------------
 
-########## Testcase 3: Passed ##########
+########## Testcase 3: Failed ##########
 Expected Output: 
 distance = 3, ancestor = wax
 distance = 13, ancestor = thing
 distance = 2, ancestor = wax
 
 Your Output: 
-distance = 3, ancestor = wax
-distance = 13, ancestor = thing
-distance = 2, ancestor = wax
+Multiple roots
 ----------------------------------------
 
 ########## Testcase 4: Passed ##########
@@ -188,32 +180,20 @@ Your Output:
 7:
 ----------------------------------------
 
-########## Testcase 9: Failed ##########
+########## Testcase 9: Passed ##########
 Expected Output: 
 Multiple roots
 
 Your Output: 
-6 vertices, 5 edges 
-0: 
-1: 2 0 
-2: 3 
-3: 4 
-4: 5 
-5:
+Multiple roots
 ----------------------------------------
 
-########## Testcase 10: Failed ##########
+########## Testcase 10: Passed ##########
 Expected Output: 
 Multiple roots
 
 Your Output: 
-6 vertices, 4 edges 
-0: 1 
-1: 2 
-2: 3 
-3: 
-4: 5 
-5:
+Multiple roots
 ----------------------------------------
 
 ########## Testcase 11: Passed ##########
