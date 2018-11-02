@@ -9,12 +9,13 @@ public class WordNet {
     /**
      * hash map.
      */
-    HashMap<String, ArrayList<Integer>> h = new
+    private HashMap<String, ArrayList<Integer>> h = new
      HashMap<String, ArrayList<Integer>>();
      /**
       * hashmap.
       */
-    HashMap<Integer, String> h2 = new HashMap<Integer, String>();
+    private HashMap<Integer, String> h2 = new 
+    HashMap<Integer, String>();
     /**
      * digraph.
      */
