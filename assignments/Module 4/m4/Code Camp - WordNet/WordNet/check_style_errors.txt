@@ -44,7 +44,7 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\WordNet.java:25:9: Variable 'sap' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\WordNet.java:29:13: Variable 'hasCycle' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\WordNet.java:33:13: Variable 'hasMultipleRoots' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\WordNet.java:43: Line is longer than 80 characters (found 140). [LineLength]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\WordNet.java:43: Line is longer than 80 characters (found 142). [LineLength]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\WordNet.java:45: Line is longer than 80 characters (found 143). [LineLength]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 4\m4\Code Camp - WordNet\WordNet\WordNet.java:67: Line is longer than 80 characters (found 89). [LineLength]
 Audit done.

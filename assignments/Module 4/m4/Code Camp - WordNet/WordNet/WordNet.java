@@ -40,7 +40,7 @@ public class WordNet {
     public WordNet(final String synsets, final String hypernyms) {
         try {
             File fileOne = new File(
-                "C:\\Users\\sai kiranmai\\Documents\\ADS-2\\assignments\\Module\\m4\\Code Camp - WordNet\\WordNet\\Files" + "\\" + synsets);
+                "C:\\Users\\sai kiranmai\\Documents\\ADS-2\\assignments\\Module 4\\m4\\Code Camp - WordNet\\WordNet\\Files" + "\\" + synsets);
             Scanner fOne = new Scanner(fileOne);
             File fileTwo = new File("C:\\Users\\sai kiranmai\\Documents\\ADS-2\\assignments\\Module 4\\m4\\Code Camp - WordNet\\WordNet\\Files"
                   + "\\" + hypernyms);
