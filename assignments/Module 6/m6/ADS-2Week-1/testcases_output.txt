@@ -12,16 +12,9 @@ Expected Output:
 3 - 0.0
 
 Your Output: 
-4 vertices, 5 edges 
-0: 2 1 
-1: 2 
-2: 0 
-3: 2 
-
-250.0
-250.0
-750.0
-0.0
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
+	at Digraph.addEdge(Digraph.java:108)
+	at Solution.main(Solution.java:41)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -38,16 +31,9 @@ Expected Output:
 3 - 0.09090909090909086
 
 Your Output: 
-4 vertices, 6 edges 
-0: 1 
-1: 2 0 
-2: 3 0 
-3: 0 
-
-750.0
-125.0
-125.0
-125.0
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
+	at Digraph.addEdge(Digraph.java:108)
+	at Solution.main(Solution.java:41)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -64,16 +50,9 @@ Expected Output:
 3 - 0.07692307692307687
 
 Your Output: 
-4 vertices, 8 edges 
-0: 1 
-1: 2 0 
-2: 3 1 0 
-3: 2 0 
-
-375.0
-166.66666666666814
-166.66666666666814
-125.0
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
+	at Digraph.addEdge(Digraph.java:108)
+	at Solution.main(Solution.java:41)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -98,24 +77,9 @@ Expected Output:
 7 - 0.02941176470588232
 
 Your Output: 
-8 vertices, 14 edges 
-0: 3 2 1 
-1: 0 
-2: 0 
-3: 7 6 5 4 0 
-4: 0 
-5: 0 
-6: 0 
-7: 0 
-
-875.0
-125.0
-125.0
-125.0
-125.0
-125.0
-125.0
-125.0
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 8
+	at Digraph.addEdge(Digraph.java:108)
+	at Solution.main(Solution.java:41)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -136,20 +100,9 @@ Expected Output:
 5 - 0.07936507936507975
 
 Your Output: 
-6 vertices, 8 edges 
-0: 3 2 1 
-1: 0 
-2: 0 
-3: 5 0 
-4: 0 
-5: 
-
-666.6666666666547
-166.66666666666592
-166.66666666666592
-166.66666666666592
-0.0
-166.66666666666592
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
+	at Digraph.addEdge(Digraph.java:108)
+	at Solution.main(Solution.java:41)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -174,24 +127,9 @@ Expected Output:
 7 - 0.051470588235294074
 
 Your Output: 
-8 vertices, 10 edges 
-0: 3 2 1 
-1: 0 
-2: 0 
-3: 7 6 5 4 0 
-4: 
-5: 
-6: 
-7: 
-
-74.99999999999993
-125.0
-125.0
-125.0
-125.0
-125.0
-125.0
-125.0
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 8
+	at Digraph.addEdge(Digraph.java:108)
+	at Solution.main(Solution.java:41)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -214,10 +152,15 @@ Your Output:
 2: 3 
 3: 0 
 
-250.0
-250.0
-250.0
-250.0
+1.0
+1.0
+1.0
+1.0
+Exception in thread "main" java.lang.IllegalArgumentException: vertex 4 is not between 0 and 3
+	at Digraph.validateVertex(Digraph.java:90)
+	at Digraph.indegree(Digraph.java:147)
+	at PageRank.<init>(Solution.java:15)
+	at Solution.main(Solution.java:46)
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -246,12 +189,17 @@ Your Output:
 4: 0 
 5: 
 
-333.33333333333627
-166.66666666666592
-166.66666666666592
-166.66666666666592
+2.0
+0.9999999999999999
+0.9999999999999999
+0.9999999999999999
 0.0
-166.66666666666592
+0.9999999999999999
+Exception in thread "main" java.lang.IllegalArgumentException: vertex 6 is not between 0 and 5
+	at Digraph.validateVertex(Digraph.java:90)
+	at Digraph.indegree(Digraph.java:147)
+	at PageRank.<init>(Solution.java:15)
+	at Solution.main(Solution.java:46)
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -268,16 +216,9 @@ Expected Output:
 3 - 0.25
 
 Your Output: 
-4 vertices, 12 edges 
-0: 3 2 1 
-1: 3 2 0 
-2: 3 1 0 
-3: 2 1 0 
-
-250.00000000001094
-250.00000000001094
-250.00000000001094
-250.00000000001094
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
+	at Digraph.addEdge(Digraph.java:108)
+	at Solution.main(Solution.java:41)
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -298,20 +239,9 @@ Expected Output:
 5 - 0.060240963855421686
 
 Your Output: 
-6 vertices, 14 edges 
-0: 3 2 1 
-1: 3 2 0 
-2: 5 3 1 0 
-3: 2 1 0 
-4: 0 
-5: 
-
-666.6666666666547
-166.666666666661
-166.666666666661
-166.666666666661
-0.0
-55.55555555555663
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
+	at Digraph.addEdge(Digraph.java:108)
+	at Solution.main(Solution.java:41)
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -328,8 +258,13 @@ Your Output:
 0: 1 
 1: 0 
 
-500.0
-500.0
+1.0
+1.0
+Exception in thread "main" java.lang.IllegalArgumentException: vertex 2 is not between 0 and 1
+	at Digraph.validateVertex(Digraph.java:90)
+	at Digraph.indegree(Digraph.java:147)
+	at PageRank.<init>(Solution.java:15)
+	at Solution.main(Solution.java:46)
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -367,31 +302,8 @@ Expected Output:
 0
 
 Your Output: 
-12 vertices, 22 edges 
-0: 3 2 1 
-1: 0 
-2: 0 
-3: 11 10 9 8 7 6 5 4 0 
-4: 0 
-5: 0 
-6: 0 
-7: 0 
-8: 0 
-9: 0 
-10: 0 
-11: 0 
-
-916.6666666668041
-83.33333333333296
-83.33333333333296
-83.33333333333296
-83.33333333333296
-83.33333333333296
-83.33333333333296
-83.33333333333296
-83.33333333333296
-83.33333333333296
-83.33333333333296
-83.33333333333296
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 12
+	at Digraph.addEdge(Digraph.java:108)
+	at Solution.main(Solution.java:41)
 ----------------------------------------
 

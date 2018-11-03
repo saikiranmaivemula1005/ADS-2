@@ -10,8 +10,8 @@ class PageRank {
 		initalpr = 1d / dg.v();
 		indegrees = new int[dg.v()];
 		// System.out.println(initalpr);
-		for (int i = 0; i < dg.v(); i++) {
-			for (int j = 0; j < 1000; j++) {
+		for (int i = 0; i < 1000; i++) {
+			for (int j = 0; j < dg.v(); j++) {
 				indegrees[i] = dg.indegree(i);
 				for (int k = 0; k < indegrees[i]; k++) {
 					pagerank[i] += initalpr / dg.outdegree(dg.getindegree(i));
