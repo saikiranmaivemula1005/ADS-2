@@ -33,7 +33,7 @@ public class Digraph {
     /**
      * incoming nodes.
      */
-     HashMap<Integer, ArrayList<Integer>> h = new
+    HashMap<Integer, ArrayList<Integer>> h = new
     HashMap<Integer, ArrayList<Integer>>();
     ArrayList<Integer> arraylist;
     /**
@@ -109,8 +109,14 @@ public class Digraph {
         validateVertex(w);
         adj[ve].add(w);
         indegree[w]++;
-         arraylist.add(w);
-         h.put(ve, arraylist);
+        if (h.containsKey(w)) {
+            ArrayList<Integer> arraylist = h.get(w);
+            arraylist.add(ve);
+        } else {
+            ArrayList<Integer> arraylist = new ArrayList<Integer>();
+            arraylist.add(ve);
+            h.put(w, arraylist);
+        }
         e++;
     }
 
