@@ -13,11 +13,11 @@ class PageRank {
 		for (int i = 0; i < dg.v(); i++) {
 			for (int j = 0; j < 1000; j++) {
 				indegrees[i] = dg.indegree(i);
-				pagerank[i] += initalpr + dg.outdegree(i);
+				for (int k = 0; k < indegrees[i]; k++) {
+					pagerank[i] += initalpr + dg.outdegree(i);
+				}
 			}
 			System.out.println(pagerank[i]);
-			System.out.println(dg.incomingnode[i]);
-
 		}
 
 
