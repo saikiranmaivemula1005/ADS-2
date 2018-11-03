@@ -1,13 +1,19 @@
 import java.util.Scanner;
 class PageRank {
 	Digraph dg;
-	double pagerank;
+	double[] pagerank;
+	double initalpr;
 	PageRank(Digraph digraph) {
 		this.dg = digraph;
+		pagerank = new double[dg.v()];
+		initalpr = 1 / dg.v();
 		for (int i = 0; i < dg.v(); i++) {
-			System.out.println(dg.outdegree(i));
-			System.out.println(dg.indegree(i));
+			for (int j = 0; j < 1000; j++) {
+				pagerank[i] = initalpr + dg.outdegree(i);
+				System.out.println(pagerank[i]);
+			}
 		}
+
 
 	}
 }
