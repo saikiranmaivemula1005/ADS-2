@@ -60,6 +60,8 @@ public class Digraph {
         for (int i = 0; i < ve; i++) {
             adj[i] = new Bag<Integer>();
         }
+        incomingnode = new int[ve];
+        size = 0;
     }
     /**
      * Returns the number of vertices in this digraph.
