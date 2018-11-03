@@ -28,17 +28,10 @@ class PageRank {
 		// 	System.out.println(i + " - " +pagerank[i]);
 		// }
 		for (int i = 0; i < dg.v(); i++) {
-			// System.out.println("incoming nodes of " + i + "are" +dg.h.get(i));
-			// outdegree.add(dg.h.get(i).get(i));
-			indegrees[i] = dg.indegree(i);
-			// for (int j = 0; j < 1000; j++) {
-				// for (int k = 0; k < indegrees[i]; k++) {
-					pagerank[i] = 1 / dg.v;
-					System.out.println(i + " - " +pagerank[i]);
-				}
-			// }
-		// }
-	}
+			pagerank[i] = 1/dg.v;
+			System.out.println(i + " - " + pagerank[i]);
+		}
+}
 }
 
 class WebSearch {
