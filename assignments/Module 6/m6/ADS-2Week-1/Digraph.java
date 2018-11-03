@@ -106,7 +106,7 @@ public class Digraph {
         validateVertex(w);
         adj[ve].add(w);
         indegree[w]++;
-        incomingnode.add(ve);
+        incomingnode.add(w);
         e++;
     }
 
