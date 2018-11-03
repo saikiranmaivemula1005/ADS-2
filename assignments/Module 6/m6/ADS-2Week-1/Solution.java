@@ -16,7 +16,7 @@ class PageRank {
 				pagerank[i] += initalpr + dg.outdegree(i);
 			}
 			// System.out.println(pagerank[i]);
-			System.out.println(dg.getindegree(i));
+			System.out.println(dg.incomingnode[i]);
 
 		}
 

@@ -29,6 +29,14 @@ public class Digraph {
         return this.indegree[i];
     }
     /**
+     * incoming nodes.
+     */
+     int[] incomingnode;
+    /**
+     * size.
+     */
+    private int size;
+    /**
      * get adj.
      */
     public Bag<Integer> getadj(int i) {
@@ -95,6 +103,7 @@ public class Digraph {
         validateVertex(w);
         adj[ve].add(w);
         indegree[w]++;
+        incomingnode[size++] = w;
         e++;
     }
 
