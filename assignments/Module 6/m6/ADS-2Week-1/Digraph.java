@@ -1,3 +1,4 @@
+import java.util.HashMap;
 import java.util.ArrayList;
 /**
  * Class for digraph.
@@ -32,7 +33,9 @@ public class Digraph {
     /**
      * incoming nodes.
      */
-     ArrayList<Integer> incomingnode;
+     HashMap<Integer, ArrayList<Integer>> h = new
+    HashMap<Integer, ArrayList<Integer>>();
+    ArrayList<Integer> arraylist;
     /**
      * size.
      */
@@ -61,7 +64,7 @@ public class Digraph {
         for (int i = 0; i < ve; i++) {
             adj[i] = new Bag<Integer>();
         }
-        incomingnode = new ArrayList<Integer>();
+        arraylist = new ArrayList<Integer>();
         size = 0;
     }
     /**
@@ -106,7 +109,8 @@ public class Digraph {
         validateVertex(w);
         adj[ve].add(w);
         indegree[w]++;
-        incomingnode.add(w);
+         arraylist.add(w);
+         h.put(ve, arraylist);
         e++;
     }
 
