@@ -21,8 +21,8 @@ class PageRank {
 			indegrees[i] = dg.indegree(i);
 			for (int j = 0; j < 1000; j++) {
 				for (int k = 0; k < indegrees[i]; k++) {
-					prev = outdegree.get(i);
 					pagerank[i] += initalpr / dg.outdegree(prev) / 1000;
+					prev = outdegree.get(i);
 				}
 			}
 			System.out.println(i + " - " +pagerank[i]);
