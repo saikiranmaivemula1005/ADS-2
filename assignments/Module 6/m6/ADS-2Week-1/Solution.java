@@ -7,7 +7,7 @@ class PageRank {
 		this.dg = digraph;
 		pagerank = new double[dg.v()];
 		initalpr = 1 / dg.v();
-		System.out.println(initalpr);
+		System.out.println(dg.v());
 		for (int i = 0; i < dg.v(); i++) {
 			for (int j = 0; j < 1000; j++) {
 				pagerank[i] += initalpr + dg.outdegree(i);
