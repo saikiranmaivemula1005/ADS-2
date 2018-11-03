@@ -1,25 +1,29 @@
 import java.util.Scanner;
 import java.util.Arrays;
+import java.util.ArrayList;
 class PageRank {
 	Digraph dg;
 	double[] pagerank;
 	double initalpr;
 	int[] indegrees;
+	int[] outdegree;
 	PageRank(Digraph digraph) {
 		this.dg = digraph;
 		pagerank = new double[dg.v()];
 		initalpr = 1d / dg.v();
 		indegrees = new int[dg.v()];
+		outdegree = new int[dg.v()];
 		// System.out.println(initalpr);
 		for (int i = 0; i < dg.v(); i++) {
 			System.out.println("incoming nodes of " + i + "are" +dg.h.get(i));
+			outdegree[i] = (dg.h.get(i).get(i));
 			indegrees[i] = dg.indegree(i);
 			for (int j = 0; j < 1000; j++) {
 				for (int k = 0; k < indegrees[i]; k++) {
-					pagerank[i] += (initalpr / dg.outdegree(dg.getindegree(i))) / 1000;
+					pagerank[i] += initalpr / dg.outdegree(dg.h.get(i).get(i));
 				}
 			}
-			// System.out.println(i + " - " +pagerank[i]);
+			System.out.println(i + " - " +pagerank[i]);
 		}
 	}
 }
