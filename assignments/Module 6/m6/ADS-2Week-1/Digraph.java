@@ -11,7 +11,7 @@ public class Digraph {
     /**
      * integer variable.
      */
-    private final int v;
+     final int v;
     /**
      * integer variable.
      */
