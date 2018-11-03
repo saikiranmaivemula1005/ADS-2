@@ -2,11 +2,11 @@ import java.util.Scanner;
 class PageRank {
 	Digraph dg;
 	double[] pagerank;
-	float initalpr;
+	double initalpr;
 	PageRank(Digraph digraph) {
 		this.dg = digraph;
 		pagerank = new double[dg.v()];
-		initalpr = 1 / 4;
+		initalpr = 1d / 4;
 		System.out.println(initalpr);
 		for (int i = 0; i < dg.v(); i++) {
 			for (int j = 0; j < 1000; j++) {
