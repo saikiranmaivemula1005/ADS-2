@@ -6,6 +6,7 @@ class PageRank {
 	double[] pagerank;
 	double initalpr;
 	int[] indegrees;
+	int prev = 0;
 	ArrayList<Integer> outdegree;
 	PageRank(Digraph digraph) {
 		this.dg = digraph;
@@ -20,7 +21,8 @@ class PageRank {
 			indegrees[i] = dg.indegree(i);
 			for (int j = 0; j < 1000; j++) {
 				for (int k = 0; k < indegrees[i]; k++) {
-					pagerank[i] += initalpr / dg.outdegree(outdegree.get(i)) / 2000;
+					prev = outdegree.get(i);
+					pagerank[i] += initalpr / dg.outdegree(prev) / 1000;
 				}
 			}
 			System.out.println(i + " - " +pagerank[i]);

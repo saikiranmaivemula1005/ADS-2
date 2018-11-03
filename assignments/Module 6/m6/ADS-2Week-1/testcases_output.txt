@@ -19,7 +19,7 @@ Your Output:
 3: 2 
 
 incoming nodes of 0are[2]
-0 - 0.12500000000000008
+0 - 0.25000000000000017
 incoming nodes of 1are[0]
 Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out-of-bounds for length 1
 	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
@@ -27,8 +27,8 @@ Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out-of-b
 	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
 	at java.base/java.util.Objects.checkIndex(Unknown Source)
 	at java.base/java.util.ArrayList.get(Unknown Source)
-	at PageRank.<init>(Solution.java:19)
-	at Solution.main(Solution.java:50)
+	at PageRank.<init>(Solution.java:20)
+	at Solution.main(Solution.java:52)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -52,7 +52,7 @@ Your Output:
 3: 0 
 
 incoming nodes of 0are[1, 2, 3]
-0 - 0.1874999999999863
+0 - 0.3749999999999726
 incoming nodes of 1are[0]
 Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out-of-bounds for length 1
 	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
@@ -60,8 +60,8 @@ Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out-of-b
 	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
 	at java.base/java.util.Objects.checkIndex(Unknown Source)
 	at java.base/java.util.ArrayList.get(Unknown Source)
-	at PageRank.<init>(Solution.java:19)
-	at Solution.main(Solution.java:50)
+	at PageRank.<init>(Solution.java:20)
+	at Solution.main(Solution.java:52)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -85,9 +85,9 @@ Your Output:
 3: 2 0 
 
 incoming nodes of 0are[1, 2, 3]
-0 - 0.1874999999999863
+0 - 0.3749999999999726
 incoming nodes of 1are[0, 2]
-1 - 0.08333333333333247
+1 - 0.16666666666666494
 incoming nodes of 2are[1, 3]
 Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 2 out-of-bounds for length 2
 	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
@@ -95,8 +95,8 @@ Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 2 out-of-b
 	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
 	at java.base/java.util.Objects.checkIndex(Unknown Source)
 	at java.base/java.util.ArrayList.get(Unknown Source)
-	at PageRank.<init>(Solution.java:19)
-	at Solution.main(Solution.java:50)
+	at PageRank.<init>(Solution.java:20)
+	at Solution.main(Solution.java:52)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -132,7 +132,7 @@ Your Output:
 7: 0 
 
 incoming nodes of 0are[1, 2, 3, 4, 5, 6, 7]
-0 - 0.437500000000042
+0 - 0.875000000000084
 incoming nodes of 1are[0]
 Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out-of-bounds for length 1
 	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
@@ -140,8 +140,8 @@ Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out-of-b
 	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
 	at java.base/java.util.Objects.checkIndex(Unknown Source)
 	at java.base/java.util.ArrayList.get(Unknown Source)
-	at PageRank.<init>(Solution.java:19)
-	at Solution.main(Solution.java:50)
+	at PageRank.<init>(Solution.java:20)
+	at Solution.main(Solution.java:52)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -171,7 +171,7 @@ Your Output:
 5: 
 
 incoming nodes of 0are[1, 2, 3, 4]
-0 - 0.3333333333333133
+0 - 0.6666666666666266
 incoming nodes of 1are[0]
 Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out-of-bounds for length 1
 	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
@@ -179,8 +179,8 @@ Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out-of-b
 	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
 	at java.base/java.util.Objects.checkIndex(Unknown Source)
 	at java.base/java.util.ArrayList.get(Unknown Source)
-	at PageRank.<init>(Solution.java:19)
-	at Solution.main(Solution.java:50)
+	at PageRank.<init>(Solution.java:20)
+	at Solution.main(Solution.java:52)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -216,7 +216,7 @@ Your Output:
 7: 
 
 incoming nodes of 0are[1, 2, 3]
-0 - 0.1874999999999863
+0 - 0.3749999999999726
 incoming nodes of 1are[0]
 Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out-of-bounds for length 1
 	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
@@ -224,8 +224,8 @@ Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out-of-b
 	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
 	at java.base/java.util.Objects.checkIndex(Unknown Source)
 	at java.base/java.util.ArrayList.get(Unknown Source)
-	at PageRank.<init>(Solution.java:19)
-	at Solution.main(Solution.java:50)
+	at PageRank.<init>(Solution.java:20)
+	at Solution.main(Solution.java:52)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -249,7 +249,7 @@ Your Output:
 3: 0 
 
 incoming nodes of 0are[3]
-0 - 0.12500000000000008
+0 - 0.25000000000000017
 incoming nodes of 1are[0]
 Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out-of-bounds for length 1
 	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
@@ -257,8 +257,8 @@ Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out-of-b
 	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
 	at java.base/java.util.Objects.checkIndex(Unknown Source)
 	at java.base/java.util.ArrayList.get(Unknown Source)
-	at PageRank.<init>(Solution.java:19)
-	at Solution.main(Solution.java:50)
+	at PageRank.<init>(Solution.java:20)
+	at Solution.main(Solution.java:52)
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -288,7 +288,7 @@ Your Output:
 5: 
 
 incoming nodes of 0are[3, 4]
-0 - 0.08333333333333247
+0 - 0.16666666666666494
 incoming nodes of 1are[0]
 Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out-of-bounds for length 1
 	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
@@ -296,8 +296,8 @@ Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out-of-b
 	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
 	at java.base/java.util.Objects.checkIndex(Unknown Source)
 	at java.base/java.util.ArrayList.get(Unknown Source)
-	at PageRank.<init>(Solution.java:19)
-	at Solution.main(Solution.java:50)
+	at PageRank.<init>(Solution.java:20)
+	at Solution.main(Solution.java:52)
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -321,11 +321,11 @@ Your Output:
 3: 2 1 0 
 
 incoming nodes of 0are[1, 2, 3]
-0 - 0.12499999999999455
+0 - 0.2499999999999891
 incoming nodes of 1are[0, 2, 3]
-1 - 0.12499999999999455
+1 - 0.2499999999999891
 incoming nodes of 2are[0, 1, 3]
-2 - 0.12499999999999455
+2 - 0.2499999999999891
 incoming nodes of 3are[0, 1, 2]
 Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 3 out-of-bounds for length 3
 	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
@@ -333,8 +333,8 @@ Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 3 out-of-b
 	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
 	at java.base/java.util.Objects.checkIndex(Unknown Source)
 	at java.base/java.util.ArrayList.get(Unknown Source)
-	at PageRank.<init>(Solution.java:19)
-	at Solution.main(Solution.java:50)
+	at PageRank.<init>(Solution.java:20)
+	at Solution.main(Solution.java:52)
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -364,11 +364,11 @@ Your Output:
 5: 
 
 incoming nodes of 0are[1, 2, 3, 4]
-0 - 0.1111111111111164
+0 - 0.2222222222222328
 incoming nodes of 1are[0, 2, 3]
-1 - 0.06249999999999727
+1 - 0.12499999999999455
 incoming nodes of 2are[0, 1, 3]
-2 - 0.08333333333333706
+2 - 0.16666666666667412
 incoming nodes of 3are[0, 1, 2]
 Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 3 out-of-bounds for length 3
 	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
@@ -376,8 +376,8 @@ Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 3 out-of-b
 	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
 	at java.base/java.util.Objects.checkIndex(Unknown Source)
 	at java.base/java.util.ArrayList.get(Unknown Source)
-	at PageRank.<init>(Solution.java:19)
-	at Solution.main(Solution.java:50)
+	at PageRank.<init>(Solution.java:20)
+	at Solution.main(Solution.java:52)
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -395,7 +395,7 @@ Your Output:
 1: 0 
 
 incoming nodes of 0are[1]
-0 - 0.25000000000000017
+0 - 0.5000000000000003
 incoming nodes of 1are[0]
 Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out-of-bounds for length 1
 	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
@@ -403,8 +403,8 @@ Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out-of-b
 	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
 	at java.base/java.util.Objects.checkIndex(Unknown Source)
 	at java.base/java.util.ArrayList.get(Unknown Source)
-	at PageRank.<init>(Solution.java:19)
-	at Solution.main(Solution.java:50)
+	at PageRank.<init>(Solution.java:20)
+	at Solution.main(Solution.java:52)
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -457,7 +457,7 @@ Your Output:
 11: 0 
 
 incoming nodes of 0are[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-0 - 0.4583333333332912
+0 - 0.9166666666665824
 incoming nodes of 1are[0]
 Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out-of-bounds for length 1
 	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
@@ -465,7 +465,7 @@ Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out-of-b
 	at java.base/jdk.internal.util.Preconditions.checkIndex(Unknown Source)
 	at java.base/java.util.Objects.checkIndex(Unknown Source)
 	at java.base/java.util.ArrayList.get(Unknown Source)
-	at PageRank.<init>(Solution.java:19)
-	at Solution.main(Solution.java:50)
+	at PageRank.<init>(Solution.java:20)
+	at Solution.main(Solution.java:52)
 ----------------------------------------
 
