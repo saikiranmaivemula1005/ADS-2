@@ -237,7 +237,7 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:7:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:7:18: Parameter digraph should be final. [FinalParameters]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:14:45: '1000' is a magic number. [MagicNumber]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:17: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:17: Line is longer than 80 characters (found 93). [LineLength]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:27: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:32: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:32:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
