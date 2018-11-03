@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 class PageRank {
 	Digraph dg;
 	double[] pagerank;
@@ -11,6 +12,7 @@ class PageRank {
 		indegrees = new int[dg.v()];
 		// System.out.println(initalpr);
 		for (int i = 0; i < dg.v(); i++) {
+			System.out.println(dg.incomingnode.get(i));
 			indegrees[i] = dg.indegree(i);
 			for (int j = 0; j < 1000; j++) {
 				for (int k = 0; k < indegrees[i]; k++) {
