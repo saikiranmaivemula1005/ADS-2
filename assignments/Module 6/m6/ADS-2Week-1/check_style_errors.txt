@@ -227,8 +227,8 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:16:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:16:33: Parameter args should be final. [FinalParameters]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:17: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:34: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:44: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:36: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:46: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
 Checkstyle ends with 15 errors.
 Starting audit...

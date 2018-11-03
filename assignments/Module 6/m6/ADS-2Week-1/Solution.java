@@ -18,10 +18,12 @@ public class Solution {
 		Scanner sc = new Scanner(System.in);
 		int vertices = Integer.parseInt(sc.nextLine());
 		Digraph dg = new Digraph(vertices);
-		String[] tokens = sc.next().split(" ");
-		for (int i = 1; i < tokens.length; i++) {
-			dg.addEdge(Integer.parseInt(tokens[0]),
-			           Integer.parseInt(tokens[i]));
+		while (sc.hasNextLine()) {
+			String[] tokens = sc.next().split(" ");
+			for (int i = 1; i < tokens.length; i++) {
+				dg.addEdge(Integer.parseInt(tokens[0]),
+				           Integer.parseInt(tokens[i]));
+			}
 		}
 		System.out.println(dg);
 		PageRank pg = new PageRank(dg);
