@@ -105,7 +105,6 @@ public class Digraph {
         validateVertex(w);
         adj[ve].add(w);
         indegree[w]++;
-        incomingnode[size++] = w;
         e++;
     }
 
