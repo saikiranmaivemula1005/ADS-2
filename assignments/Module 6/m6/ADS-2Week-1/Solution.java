@@ -28,7 +28,7 @@ class PageRank {
 		// 	System.out.println(i + " - " +pagerank[i]);
 		// }
 		for (int i = 0; i < dg.v(); i++) {
-			pagerank[i] = 1/dg.v;
+			pagerank[i] = 1/4;
 			System.out.println(i + " - " + pagerank[i]);
 		}
 }
