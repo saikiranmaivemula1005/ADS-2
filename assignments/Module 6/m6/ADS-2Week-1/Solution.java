@@ -16,12 +16,12 @@ public class Solution {
 	public static void main(String[] args) {
 		// read the first line of the input to get the number of vertices
 		Scanner sc = new Scanner(System.in);
-		int vertices = sc.nextInt();
+		int vertices = Integer.parseInt(sc.nextLine());
 		Digraph dg = new Digraph(vertices);
 		String[] tokens = sc.next().split(" ");
 		for (int i = 1; i < tokens.length; i++) {
 			dg.addEdge(Integer.parseInt(tokens[0]),
-			           Integer.parseInt(tokens[1]));
+			           Integer.parseInt(tokens[i]));
 		}
 		System.out.println(dg);
 		PageRank pg = new PageRank(dg);
