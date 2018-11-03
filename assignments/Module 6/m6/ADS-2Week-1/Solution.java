@@ -4,20 +4,17 @@ class PageRank {
 	double[] pagerank;
 	double initalpr;
 	int[] indegrees;
-	double[] outdegree;
 	PageRank(Digraph digraph) {
 		this.dg = digraph;
 		pagerank = new double[dg.v()];
 		initalpr = 1d / dg.v();
 		indegrees = new int[dg.v()];
-		outdegree = new double[dg.v()];
 		// System.out.println(initalpr);
 		for (int i = 0; i < dg.v(); i++) {
 			indegrees[i] = dg.indegree(i);
-			outdegree[i] = pagerank[dg.indegree(i)];
 			for (int j = 0; j < 1000; j++) {
 				for (int k = 0; k < indegrees[i]; k++) {
-					pagerank[i] += initalpr / outdegree[i];
+					pagerank[i] += (double)initalpr / dg.outdegree(2);
 				}
 			}
 			System.out.println(i + " - " +pagerank[i]);
