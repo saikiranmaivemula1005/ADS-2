@@ -23,6 +23,12 @@ public class Digraph {
      */
     private int[] indegree;
     /**
+     * get adj.
+     */
+    public Bag<Integer> getadj(int i) {
+        return this.adj[i];
+    }
+    /**
      * Initializes an empty digraph with <em>V</em> vertices.
      * Time complexity : O(V).
      * @param  ve the number of vertices
