@@ -23,6 +23,7 @@ public class Solution {
 			dg.addEdge(Integer.parseInt(tokens[0]),
 			           Integer.parseInt(tokens[i]));
 		}
+		System.out.println(dg);
 		PageRank pg = new PageRank(dg);
 		System.out.println(pg);
 
