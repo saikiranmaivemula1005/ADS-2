@@ -229,6 +229,7 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:5:15: Variable 'initalpr' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:6:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:6:18: Parameter digraph should be final. [FinalParameters]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:9:32: '4' is a magic number. [MagicNumber]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:12:45: '1000' is a magic number. [MagicNumber]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:23: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:28: Missing a Javadoc comment. [JavadocType]
@@ -239,7 +240,7 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:49: Line is longer than 80 characters (found 87). [LineLength]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:59: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 20 errors.
+Checkstyle ends with 21 errors.
 Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
