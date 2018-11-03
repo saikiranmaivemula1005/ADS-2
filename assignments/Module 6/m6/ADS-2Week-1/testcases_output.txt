@@ -331,8 +331,8 @@ Your Output:
 Exception in thread "main" java.lang.IllegalArgumentException: vertex 2 is not between 0 and 1
 	at Digraph.validateVertex(Digraph.java:90)
 	at Digraph.outdegree(Digraph.java:134)
-	at PageRank.<init>(Solution.java:18)
-	at Solution.main(Solution.java:47)
+	at PageRank.<init>(Solution.java:17)
+	at Solution.main(Solution.java:46)
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
