@@ -19,7 +19,7 @@ public class Solution {
 		int vertices = Integer.parseInt(sc.nextLine());
 		Digraph dg = new Digraph(vertices);
 		while (sc.hasNextLine()) {
-			String[] tokens = sc.next().split(" ");
+			String[] tokens = sc.nextLine().split(" ");
 			for (int i = 1; i < tokens.length; i++) {
 				dg.addEdge(Integer.parseInt(tokens[0]),
 				           Integer.parseInt(tokens[i]));
