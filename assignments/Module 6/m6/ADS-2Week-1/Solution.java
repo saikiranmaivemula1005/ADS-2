@@ -5,7 +5,7 @@ class PageRank {
 	PageRank(Digraph digraph) {
 		this.dg = digraph;
 		for (int i = 0; i < dg.v(); i++) {
-			System.out.println(dg.getadj(i));
+			System.out.println(dg.outdegree(i));
 		}
 
 	}
