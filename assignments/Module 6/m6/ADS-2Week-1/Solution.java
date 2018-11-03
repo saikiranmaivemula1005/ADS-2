@@ -3,16 +3,19 @@ class PageRank {
 	Digraph dg;
 	double[] pagerank;
 	double initalpr;
+	int[] indegrees;
 	PageRank(Digraph digraph) {
 		this.dg = digraph;
 		pagerank = new double[dg.v()];
 		initalpr = 1d / dg.v();
+		indegrees = new int[dg.v()];
 		System.out.println(initalpr);
 		for (int i = 0; i < dg.v(); i++) {
 			for (int j = 0; j < 1000; j++) {
+				indegrees[i] = dg.indegree(i);
 				pagerank[i] += initalpr + dg.outdegree(i);
 			}
-			System.out.println(pagerank[i]);
+			// System.out.println(pagerank[i]);
 
 		}
 
