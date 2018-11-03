@@ -25,8 +25,8 @@ public class Digraph {
     /**
      * print indegree;
      */
-    public int[] getindegree() {
-        return this.indegree;
+    public int getindegree(int i) {
+        return this.indegree[i];
     }
     /**
      * get adj.
