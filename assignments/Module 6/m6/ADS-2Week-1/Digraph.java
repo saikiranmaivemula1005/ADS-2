@@ -31,7 +31,7 @@ public class Digraph {
     /**
      * incoming nodes.
      */
-     int[] incomingnode;
+     int[][] incomingnode;
     /**
      * size.
      */
@@ -60,7 +60,7 @@ public class Digraph {
         for (int i = 0; i < ve; i++) {
             adj[i] = new Bag<Integer>();
         }
-        incomingnode = new int[ve];
+        incomingnode = new int[ve][ve];
         size = 0;
     }
     /**
@@ -105,7 +105,7 @@ public class Digraph {
         validateVertex(w);
         adj[ve].add(w);
         indegree[w]++;
-        incomingnode[size++] = w;
+        incomingnode[size++][size++] = w;
         e++;
     }
 
