@@ -23,6 +23,12 @@ public class Digraph {
      */
     private int[] indegree;
     /**
+     * print indegree;
+     */
+    public int[] getindegree() {
+        return this.indegree;
+    }
+    /**
      * get adj.
      */
     public Bag<Integer> getadj(int i) {
