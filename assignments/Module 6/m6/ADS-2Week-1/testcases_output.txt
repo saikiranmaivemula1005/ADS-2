@@ -19,6 +19,7 @@ Your Output:
 3: 2 
 
 incoming nodes of 0are[2]
+0 - 250.0
 incoming nodes of 1are[0]
 Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out-of-bounds for length 1
 	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
@@ -51,6 +52,7 @@ Your Output:
 3: 0 
 
 incoming nodes of 0are[1, 2, 3]
+0 - 375.0
 incoming nodes of 1are[0]
 Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out-of-bounds for length 1
 	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
@@ -83,7 +85,9 @@ Your Output:
 3: 2 0 
 
 incoming nodes of 0are[1, 2, 3]
+0 - 375.0
 incoming nodes of 1are[0, 2]
+1 - 166.66666666666814
 incoming nodes of 2are[1, 3]
 Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 2 out-of-bounds for length 2
 	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
@@ -128,6 +132,7 @@ Your Output:
 7: 0 
 
 incoming nodes of 0are[1, 2, 3, 4, 5, 6, 7]
+0 - 875.0
 incoming nodes of 1are[0]
 Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out-of-bounds for length 1
 	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
@@ -166,6 +171,7 @@ Your Output:
 5: 
 
 incoming nodes of 0are[1, 2, 3, 4]
+0 - 666.6666666666547
 incoming nodes of 1are[0]
 Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out-of-bounds for length 1
 	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
@@ -210,6 +216,7 @@ Your Output:
 7: 
 
 incoming nodes of 0are[1, 2, 3]
+0 - 375.0
 incoming nodes of 1are[0]
 Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out-of-bounds for length 1
 	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
@@ -242,6 +249,7 @@ Your Output:
 3: 0 
 
 incoming nodes of 0are[3]
+0 - 250.0
 incoming nodes of 1are[0]
 Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out-of-bounds for length 1
 	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
@@ -280,6 +288,7 @@ Your Output:
 5: 
 
 incoming nodes of 0are[3, 4]
+0 - 166.66666666666814
 incoming nodes of 1are[0]
 Exception in thread "main" java.lang.IndexOutOfBoundsException: Index 1 out-of-bounds for length 1
 	at java.base/jdk.internal.util.Preconditions.outOfBounds(Unknown Source)
