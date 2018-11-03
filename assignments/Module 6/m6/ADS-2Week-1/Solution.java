@@ -22,7 +22,7 @@ class PageRank {
 			for (int j = 0; j < 1000; j++) {
 				for (int k = 0; k < indegrees[i]; k++) {
 					pagerank[i] += initalpr / dg.outdegree(prev) / 1000;
-					prev = outdegree.get(indegrees[i]);
+					prev = outdegree.get(i);
 				}
 			}
 			System.out.println(i + " - " +pagerank[i]);
