@@ -18,14 +18,10 @@ Your Output:
 2: 0 
 3: 2 
 
-0
-0 - 0.25000000000000017
-0
-1 - 0.25000000000000017
-1
-2 - 0.7499999999999452
-2
-3 - 0.0
+incoming nodes of 0are0
+incoming nodes of 1are0
+incoming nodes of 2are1
+incoming nodes of 3are2
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -48,14 +44,10 @@ Your Output:
 2: 3 0 
 3: 0 
 
-0
-0 - 0.7499999999999452
-1
-1 - 0.12500000000000008
-1
-2 - 0.12500000000000008
-2
-3 - 0.12500000000000008
+incoming nodes of 0are0
+incoming nodes of 1are1
+incoming nodes of 2are1
+incoming nodes of 3are2
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -78,14 +70,10 @@ Your Output:
 2: 3 1 0 
 3: 2 0 
 
-0
-0 - 0.3749999999999726
-1
-1 - 0.16666666666666494
-1
-2 - 0.16666666666666494
-2
-3 - 0.12500000000000008
+incoming nodes of 0are0
+incoming nodes of 1are1
+incoming nodes of 2are1
+incoming nodes of 3are2
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -120,22 +108,14 @@ Your Output:
 6: 0 
 7: 0 
 
-0
-0 - 0.875000000000084
-0
-1 - 0.12500000000000008
-0
-2 - 0.12500000000000008
-1
-3 - 0.12500000000000008
-2
-4 - 0.12500000000000008
-3
-5 - 0.12500000000000008
-3
-6 - 0.12500000000000008
-3
-7 - 0.12500000000000008
+incoming nodes of 0are0
+incoming nodes of 1are0
+incoming nodes of 2are0
+incoming nodes of 3are1
+incoming nodes of 4are2
+incoming nodes of 5are3
+incoming nodes of 6are3
+incoming nodes of 7are3
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -164,18 +144,12 @@ Your Output:
 4: 0 
 5: 
 
-0
-0 - 0.6666666666666266
-0
-1 - 0.1666666666666677
-0
-2 - 0.1666666666666677
-1
-3 - 0.1666666666666677
-2
-4 - 0.0
-3
-5 - 0.1666666666666677
+incoming nodes of 0are0
+incoming nodes of 1are0
+incoming nodes of 2are0
+incoming nodes of 3are1
+incoming nodes of 4are2
+incoming nodes of 5are3
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -210,22 +184,14 @@ Your Output:
 6: 
 7: 
 
-0
-0 - 0.07499999999999582
-0
-1 - 0.12500000000000008
-0
-2 - 0.12500000000000008
-1
-3 - 0.12500000000000008
-2
-4 - 0.12500000000000008
-3
-5 - 0.12500000000000008
-3
-6 - 0.12500000000000008
-3
-7 - 0.12500000000000008
+incoming nodes of 0are0
+incoming nodes of 1are0
+incoming nodes of 2are0
+incoming nodes of 3are1
+incoming nodes of 4are2
+incoming nodes of 5are3
+incoming nodes of 6are3
+incoming nodes of 7are3
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -248,14 +214,10 @@ Your Output:
 2: 3 
 3: 0 
 
-0
-0 - 0.25000000000000017
-1
-1 - 0.25000000000000017
-2
-2 - 0.25000000000000017
-3
-3 - 0.25000000000000017
+incoming nodes of 0are0
+incoming nodes of 1are1
+incoming nodes of 2are2
+incoming nodes of 3are3
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -284,18 +246,12 @@ Your Output:
 4: 0 
 5: 
 
-0
-0 - 0.3333333333333299
-1
-1 - 0.1666666666666677
-2
-2 - 0.1666666666666677
-3
-3 - 0.1666666666666677
-3
-4 - 0.0
-4
-5 - 0.1666666666666677
+incoming nodes of 0are0
+incoming nodes of 1are1
+incoming nodes of 2are2
+incoming nodes of 3are3
+incoming nodes of 4are3
+incoming nodes of 5are4
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -318,14 +274,10 @@ Your Output:
 2: 3 1 0 
 3: 2 1 0 
 
-0
-0 - 0.2499999999999891
-0
-1 - 0.2499999999999891
-0
-2 - 0.2499999999999891
-1
-3 - 0.2499999999999891
+incoming nodes of 0are0
+incoming nodes of 1are0
+incoming nodes of 2are0
+incoming nodes of 3are1
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -354,18 +306,12 @@ Your Output:
 4: 0 
 5: 
 
-0
-0 - 0.6666666666666266
-0
-1 - 0.16666666666667412
-0
-2 - 0.16666666666667412
-1
-3 - 0.16666666666667412
-1
-4 - 0.0
-1
-5 - 0.05555555555555677
+incoming nodes of 0are0
+incoming nodes of 1are0
+incoming nodes of 2are0
+incoming nodes of 3are1
+incoming nodes of 4are1
+incoming nodes of 5are1
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -382,10 +328,8 @@ Your Output:
 0: 1 
 1: 0 
 
-0
-0 - 0.5000000000000003
-1
-1 - 0.5000000000000003
+incoming nodes of 0are0
+incoming nodes of 1are1
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -437,29 +381,17 @@ Your Output:
 10: 0 
 11: 0 
 
-0
-0 - 0.9166666666665824
-0
-1 - 0.08333333333333386
-0
-2 - 0.08333333333333386
-1
-3 - 0.08333333333333386
-2
-4 - 0.08333333333333386
-3
-5 - 0.08333333333333386
-3
-6 - 0.08333333333333386
-3
-7 - 0.08333333333333386
-3
-8 - 0.08333333333333386
-3
-9 - 0.08333333333333386
-3
-10 - 0.08333333333333386
-3
-11 - 0.08333333333333386
+incoming nodes of 0are0
+incoming nodes of 1are0
+incoming nodes of 2are0
+incoming nodes of 3are1
+incoming nodes of 4are2
+incoming nodes of 5are3
+incoming nodes of 6are3
+incoming nodes of 7are3
+incoming nodes of 8are3
+incoming nodes of 9are3
+incoming nodes of 10are3
+incoming nodes of 11are3
 ----------------------------------------
 
