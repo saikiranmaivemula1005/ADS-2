@@ -237,8 +237,9 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:7:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:7:18: Parameter digraph should be final. [FinalParameters]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:15:45: '1000' is a magic number. [MagicNumber]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:17: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:17: Line is longer than 80 characters (found 99). [LineLength]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:17:64: 'typecast' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:17:95: '1000' is a magic number. [MagicNumber]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:20:55: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:25: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:30: Missing a Javadoc comment. [JavadocType]
@@ -249,7 +250,7 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:51: Line is longer than 80 characters (found 87). [LineLength]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:61: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 25 errors.
+Checkstyle ends with 26 errors.
 Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
