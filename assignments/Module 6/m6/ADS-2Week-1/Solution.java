@@ -9,9 +9,10 @@ class PageRank {
 		initalpr = 1 / dg.v();
 		for (int i = 0; i < dg.v(); i++) {
 			for (int j = 0; j < 1000; j++) {
-				pagerank[i] = initalpr + dg.outdegree(i);
-				System.out.println(pagerank[i]);
+				pagerank[i] += initalpr + dg.outdegree(i);
 			}
+			System.out.println(pagerank[i]);
+
 		}
 
 
