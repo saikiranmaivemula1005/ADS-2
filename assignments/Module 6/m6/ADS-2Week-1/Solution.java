@@ -21,7 +21,7 @@ public class Solution {
 		String[] tokens = sc.next().split(" ");
 		for (int i = 1; i < tokens.length; i++) {
 			dg.addEdge(Integer.parseInt(tokens[0]),
-			           Integer.parseInt(tokens[i]));
+			           Integer.parseInt(tokens[1]));
 		}
 		System.out.println(dg);
 		PageRank pg = new PageRank(dg);
