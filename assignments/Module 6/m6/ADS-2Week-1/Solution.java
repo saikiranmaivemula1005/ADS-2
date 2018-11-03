@@ -2,7 +2,7 @@ import java.util.Scanner;
 class PageRank {
 	Digraph dg;
 	double[] pagerank;
-	double initalpr;
+	float initalpr;
 	PageRank(Digraph digraph) {
 		this.dg = digraph;
 		pagerank = new double[dg.v()];

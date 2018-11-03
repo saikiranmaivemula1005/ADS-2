@@ -226,7 +226,7 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:4:15: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:4:18: Variable 'pagerank' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:5:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:5:16: Variable 'initalpr' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:5:15: Variable 'initalpr' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:6:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:6:18: Parameter digraph should be final. [FinalParameters]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 6\m6\ADS-2Week-1\Solution.java:12:45: '1000' is a magic number. [MagicNumber]
