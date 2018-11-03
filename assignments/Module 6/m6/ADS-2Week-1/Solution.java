@@ -14,10 +14,10 @@ class PageRank {
 			indegrees[i] = dg.indegree(i);
 			for (int j = 0; j < indegrees[i]; j++) {
 				for (int k = 0; k < 1000; k++) {
-					pagerank[i] /= (double)initalpr / dg.outdegree(2);
+					pagerank[i] += (double)initalpr / dg.outdegree(2);
 				}
 			}
-			System.out.println(pagerank[i]);
+			System.out.println(i + " - " +pagerank[i]);
 		}
 
 
