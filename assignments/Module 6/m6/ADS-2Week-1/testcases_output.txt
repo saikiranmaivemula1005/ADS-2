@@ -18,12 +18,10 @@ Your Output:
 2: 0 
 3: 2 
 
-0 - 1000.0
+0 - 0.0
 1 - 1000.0
-2 - 0.0
-Exception in thread "main" java.lang.ArithmeticException: / by zero
-	at PageRank.<init>(Solution.java:36)
-	at Solution.main(Solution.java:63)
+2 - 1000.0
+3 - 1000.0
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -46,9 +44,9 @@ Your Output:
 2: 3 0 
 3: 0 
 
-0 - 0.0
-1 - 1000.0
-2 - 1000.0
+0 - 1000.0
+1 - 0.0
+2 - 0.0
 3 - 1000.0
 ----------------------------------------
 
@@ -72,10 +70,10 @@ Your Output:
 2: 3 1 0 
 3: 2 0 
 
-0 - 0.0
+0 - 1000.0
 1 - 0.0
 2 - 0.0
-3 - 1000.0
+3 - 0.0
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -113,7 +111,7 @@ Your Output:
 0 - 0.0
 1 - 1000.0
 2 - 1000.0
-3 - 1000.0
+3 - 0.0
 4 - 1000.0
 5 - 1000.0
 6 - 1000.0
@@ -149,7 +147,8 @@ Your Output:
 0 - 0.0
 1 - 1000.0
 2 - 1000.0
-3 - 1000.0
+3 - 0.0
+4 - 1000.0
 Exception in thread "main" java.lang.ArithmeticException: / by zero
 	at PageRank.<init>(Solution.java:36)
 	at Solution.main(Solution.java:63)
@@ -190,11 +189,10 @@ Your Output:
 0 - 0.0
 1 - 1000.0
 2 - 1000.0
-3 - 1000.0
-4 - 1000.0
-5 - 1000.0
-6 - 1000.0
-7 - 1000.0
+3 - 0.0
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+	at PageRank.<init>(Solution.java:36)
+	at Solution.main(Solution.java:63)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -249,10 +247,11 @@ Your Output:
 4: 0 
 5: 
 
-0 - 0.0
+0 - 1000.0
 1 - 1000.0
 2 - 1000.0
-3 - 1000.0
+3 - 0.0
+4 - 1000.0
 Exception in thread "main" java.lang.ArithmeticException: / by zero
 	at PageRank.<init>(Solution.java:36)
 	at Solution.main(Solution.java:63)
@@ -314,6 +313,7 @@ Your Output:
 1 - 0.0
 2 - 0.0
 3 - 0.0
+4 - 1000.0
 Exception in thread "main" java.lang.ArithmeticException: / by zero
 	at PageRank.<init>(Solution.java:36)
 	at Solution.main(Solution.java:63)
@@ -389,7 +389,7 @@ Your Output:
 0 - 0.0
 1 - 1000.0
 2 - 1000.0
-3 - 1000.0
+3 - 0.0
 4 - 1000.0
 5 - 1000.0
 6 - 1000.0

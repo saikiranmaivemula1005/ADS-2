@@ -33,7 +33,7 @@ class PageRank {
 			indegrees[i] = dg.indegree(i);
 			for (int j = 0; j < 1000; j++) {
 				// for (int k = 0; k < indegrees[i]; k++) {
-					pagerank[i] += 1 / dg.indegree(i);
+					pagerank[i] += 1 / dg.outdegree(i);
 				}
 			// }
 			System.out.println(i + " - " +pagerank[i]);
