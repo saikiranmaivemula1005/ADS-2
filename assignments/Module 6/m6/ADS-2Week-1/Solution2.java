@@ -58,11 +58,12 @@ class PageRank {
             }
             pgRank = tempPR;
         }
-    }
-    void print() {
-        for (int i = 0; i < vertices; i++) {
+         for (int i = 0; i < vertices; i++) {
             System.out.println(i + " - " + pgRank[i]);
         }
+    }
+    void print() {
+       
     }
     class WebSearch {
     }
@@ -87,7 +88,7 @@ class Solution2 {
         }
         System.out.println(g.toString());
         PageRank pg = new PageRank(g);
-        pg.print();
+        // pg.print();
         // Create page rank object to
         //pass the graph object to the constructor
         // print the page rank object
