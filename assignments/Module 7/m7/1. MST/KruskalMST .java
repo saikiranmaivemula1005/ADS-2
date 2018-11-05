@@ -1,14 +1,27 @@
- class KruskalMST {
-    private static final double FLOATING_POINT_EPSILON = 1E-12;
-
-    private double weight;                        // weight of MST
-    private Queue<Edge> mst = new Queue<Edge>();  // edges in MST
+/**
+ * Class for kruskal mst.
+ */
+class KruskalMST {
+    /**
+     * { floating point }.
+     */
+    private static final double
+    FLOATING_POINT_EPSILON = 1E-12;
+    /**
+     * weight.
+     */
+    private double weight;
+    /**
+     * mst.
+     */// weight of MST
+    private Queue<Edge> mst = new Queue<Edge>();
 
     /**
-     * Compute a minimum spanning tree (or forest) of an edge-weighted graph.
+     * Compute a minimum spanning tree
+     * (or forest) of an edge-weighted graph.
      * @param G the edge-weighted graph
      */
-    public KruskalMST(EdgeWeightedGraph g) {
+    public KruskalMST(final EdgeWeightedGraph g) {
         // more efficient to build heap by passing array of edges
         MinPQ<Edge> pq = new MinPQ<Edge>();
         for (Edge e : g.edges()) {
@@ -42,15 +55,22 @@
     }
 
     /**
-     * Returns the sum of the edge weights in a minimum spanning tree (or forest).
-     * @return the sum of the edge weights in a minimum spanning tree (or forest)
+     * Returns the sum of the edge weights
+     *  in a minimum spanning tree (or forest).
+     * @return the sum of the edge weights
+     * in a minimum spanning tree (or forest)
      */
     public double weight() {
         return weight;
     }
-    
-    // check optimality conditions (takes time proportional to E V lg* V)
-    private boolean check(EdgeWeightedGraph g) {
+    /**
+     * check.
+     *
+     * @param      g     { graph }
+     *
+     * @return     { boolean }
+     */
+    private boolean check(final EdgeWeightedGraph g) {
 
         // check total weight
         double total = 0.0;
@@ -58,7 +78,9 @@
             total += e.weight();
         }
         if (Math.abs(total - weight()) > FLOATING_POINT_EPSILON) {
-            System.err.printf("Weight of edges does not equal weight(): %f vs. %f\n", total, weight());
+            System.err.printf(
+                "Weight of edges does not equal weight(): %f vs. %f\n",
+                total, weight());
             return false;
         }
 
@@ -91,13 +113,14 @@
                 int x = f.either(), y = f.other(x);
                 if (f != e) uf.union(x, y);
             }
-            
+
             // check that e is min weight edge in crossing cut
             for (Edge f : g.edges()) {
                 int x = f.either(), y = f.other(x);
                 if (!uf.connected(x, y)) {
                     if (f.weight() < e.weight()) {
-                        System.err.println("Edge " + f + " violates cut optimality conditions");
+                        System.err.println("Edge " +
+                         f + " violates cut optimality conditions");
                         return false;
                     }
                 }
