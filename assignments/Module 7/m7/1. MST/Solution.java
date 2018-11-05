@@ -7,6 +7,7 @@ class Solution {
 		Scanner sc = new Scanner(System.in);
 		int vertices = sc.nextInt();
 		int edges = sc.nextInt();
+		sc.nextLine();
 		EdgeWeightedGraph ewd = new EdgeWeightedGraph(vertices);
 		while (sc.hasNextLine()) {
 			String[] tokens = sc.nextLine().split(" ");
