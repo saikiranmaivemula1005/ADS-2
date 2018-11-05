@@ -1,3 +1,6 @@
+/**
+ * Class for uf.
+ */
 public class UF {
     /**
      * parent array of integer type.
@@ -17,8 +20,10 @@ public class UF {
      * @param      n   integer variable.
      */
     public UF(final int n) {
-        if (n < 0) throw new
+        if (n < 0) {
+            throw new
             IllegalArgumentException();
+        }
         count = n;
         parent = new int[n];
         rank = new byte[n];
@@ -34,13 +39,14 @@ public class UF {
      *
      * @return parent.
      */
-    public int find( int p) {
+    public int find(final int p) {
         validate(p);
-        while (p != parent[p]) {
-            parent[p] = parent[parent[p]];
-            p = parent[p];
+        int x = p;
+        while (x != parent[x]) {
+            parent[x] = parent[parent[x]];
+            x = parent[x];
         }
-        return p;
+        return x;
     }
 
     /**
@@ -94,14 +100,17 @@ public class UF {
         }
         count--;
     }
-
-    // validate that p is a valid index
+    /**
+     * validate method.
+     *
+     * @param      p     { parameter_description }
+     */
     private void validate(final int p) {
         int n = parent.length;
         if (p < 0 || p >= n) {
             throw new IllegalArgumentException(
-                "index " + p + " is not between 0 and " +
-                (n - 1));
+                "index " + p + " is not between 0 and "
+                 + (n - 1));
         }
     }
 }
