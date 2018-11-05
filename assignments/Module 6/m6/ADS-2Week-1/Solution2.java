@@ -21,8 +21,8 @@ class PageRank {
      *
      * @param      gr    The graphics
      */
-    PageRank(final Digraph gr) {
-        this.g = gr;
+    PageRank(final Digraph graph) {
+        this.g = graph;
         this.reversegraph = g.reverse();
         this.vertices = g.v();
         pgRank = new Double[vertices];
@@ -45,9 +45,9 @@ class PageRank {
                 }
             }
         }
-        Double[] tempPR = new Double[vertices];
         final int thou = 1000;
-        for (int k = 0; k < thou; k++) {
+        for (int k = 1; k < thou; k++) {
+            Double[] tempPR = new Double[vertices];
             for (int i = 0; i < vertices; i++) {
                 Double sum = 0.0;
                 for (int each : g.reverse().adj(i)) {
@@ -56,8 +56,8 @@ class PageRank {
                 }
                 tempPR[i] = sum;
             }
+            pgRank = tempPR;
         }
-        pgRank = tempPR;
     }
     void print() {
         for (int i = 0; i < vertices; i++) {
