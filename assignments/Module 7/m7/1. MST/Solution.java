@@ -11,7 +11,7 @@ class Solution {
 		while (sc.hasNextLine()) {
 			String[] tokens = sc.nextLine().split(" ");
 			Edge e = new Edge(Integer.parseInt(tokens[0]),
-			                  Integer.parseInt(tokens[1]), Integer.parseInt(tokens[2]));
+			                  Integer.parseInt(tokens[1]), Double.parseDouble(tokens[2]));
 			ewd.addEdge(e);
 		}
 		KruskalMST mst = new KruskalMST(ewd);

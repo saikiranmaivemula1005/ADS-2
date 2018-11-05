@@ -220,7 +220,7 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\Solution.java:6:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\Solution.java:6:33: Parameter args should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\Solution.java:14: Line is longer than 80 characters (found 100). [LineLength]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\Solution.java:14: Line is longer than 80 characters (found 102). [LineLength]
 Audit done.
 Checkstyle ends with 7 errors.
 Starting audit...
