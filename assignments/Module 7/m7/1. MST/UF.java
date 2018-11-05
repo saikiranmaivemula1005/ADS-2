@@ -1,14 +1,22 @@
 public class UF {
-
-    private int[] parent;  // parent[i] = parent of i
+    /**
+     * parent array of integer type.
+     */
+    private int[] parent;
+    /**
+     * rank array of byte type.
+     */
     private byte[] rank;
-    private int count;     // number of components
+    /**
+     * integer variable.
+     */
+    private int count;
     /**
      * Constructs the object.
      *
      * @param      n   integer variable.
      */
-    public UF(int n) {
+    public UF(final int n) {
         if (n < 0) throw new
             IllegalArgumentException();
         count = n;
@@ -26,7 +34,7 @@ public class UF {
      *
      * @return parent.
      */
-    public int find(int p) {
+    public int find( int p) {
         validate(p);
         while (p != parent[p]) {
             parent[p] = parent[parent[p]];
@@ -49,12 +57,13 @@ public class UF {
      *
      * @param  p the integer representing one site
      * @param  q the integer representing the other site
-     * @return {@code true} if the two sites {@code p} and {@code q} are in the same component;
+     * @return {@code true} if the two sites
+     *  {@code p} and {@code q} are in the same component;
      *         {@code false} otherwise
      * @throws IllegalArgumentException unless
      *         both {@code 0 <= p < n} and {@code 0 <= q < n}
      */
-    public boolean connected(int p, int q) {
+    public boolean connected(final int p, final int q) {
         return find(p) == find(q);
     }
 
@@ -67,7 +76,7 @@ public class UF {
      * @throws IllegalArgumentException unless
      *         both {@code 0 <= p < n} and {@code 0 <= q < n}
      */
-    public void union(int p, int q) {
+    public void union(final int p, final int q) {
         int rootP = find(p);
         int rootQ = find(q);
         if (rootP == rootQ) {
@@ -87,10 +96,12 @@ public class UF {
     }
 
     // validate that p is a valid index
-    private void validate(int p) {
+    private void validate(final int p) {
         int n = parent.length;
         if (p < 0 || p >= n) {
-            throw new IllegalArgumentException("index " + p + " is not between 0 and " + (n - 1));
+            throw new IllegalArgumentException(
+                "index " + p + " is not between 0 and " +
+                (n - 1));
         }
     }
 }
