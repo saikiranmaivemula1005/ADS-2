@@ -89,11 +89,11 @@ class PageRank {
     /**.
      * solution class
      */
-     class Solution {
+     class Solution2 {
         /**.
          * constructor
          */
-        protected Solution() {
+        protected Solution2() {
             //Constructor
         }
         public void main(String[] args) {
