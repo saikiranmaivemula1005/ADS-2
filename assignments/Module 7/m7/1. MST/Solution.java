@@ -11,7 +11,7 @@ class Solution {
     }
     /**
      * main method.
-     *
+     * Time complexity : O(v).
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
@@ -31,3 +31,4 @@ class Solution {
         System.out.format("%.5f", mst.weight());
     }
 }
+
