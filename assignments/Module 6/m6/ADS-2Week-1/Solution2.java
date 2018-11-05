@@ -74,29 +74,17 @@ class PageRank {
         //findPageRank();
         return pgRank[v];
     }
-    /**.
-     * method to printer
-     */
-
-
-    /**.
-     * class to for web search
-     */
     class WebSearch {
-//Websearch ckass
     }
-
-    /**.
-     * solution class
-     */
-     class Solution2 {
+}
+    class Solution2 {
         /**.
          * constructor
          */
         protected Solution2() {
             //Constructor
         }
-        public void main(String[] args) {
+        public static void main(String[] args) {
             Scanner s = new Scanner(System.in);
             int noOfVertices = Integer.parseInt(s.nextLine());
             Digraph g = new Digraph(noOfVertices);
@@ -130,4 +118,3 @@ class PageRank {
 
         }
     }
-}
