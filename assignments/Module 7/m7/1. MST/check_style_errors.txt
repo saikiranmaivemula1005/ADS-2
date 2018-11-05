@@ -212,9 +212,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 33 errors.
 Starting audit...
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\Stack.java:14: Line has trailing spaces. [RegexpSingleline]
@@ -250,31 +248,18 @@ Checkstyle ends with 29 errors.
 Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:1: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:3:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:4: Line is longer than 80 characters (found 88). [LineLength]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:4:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:5:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:9: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:15:15: Parameter n should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:16: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:27: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:30: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:33:21: Parameter p should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:50: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:56: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:61:30: Parameter p should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:61:37: Parameter q should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:64: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:66: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:74:23: Parameter p should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:74:30: Parameter q should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:77: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:80: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:81: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:11:15: Parameter n should be final. [FinalParameters]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:12: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:29:21: Parameter p should be final. [FinalParameters]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:52: Line is longer than 80 characters (found 95). [LineLength]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:57:30: Parameter p should be final. [FinalParameters]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:57:37: Parameter q should be final. [FinalParameters]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:70:23: Parameter p should be final. [FinalParameters]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:70:30: Parameter q should be final. [FinalParameters]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:90:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:90:27: Parameter p should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:93: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:93: Line is longer than 80 characters (found 98). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:93:92: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\UF.java:93:93: '-' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 28 errors.
+Checkstyle ends with 15 errors.
