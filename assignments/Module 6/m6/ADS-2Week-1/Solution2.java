@@ -47,7 +47,7 @@ class PageRank {
         }
         Double[] tempPR = new Double[vertices];
         final int thou = 1000;
-        for (int k = 1; k < thou; k++) {
+        for (int k = 0; k < thou; k++) {
             for (int i = 0; i < vertices; i++) {
                 Double sum = 0.0;
                 for (int each : g.reverse().adj(i)) {
