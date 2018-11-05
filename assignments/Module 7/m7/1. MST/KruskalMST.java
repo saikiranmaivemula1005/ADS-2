@@ -1,54 +1,60 @@
 /**
  * Class for kruskal mst.
  */
-class KruskalMST {
+public class KruskalMST {
     /**
-     * { floating point }.
+     * Floating point.
      */
-    private static final double
-    FLOATING_POINT_EPSILON = 1E-12;
+    private static final double FLOATING_POINT_EPSILON = 1E-12;
     /**
-     * weight.
+     * weight of MST.
      */
     private double weight;
     /**
-     * mst.
-     */// weight of MST
+     * edges in MST.
+     */
     private Queue<Edge> mst = new Queue<Edge>();
 
     /**
-     * Compute a minimum spanning tree
-     * (or forest) of an edge-weighted graph.
-     * @param G the edge-weighted graph
+     * Compute a minimum spanning tree (or forest)
+     * of an edge-weighted graph.
+     * @param gph the edge-weighted graph
      */
-    public KruskalMST(final EdgeWeightedGraph g) {
+    public KruskalMST(final EdgeWeightedGraph gph) {
         // more efficient to build heap by passing array of edges
         MinPQ<Edge> pq = new MinPQ<Edge>();
-        for (Edge e : g.edges()) {
+        for (Edge e : gph.edges()) {
             pq.insert(e);
         }
 
         // run greedy algorithm
-        UF uf = new UF(g.v());
-        while (!pq.isEmpty() && mst.size() < g.v() - 1) {
+        UF uf = new UF(gph.vertex());
+        while (!pq.isEmpty() && mst.size() < gph.vertex() - 1) {
             Edge e = pq.delMin();
             int v = e.either();
             int w = e.other(v);
-            if (!uf.connected(v, w)) { // v-w does not create a cycle
-                uf.union(v, w);  // merge v and w components
-                mst.enqueue(e);  // add edge e to mst
+            // v-w does not create a cycle.
+            if (!uf.connected(v, w)) {
+                // merge v and w components.
+                uf.union(v, w);
+                // add edge e to mst.
+                mst.enqueue(e);
                 weight += e.weight();
             }
         }
 
         // check optimality conditions
-        assert check(g);
+        assert check(gph);
     }
 
     /**
-     * Returns the edges in a minimum spanning tree (or forest).
-     * @return the edges in a minimum spanning tree (or forest) as
-     *    an iterable of edges
+     * Returns the edges in a minimum spanning
+     * tree (or forest).
+     * @return the edges in a minimum spanning
+     * tree (or forest) as
+     * an iterable of edges
+     *
+     * Complexity is 1.
      */
     public Iterable<Edge> edges() {
         return mst;
@@ -56,21 +62,27 @@ class KruskalMST {
 
     /**
      * Returns the sum of the edge weights
-     *  in a minimum spanning tree (or forest).
+     * in a minimum spanning tree (or forest).
      * @return the sum of the edge weights
      * in a minimum spanning tree (or forest)
+     *
+     * Complexity is 1.
      */
     public double weight() {
         return weight;
     }
+
+
     /**
-     * check.
+     * Checks the optimality conditions.
      *
-     * @param      g     { graph }
+     * Complexity is E V lg* V.
      *
-     * @return     { boolean }
+     * @param      grp     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
      */
-    private boolean check(final EdgeWeightedGraph g) {
+    private boolean check(final EdgeWeightedGraph grp) {
 
         // check total weight
         double total = 0.0;
@@ -78,14 +90,19 @@ class KruskalMST {
             total += e.weight();
         }
         if (Math.abs(total - weight()) > FLOATING_POINT_EPSILON) {
-            System.err.printf(
-                "Weight of edges does not equal weight(): %f vs. %f\n",
-                total, weight());
+System.err.printf("Weight of edges doesnot equal weight(): %f vs. %f\n",
+    total, weight());
             return false;
         }
 
         // check that it is acyclic
-        UF uf = new UF(g.v());
+
+
+        /**
+         * Checks if the pariticular graph is acyclic.
+         * Complexity is E.
+         */
+        UF uf = new UF(grp.vertex());
         for (Edge e : edges()) {
             int v = e.either(), w = e.other(v);
             if (uf.connected(v, w)) {
@@ -96,7 +113,7 @@ class KruskalMST {
         }
 
         // check that it is a spanning forest
-        for (Edge e : g.edges()) {
+        for (Edge e : grp.edges()) {
             int v = e.either(), w = e.other(v);
             if (!uf.connected(v, w)) {
                 System.err.println("Not a spanning forest");
@@ -104,23 +121,26 @@ class KruskalMST {
             }
         }
 
-        // check that it is a minimal spanning forest (cut optimality conditions)
+        // check that it is a minimal spanning forest
+        //(cut optimality conditions)
         for (Edge e : edges()) {
 
             // all edges in MST except e
-            uf = new UF(g.v());
+            uf = new UF(grp.vertex());
             for (Edge f : mst) {
                 int x = f.either(), y = f.other(x);
-                if (f != e) uf.union(x, y);
+                if (f != e) {
+                    uf.union(x, y);
+                }
             }
 
             // check that e is min weight edge in crossing cut
-            for (Edge f : g.edges()) {
+            for (Edge f : grp.edges()) {
                 int x = f.either(), y = f.other(x);
                 if (!uf.connected(x, y)) {
                     if (f.weight() < e.weight()) {
-                        System.err.println("Edge " +
-                         f + " violates cut optimality conditions");
+                        System.err.println("Edge " + f
+                        + " violates cut optimality conditions");
                         return false;
                     }
                 }
@@ -130,5 +150,5 @@ class KruskalMST {
 
         return true;
     }
-
 }
+
