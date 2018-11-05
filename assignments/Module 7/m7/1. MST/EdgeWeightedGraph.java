@@ -6,10 +6,10 @@ public class EdgeWeightedGraph {
      * newline.
      */
     private static final String NEWLINE
-     = System.getProperty("line.separator");
-     /**
-      * integer variable.
-      */
+        = System.getProperty("line.separator");
+    /**
+     * integer variable.
+     */
     private final int vertices;
     /**
      * integer variable.
@@ -19,15 +19,16 @@ public class EdgeWeightedGraph {
      * adj array of bag type.
      */
     private Bag<Edge>[] adj;
-    
+
     /**
-     * Initializes an empty edge-weighted graph with {@code V} vertices and 0 edges.
+     * Initializes an empty edge-weighted
+     * graph with {@code V} vertices and 0 edges.
      *
-     * @param  V the number of vertices
+     * @param  ve the number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
-    public EdgeWeightedGraph(int ve) {
-        if (ve < 0) { 
+    public EdgeWeightedGraph(final int ve) {
+        if (ve < 0) {
             throw new IllegalArgumentException(
                 "Number of vertices must be nonnegative");
         }
@@ -56,7 +57,7 @@ public class EdgeWeightedGraph {
         return edges;
     }
     /**
-     *throw an IllegalArgumentException unless {@code 0 <= v < V}
+     *throw an IllegalArgumentException unless {@code 0 <= v < V}.
      *
      * @param      v     { integer variable. }
      */
@@ -71,7 +72,7 @@ public class EdgeWeightedGraph {
      * Adds the undirected edge {@code e} to this edge-weighted graph.
      *
      * @param  e the edge
-     * @throws IllegalArgumentException 
+     * @throws IllegalArgumentException
      * unless both endpoints are between {@code 0} and {@code V-1}
      */
     public void addEdge(final Edge e) {
@@ -100,7 +101,7 @@ public class EdgeWeightedGraph {
      * Returns the degree of vertex {@code v}.
      *
      * @param  v the vertex
-     * @return the degree of vertex {@code v}               
+     * @return the degree of vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
     public int degree(final int v) {
@@ -110,7 +111,8 @@ public class EdgeWeightedGraph {
 
     /**
      * Returns all edges in this edge-weighted graph.
-     * To iterate over the edges in this edge-weighted graph, use foreach notation:
+     * To iterate over the edges in this edge-weighted
+     * graph, use foreach notation:
      * {@code for (Edge e : G.edges())}.
      *
      * @return all edges in this edge-weighted graph, as an iterable
@@ -122,10 +124,10 @@ public class EdgeWeightedGraph {
             for (Edge e : adj(v)) {
                 if (e.other(v) > v) {
                     list.add(e);
-                }
-                // add only one copy of each self loop (self loops will be consecutive)
-                else if (e.other(v) == v) {
-                    if (selfLoops % 2 == 0) list.add(e);
+                } else if (e.other(v) == v) {
+                    if (selfLoops % 2 == 0) {
+                        list.add(e);
+                    }
                     selfLoops++;
                 }
             }
@@ -137,7 +139,8 @@ public class EdgeWeightedGraph {
      * Returns a string representation of the edge-weighted graph.
      * This method takes time proportional to <em>E</em> + <em>V</em>.
      *
-     * @return the number of vertices <em>V</em>, followed by the number of edges <em>E</em>,
+     * @return the number of vertices <em>V</em>, 
+     * followed by the number of edges <em>E</em>,
      *         followed by the <em>V</em> adjacency lists of edges
      */
     public String toString() {
