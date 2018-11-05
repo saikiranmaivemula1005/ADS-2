@@ -1,9 +1,7 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\Edge.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\EdgeWeightedGraph.java:22: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 7\m7\1. MST\EdgeWeightedGraph.java:24: Line is longer than 80 characters (found 84). [LineLength]
