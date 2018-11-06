@@ -7,7 +7,7 @@ class Solution {
     /**
      * constructor.
      */
-    private Solution() {
+    protected Solution() {
     }
     /**
      * main method.
@@ -45,3 +45,4 @@ class Solution {
         }
     }
 }
+
