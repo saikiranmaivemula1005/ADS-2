@@ -3,7 +3,7 @@ import java.util.HashMap;
 /**
  *class for solution.
  */
- class Solution {
+class Solution {
     /**
      * constructor.
      */
@@ -11,14 +11,14 @@ import java.util.HashMap;
     }
     /**
      * main method.
-     * 
+     *
      *time complexity : O(E + V)
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         HashMap<String, Integer> h
-        = new HashMap<String, Integer>();
+            = new HashMap<String, Integer>();
         String[] tokens = scan.nextLine().split(" ");
         int edges = Integer.parseInt(tokens[1]);
         String[] vertices = scan.nextLine().split(" ");
@@ -27,12 +27,12 @@ import java.util.HashMap;
         }
         Edge e;
         EdgeWeightedGraph ewg
-        = new EdgeWeightedGraph(vertices.length);
+            = new EdgeWeightedGraph(vertices.length);
         for (int i = 0; i < edges; i++) {
             String[] directPath = scan.nextLine().split(" ");
             e = new Edge(h.get(directPath[0]),
-                               h.get(directPath[1]),
-                               Double.parseDouble(directPath[2]));
+                         h.get(directPath[1]),
+                         Double.parseDouble(directPath[2]));
             ewg.addEdge(e);
         }
         int queries = Integer.parseInt(scan.nextLine());
