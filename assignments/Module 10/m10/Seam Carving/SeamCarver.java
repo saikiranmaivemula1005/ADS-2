@@ -23,8 +23,11 @@ public class SeamCarver {
 		if (x == 0 || y == 0 || x == pic.width() - 1 || y == pic.height() - 1) {
 			return 1000;
 		}
+		double red = pic.get(x, y).getRed();
+		double green = pic.get(x, y).getGreen();
+		double blue = pic.get(x, y).getBlue();
 
-		return pic.get(x, y).getRed();
+		return pic.get(x, y).getGreen();
 	}
 
 	// sequence of indices for horizontal seam
