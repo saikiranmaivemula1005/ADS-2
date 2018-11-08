@@ -192,6 +192,7 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 10\m10\Seam Carving\SeamCarver.java:22:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 10\m10\Seam Carving\SeamCarver.java:22:30: Parameter x should be final. [FinalParameters]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 10\m10\Seam Carving\SeamCarver.java:22:37: Parameter y should be final. [FinalParameters]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 10\m10\Seam Carving\SeamCarver.java:23: Line is longer than 80 characters (found 88). [LineLength]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 10\m10\Seam Carving\SeamCarver.java:24:32: '1000' is a magic number. [MagicNumber]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 10\m10\Seam Carving\SeamCarver.java:30:9: Class 'SeamCarver' looks like designed for extension (can be subclassed), but the method 'findHorizontalSeam' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SeamCarver' final or making the method 'findHorizontalSeam' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 10\m10\Seam Carving\SeamCarver.java:30:9: Missing a Javadoc comment. [JavadocMethod]
@@ -202,7 +203,7 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 10\m10\Seam Carving\SeamCarver.java:45:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 10\m10\Seam Carving\SeamCarver.java:45:40: Parameter seam should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 26 errors.
+Checkstyle ends with 27 errors.
 Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 10\m10\Seam Carving\ShowEnergy.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 10\m10\Seam Carving\ShowEnergy.java:5: Line has trailing spaces. [RegexpSingleline]
