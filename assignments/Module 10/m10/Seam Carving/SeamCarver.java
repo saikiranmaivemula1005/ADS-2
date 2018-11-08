@@ -20,9 +20,9 @@ public class SeamCarver {
 
 	// energy of pixel at column x and row y
 	public double energy(int x, int y) {
-		pic.getRGB(x, y);
+		// pic.getRGB(x, y);
 		// System.out.println(pic.get(x, y).getRGB());
-		return pic.get(x, y).getRGB();
+		return pic.getRGB(x, y);
 	}
 
 	// sequence of indices for horizontal seam
