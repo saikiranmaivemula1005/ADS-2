@@ -127,7 +127,7 @@ class DijkstraSP {
             i++;
             x = e.other(x);
         }
-        for (i = 4; i > 0; i--) {
+        for (i = 3; i > 0; i--) {
             System.out.print(array[i] + " ");
         }
     }
