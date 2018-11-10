@@ -6,7 +6,7 @@ public class EdgeWeightedGraph {
      * New line.
      */
     private static final String NEWLINE
-    = System.getProperty("line.separator");
+        = System.getProperty("line.separator");
     /**
      * Vertices.
      */
@@ -180,7 +180,7 @@ public class EdgeWeightedGraph {
         for (int v = 0; v < ver; v++) {
             s.append(v + ": ");
             for (Edge e : adj[v]) {
-                s.append(e + "  ");
+                s.append(e.either() + "-" + e.other(e.either()) +  " " + e.weight() + "  ");
             }
             s.append(NEWLINE);
         }
