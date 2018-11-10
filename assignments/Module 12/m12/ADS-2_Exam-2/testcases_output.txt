@@ -77,10 +77,6 @@ Expected Output:
 
 Your Output: 
 828.0
-Edge@6a5fc7f7
-Edge@3b6eb2ec
-Edge@1e643faf
-Edge@6e8dacdf
 Edge@6a5fc7f7 Edge@3b6eb2ec Edge@1e643faf Edge@6e8dacdf
 ----------------------------------------
 
