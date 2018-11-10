@@ -1,3 +1,5 @@
+import java.util.Collections;
+import java.util.Arrays;
 /**
  *the class for dijkstra's algorithm.
  *to find the shortest path.
@@ -127,9 +129,8 @@ class DijkstraSP {
             i++;
             x = e.other(x);
         }
-        for (i = array.length; i >= 0; i--) {
-            System.out.print(array[i] + " ");
-        }
+        Collections.reverse(Arrays.asList(array)); 
+        System.out.print(Arrays.asList(array));
     }
     /**
      *returns the shortest distance between.
