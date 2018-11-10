@@ -106,6 +106,18 @@ class DijkstraSP {
         }
         return path;
     }
+    public String path(final int v) {
+        if (!hasPathTo(v)) {
+            return null;
+        }
+        Stack<Edge> path = new Stack<Edge>();
+        int x = v;
+        for (Edge e = edgeTo[v]; e != null; e = edgeTo[x]) {
+            path.push(e);
+            x = e.other(x);
+        }
+        return path.toString();
+    }
     /**
      *returns the shortest distance between.
      *two vertices.

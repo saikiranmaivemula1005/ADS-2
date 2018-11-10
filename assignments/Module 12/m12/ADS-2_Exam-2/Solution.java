@@ -54,7 +54,7 @@ public class Solution {
 				double temp = dsp.distance(via);
 				if (dsp.hasPathTo(destination)) {
 					System.out.println(dsp.distance(destination) + temp);
-					System.out.println(dsp.pathTo(destination));
+					System.out.println(dsp.path(destination));
 				} else {
 					System.out.println("No Path Found.");
 				}
