@@ -121,7 +121,7 @@ class DijkstraSP {
         int[] array = new int[graph.vertex()];
         int x = v;
         int i = 0;
-        for (Edge e = edgeTo[v]; e != null; e = edgeTo[x]) {
+        for (Edge e = edgeTo[v]; e != null; e = edgeTo[v]) {
             path.push(e);
             array[i] = e.other(x);
             System.out.print(array[i] + " ");

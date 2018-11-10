@@ -70,7 +70,9 @@ public class Solution {
                 dsp = new DijkstraSP(ewg, source);
                 if (dsp.hasPathTo(destination)) {
                     System.out.println(dsp.distance(destination) + temp);
+                    System.out.print(source + " ");
                     dsp.path(destination);
+                    System.out.print(destination);
                 } else {
                     System.out.println("No Path Found.");
                 }

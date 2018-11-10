@@ -77,6 +77,8 @@ Expected Output:
 
 Your Output: 
 692.0
-7 0 4 2
+2 7 1 7 1 7 1 7 1 7 1 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10
+	at DijkstraSP.path(DijkstraSP.java:126)
+	at Solution.main(Solution.java:74)
 ----------------------------------------
 
