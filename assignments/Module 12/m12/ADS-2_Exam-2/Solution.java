@@ -19,7 +19,7 @@ public class Solution {
 		String caseToGo = sc.nextLine();
 		switch (caseToGo) {
 		case "Graph":
-			System.out.println(ewg.toString());
+			ewg.print();
 			break;
 
 		case "DirectedPaths":

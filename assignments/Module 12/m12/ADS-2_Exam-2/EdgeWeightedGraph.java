@@ -174,17 +174,16 @@ public class EdgeWeightedGraph {
      * followed by the number of edges <em>E</em>,
      * followed by the <em>V</em> adjacency lists of edges
      */
-    public String toString() {
+    public void print() {
         StringBuilder s = new StringBuilder();
-        s.append(ver + " vertices " + edge + " edges " + NEWLINE);
+        System.out.println(ver + " vertices " + edge + " edges ");
         for (int v = 0; v < ver; v++) {
-            s.append(v + ": ");
+            System.out.print(v + ": ");
             for (Edge e : adj[v]) {
-                s.append(e.either() + "-" + e.other(e.either()) +  " " + e.weight() + "  ");
+                System.out.format("%.5f", e.either() + "-" + e.other(e.either()) +  " " + e.weight() + "  ");
             }
-            s.append(NEWLINE);
+            System.out.println();
         }
-        return s.toString();
     }
 }
 
