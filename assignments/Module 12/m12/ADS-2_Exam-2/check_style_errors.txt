@@ -1,29 +1,27 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 12\m12\ADS-2_Exam-2\DijkstraSP.java:109:5: Missing a Javadoc comment. [JavadocMethod]
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 12\m12\ADS-2_Exam-2\EdgeWeightedGraph.java:177:52: '+' should be on a new line. [OperatorWrap]
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 12\m12\ADS-2_Exam-2\EdgeWeightedGraph.java:173: Unused Javadoc tag. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 12\m12\ADS-2_Exam-2\EdgeWeightedGraph.java:183: Line is longer than 80 characters (found 105). [LineLength]
 Audit done.
-Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 12\m12\ADS-2_Exam-2\KruskalMST .java:24:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 12\m12\ADS-2_Exam-2\KruskalMST .java:107: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 12\m12\ADS-2_Exam-2\KruskalMST .java:114: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 12\m12\ADS-2_Exam-2\KruskalMST .java:122:52: '+' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 4 errors.
 Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 12\m12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 12\m12\ADS-2_Exam-2\Solution.java:57: Line is longer than 80 characters (found 98). [LineLength]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 12\m12\ADS-2_Exam-2\Solution.java:57: Line has trailing spaces. [RegexpSingleline]
 Audit done.
 Checkstyle ends with 2 errors.
+Starting audit...
+Audit done.
 Starting audit...
 Audit done.

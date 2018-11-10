@@ -106,6 +106,13 @@ class DijkstraSP {
         }
         return path;
     }
+    /**
+     * path method.
+     *
+     * @param      v     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public String path(final int v) {
         if (!hasPathTo(v)) {
             return null;
