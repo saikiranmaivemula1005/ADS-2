@@ -113,17 +113,21 @@ class DijkstraSP {
      *
      * @return     { description_of_the_return_value }
      */
-    public String path(final int v) {
+    public int[] path(final int v) {
         if (!hasPathTo(v)) {
             return null;
         }
         Stack<Edge> path = new Stack<Edge>();
+        int[] array = new int[graph.vertex()];
         int x = v;
+        int i = 0;
         for (Edge e = edgeTo[v]; e != null; e = edgeTo[x]) {
             path.push(e);
+            array[i] = e.either();
+            i++;
             x = e.other(x);
         }
-        return path.toString();
+        return array;
     }
     /**
      *returns the shortest distance between.
