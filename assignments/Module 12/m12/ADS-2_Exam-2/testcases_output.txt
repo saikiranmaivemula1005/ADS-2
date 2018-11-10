@@ -9,11 +9,13 @@ Expected Output:
 5:
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "Graph"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:14)
+6 6
+0: Edge@77b52d12  Edge@2d554825  
+1: Edge@68837a77  Edge@6be46e8f  Edge@2d554825  
+2: Edge@3567135c  Edge@327471b5  Edge@68837a77  
+3: Edge@327471b5  Edge@77b52d12  
+4: Edge@3567135c  Edge@6be46e8f  
+5:
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -31,11 +33,17 @@ Expected Output:
 9: 7-9 157.00000  2-9 237.00000
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "Graph"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:14)
+10 11
+0: Edge@77b52d12  Edge@2d554825  
+1: Edge@68837a77  Edge@6be46e8f  Edge@3567135c  
+2: Edge@327471b5  Edge@4157f54e  Edge@90f6bfd  
+3: Edge@47f6473  
+4: Edge@15975490  Edge@90f6bfd  Edge@2d554825  
+5: Edge@15975490  Edge@4157f54e  
+6: Edge@3567135c  
+7: Edge@6b143ee9  Edge@47f6473  Edge@68837a77  Edge@6be46e8f  Edge@77b52d12  
+8: 
+9: Edge@6b143ee9  Edge@327471b5
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -43,11 +51,7 @@ Expected Output:
 No Path Found.
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "DirectedPaths"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:14)
+
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -55,11 +59,7 @@ Expected Output:
 370.0
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "DirectedPaths"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:14)
+
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -67,11 +67,7 @@ Expected Output:
 No Path Found.
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "ViaPaths"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:14)
+
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -80,10 +76,6 @@ Expected Output:
 5 2 4 0 7 1
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "ViaPaths"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:14)
+
 ----------------------------------------
 
