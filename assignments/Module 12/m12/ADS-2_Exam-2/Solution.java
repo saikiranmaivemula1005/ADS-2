@@ -27,6 +27,15 @@ public class Solution {
 			// First is the source and second is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
+			int source = Integer.parseInt(sc.nextLine());
+			int destination = Integer.parseInt(sc.nextLine());
+			DijkstraSP dsp = new DijkstraSP(ewg, source);
+			if (dsp.hasPathTo(destination)) {
+				System.out.println(dsp.distance(destination));
+			} else {
+				System.out.println("No Path Found.");
+			}
+
 			break;
 
 		case "ViaPaths":

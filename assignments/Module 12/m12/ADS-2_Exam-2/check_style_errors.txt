@@ -3,10 +3,21 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
+Audit done.
+Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 12\m12\ADS-2_Exam-2\EdgeWeightedGraph.java:173: Unused Javadoc tag. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 12\m12\ADS-2_Exam-2\EdgeWeightedGraph.java:183: Line is longer than 80 characters (found 105). [LineLength]
 Audit done.
 Checkstyle ends with 2 errors.
+Starting audit...
+Audit done.
+Starting audit...
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 12\m12\ADS-2_Exam-2\KruskalMST .java:24:5: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 12\m12\ADS-2_Exam-2\KruskalMST .java:107: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 12\m12\ADS-2_Exam-2\KruskalMST .java:114: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 12\m12\ADS-2_Exam-2\KruskalMST .java:122:52: '+' should be on a new line. [OperatorWrap]
+Audit done.
+Checkstyle ends with 4 errors.
 Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 12\m12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 12\m12\ADS-2_Exam-2\Solution.java:2: Missing a Javadoc comment. [JavadocType]
@@ -15,7 +26,9 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 12\m12\ADS-2_Exam-2\Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 12\m12\ADS-2_Exam-2\Solution.java:4:33: Parameter args should be final. [FinalParameters]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 12\m12\ADS-2_Exam-2\Solution.java:26: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 12\m12\ADS-2_Exam-2\Solution.java:33: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 12\m12\ADS-2_Exam-2\Solution.java:34: Line is longer than 80 characters (found 110). [LineLength]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 12\m12\ADS-2_Exam-2\Solution.java:42: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 12\m12\ADS-2_Exam-2\Solution.java:43: Line is longer than 80 characters (found 110). [LineLength]
 Audit done.
 Checkstyle ends with 9 errors.
+Starting audit...
+Audit done.
