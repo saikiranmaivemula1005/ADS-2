@@ -124,9 +124,11 @@ class DijkstraSP {
         for (Edge e = edgeTo[v]; e != null; e = edgeTo[x]) {
             path.push(e);
             array[i] = e.other(x);
-            System.out.print(array[i] + " ");
             i++;
             x = e.other(x);
+        }
+        for (i = array.length; i > 0; i--) {
+            System.out.print(array[i] + " ");
         }
     }
     /**
