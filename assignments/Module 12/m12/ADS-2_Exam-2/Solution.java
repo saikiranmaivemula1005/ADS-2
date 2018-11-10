@@ -45,6 +45,21 @@ public class Solution {
 			// third is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
+			line = sc.nextLine().split(" ");
+			source = Integer.parseInt(line[0]);
+			int via = Integer.parseInt(line[1]);
+			destination = Integer.parseInt(line[2]);
+			dsp = new DijkstraSP(ewg, source);
+			if (dsp.hasPathTo(via)) {
+				if (dsp.hasPathTo(destination)) {
+					System.out.println(dsp.distance(destination));
+					System.out.println(dsp.pathTo(destination));
+				} else {
+					System.out.println("No Path Found.");
+				}
+			} else {
+				System.out.println("No Path Found.");
+			}
 			break;
 
 		default:
