@@ -91,8 +91,7 @@ public class Stack<Item> implements Iterable<Item> {
     public String toString() {
         StringBuilder s = new StringBuilder();
         for (Item item : this) {
-            s.append(item);
-            System.out.println(item);
+            s.append(item.either());
             s.append(' ');
         }
         return s.toString();
