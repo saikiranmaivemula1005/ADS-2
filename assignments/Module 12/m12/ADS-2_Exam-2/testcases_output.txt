@@ -62,12 +62,11 @@ Your Output:
 370.0
 ----------------------------------------
 
-########## Testcase 4: Failed ##########
+########## Testcase 4: Passed ##########
 Expected Output: 
 No Path Found.
 
 Your Output: 
-4.0
 No Path Found.
 ----------------------------------------
 
@@ -77,7 +76,6 @@ Expected Output:
 5 2 4 0 7 1
 
 Your Output: 
-179.0
 828.0
 Edge@6a5fc7f7 Edge@3b6eb2ec Edge@1e643faf Edge@6e8dacdf
 ----------------------------------------

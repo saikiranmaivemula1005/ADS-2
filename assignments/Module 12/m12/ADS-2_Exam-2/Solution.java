@@ -66,7 +66,6 @@ public class Solution {
             dsp = new DijkstraSP(ewg, source);
             if (dsp.hasPathTo(via)) {
                 double temp = dsp.distance(via);
-                System.out.println(temp);
                 if (dsp.hasPathTo(destination)) {
                     System.out.println(dsp.distance(destination) + temp);
                     System.out.println(dsp.path(destination));
