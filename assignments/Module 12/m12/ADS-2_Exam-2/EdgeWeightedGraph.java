@@ -180,7 +180,7 @@ public class EdgeWeightedGraph {
         for (int v = 0; v < ver; v++) {
             System.out.print(v + ": ");
             for (Edge e : adj[v]) {
-                System.out.format(e.either() + "-" + e.other(e.either()) +  " " +"%.5f", e.weight() + "  ");
+                System.out.format(e.either() + "-" + e.other(e.either()) +  " " + e.weight() + "0000  ");
             }
             System.out.println();
         }
