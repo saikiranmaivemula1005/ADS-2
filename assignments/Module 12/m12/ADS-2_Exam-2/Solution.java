@@ -13,7 +13,7 @@ public class Solution {
 			String[] tokens = sc.nextLine().split(" ");
 			Edge e = new Edge(Integer.parseInt(tokens[0]),
 			                  Integer.parseInt(tokens[1]),
-			                  Double.parseDouble(tokens[2]));
+			                  Float.parseFloat(tokens[2]));
 			ewg.addEdge(e);
 		}
 		String caseToGo = sc.nextLine();

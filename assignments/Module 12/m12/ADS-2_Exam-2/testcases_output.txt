@@ -10,10 +10,10 @@ Expected Output:
 
 Your Output: 
 6 vertices 6 edges 
-0: Exception in thread "main" java.util.IllegalFormatPrecisionException: 5
-	at java.base/java.util.Formatter$FormatSpecifier.checkInteger(Unknown Source)
-	at java.base/java.util.Formatter$FormatSpecifier.<init>(Unknown Source)
-	at java.base/java.util.Formatter.parse(Unknown Source)
+0: 0-3 Exception in thread "main" java.util.IllegalFormatConversionException: f != java.lang.String
+	at java.base/java.util.Formatter$FormatSpecifier.failConversion(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.printFloat(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.print(Unknown Source)
 	at java.base/java.util.Formatter.format(Unknown Source)
 	at java.base/java.io.PrintStream.format(Unknown Source)
 	at EdgeWeightedGraph.print(EdgeWeightedGraph.java:183)
@@ -36,10 +36,10 @@ Expected Output:
 
 Your Output: 
 10 vertices 11 edges 
-0: Exception in thread "main" java.util.IllegalFormatPrecisionException: 5
-	at java.base/java.util.Formatter$FormatSpecifier.checkInteger(Unknown Source)
-	at java.base/java.util.Formatter$FormatSpecifier.<init>(Unknown Source)
-	at java.base/java.util.Formatter.parse(Unknown Source)
+0: 0-7 Exception in thread "main" java.util.IllegalFormatConversionException: f != java.lang.String
+	at java.base/java.util.Formatter$FormatSpecifier.failConversion(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.printFloat(Unknown Source)
+	at java.base/java.util.Formatter$FormatSpecifier.print(Unknown Source)
 	at java.base/java.util.Formatter.format(Unknown Source)
 	at java.base/java.io.PrintStream.format(Unknown Source)
 	at EdgeWeightedGraph.print(EdgeWeightedGraph.java:183)
