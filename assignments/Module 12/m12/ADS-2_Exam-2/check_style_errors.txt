@@ -1,8 +1,8 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 12\m12\ADS-2_Exam-2\DijkstraSP.java:116: Unused Javadoc tag. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 12\m12\ADS-2_Exam-2\DijkstraSP.java:132: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 12\m12\ADS-2_Exam-2\DijkstraSP.java:114: Unused Javadoc tag. [JavadocMethod]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 12\m12\ADS-2_Exam-2\DijkstraSP.java:130:18: '4' is a magic number. [MagicNumber]
 Audit done.
 Checkstyle ends with 2 errors.
 Starting audit...
