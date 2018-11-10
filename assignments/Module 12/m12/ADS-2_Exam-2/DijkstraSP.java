@@ -123,7 +123,7 @@ class DijkstraSP {
         int i = 0;
         for (Edge e = edgeTo[v]; e != null; e = edgeTo[x]) {
             path.push(e);
-            array[i] = e.either();
+            array[i] = e.other(x);
             System.out.print(array[i] + " ");
             i++;
             x = e.other(x);
