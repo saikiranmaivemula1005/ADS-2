@@ -25,11 +25,11 @@ public final class Solution {
         Scanner sc = new Scanner(System.in);
         int n = Integer.parseInt(sc.nextLine());
         String[] arr = new String[n];
-        Quick3string q3s = new Quick3string();
+        Quick3string quickstring = new Quick3string();
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextLine();
         }
-        q3s.sort(arr);
+        quickstring.sort(arr);
         System.out.println(Arrays.toString(arr));
     }
 }
