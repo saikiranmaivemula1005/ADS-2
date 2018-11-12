@@ -10,7 +10,7 @@
     /**
      * Constructs the object.
      */
-    public Quick3string() {
+    protected Quick3string() {
         //Empty constructor.
     }
 
