@@ -1,30 +1,38 @@
+/**
+ * Scanner import.
+ */
 import java.util.Scanner;
+/**
+ * Arrays import.
+ */
 import java.util.Arrays;
 /**
- * this is a class Solution.
+ * Class for solution.
  */
 public final class Solution {
     /**
      * Constructs the object.
      */
     private Solution() {
-        //unused constructor.
+        //Empty constructor.
     }
     /**
-     * main method.
+     * Main function.
      *
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        LSD lsd = new LSD();
         Scanner sc = new Scanner(System.in);
-        int numberOfinputs = Integer.parseInt(sc.nextLine());
-        String[] tokens = new String[numberOfinputs];
-        for (int i = 0; i < numberOfinputs; i++) {
-            tokens[i] = sc.nextLine();
+        int n = Integer.parseInt(sc.nextLine());
+        String[] arr = new String[n];
+        Quick3string q3s = new Quick3string();
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextLine();
         }
-        lsd.sort(tokens, tokens[1].length());
-        System.out.println(Arrays.toString(tokens));
+        q3s.sort(arr);
+        System.out.println(Arrays.toString(arr));
     }
 }
+
+
 
