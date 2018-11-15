@@ -19,7 +19,7 @@ public class BoggleSolver {
 				dfs(arraylist, str, i, j, marked, board);
 			}
 		}
-		return new Bag<String>();
+		return arraylist;
 	}
 	public void dfs(ArrayList<String> lst, String ch, int row, int col, boolean[][] marked, BoggleBoard board) {
 		if (ch.length() >= 3 && tst.contains(ch)) {
@@ -30,11 +30,11 @@ public class BoggleSolver {
 		}
 		for (int i = 0; i < board.rows(); i++) {
 			for (int j = 0; j < board.cols(); j++) {
-				if (marked[row][col] == true) {
+				if (marked[i][j] == true) {
 					continue;
 				}
 				ch += "" + board.getLetter(i, j);
-				marked[row][col] = true;
+				marked[i][j] = true;
 				dfs(lst, ch, i, j, marked, board);
 			}
 		}

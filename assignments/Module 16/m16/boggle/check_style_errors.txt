@@ -581,7 +581,7 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 16\m16\boggle\BoggleSolver.java:24:77: Parameter marked should be final. [FinalParameters]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 16\m16\boggle\BoggleSolver.java:24:97: Parameter board should be final. [FinalParameters]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 16\m16\boggle\BoggleSolver.java:25:36: '3' is a magic number. [MagicNumber]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 16\m16\boggle\BoggleSolver.java:33:54: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 16\m16\boggle\BoggleSolver.java:33:50: Expression can be simplified. [SimplifyBooleanExpression]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 16\m16\boggle\BoggleSolver.java:43: Line is longer than 80 characters (found 90). [LineLength]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 16\m16\boggle\BoggleSolver.java:44: Line is longer than 80 characters (found 85). [LineLength]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 16\m16\boggle\BoggleSolver.java:45:9: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'scoreOf' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'scoreOf' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
