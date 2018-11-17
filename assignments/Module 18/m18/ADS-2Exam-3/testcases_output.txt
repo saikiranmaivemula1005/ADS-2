@@ -169,6 +169,8 @@ right
 words
 
 Your Output: 
+within
+hello
 Exception in thread "main" java.util.NoSuchElementException: Priority queue underflow
 	at MaxPQ.delMax(MaxPQ.java:174)
 	at T9.getSuggestions(Solution.java:136)
