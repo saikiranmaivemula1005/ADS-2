@@ -131,7 +131,7 @@ class T9 {
 		for (String str : words) {
 			maxpq.insert(str);
 		}
-		for (int i = 0; i < k; i++) {
+		for (int i = k; i > 0; i--) {
 			System.out.println(maxpq.delMax());
 		}
 	}
