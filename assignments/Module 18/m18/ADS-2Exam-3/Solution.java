@@ -90,7 +90,8 @@ public class Solution {
 		String[] words = toReadFile(file);
 		for (int i = 0; i < words.length; i++) {
 			if (st.contains(words[i])) {
-				st.put(words[i], st.get(words[i]) + 1);
+				int existing = st.get(words[i]);
+				st.put(words[i], existing++);
 			} else {
 				st.put(words[i], 1);
 			}
