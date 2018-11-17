@@ -131,9 +131,14 @@ class T9 {
 		for (String str : words) {
 			maxpq.insert(tst.get(str));
 		}
-		for (int i = 0; i < k; i++) {
-			System.out.println(maxpq.delMax());
+		for (String str : words) {
+			for (int i = 0; i < k; i++) {
+				if (maxpq.delMax() == tst.get(str)) {
+					System.out.println(str);
+				}
+			}
 		}
+
 	}
 
 	// final output
