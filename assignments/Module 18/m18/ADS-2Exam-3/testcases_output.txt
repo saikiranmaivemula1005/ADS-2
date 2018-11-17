@@ -169,10 +169,10 @@ right
 words
 
 Your Output: 
-hello
-is
-right
+within
 rights
+right
+is
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
