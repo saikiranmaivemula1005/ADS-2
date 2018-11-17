@@ -113,11 +113,11 @@ class T9 {
 
 	// get all the prefixes that match with given prefix.
 	public Iterable<String> getAllWords(String prefix) {
-		Queue q = new Queue();
+		Queue queue = new Queue();
 		for (String str : tst.keysWithPrefix(prefix)) {
-			q.enqueue(str);
+			queue.enqueue(str);
 		}
-		return q;
+		return queue;
 	}
 
 	public Iterable<String> potentialWords(String t9Signature) {
@@ -154,8 +154,6 @@ class T9 {
 			bag.add(array[i - 1]);
 		}
 		return bag;
-
-
 	}
 
 	// final output
