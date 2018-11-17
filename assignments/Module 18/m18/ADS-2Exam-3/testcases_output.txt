@@ -169,10 +169,10 @@ right
 words
 
 Your Output: 
-null
-null
-null
-null
+2701
+3074
+5159
+5162
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########

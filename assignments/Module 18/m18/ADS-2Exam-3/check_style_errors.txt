@@ -403,15 +403,8 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 18\m18\ADS-2Exam-3\Solution.java:129:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 18\m18\ADS-2Exam-3\Solution.java:129:36: Parameter words should be final. [FinalParameters]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 18\m18\ADS-2Exam-3\Solution.java:129:60: Parameter k should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 18\m18\ADS-2Exam-3\Solution.java:148:27: '=' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 18\m18\ADS-2Exam-3\Solution.java:148:28: '=' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 18\m18\ADS-2Exam-3\Solution.java:148:30: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 18\m18\ADS-2Exam-3\Solution.java:148:31: '<' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 18\m18\ADS-2Exam-3\Solution.java:148:32: '<' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 18\m18\ADS-2Exam-3\Solution.java:148:34: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 18\m18\ADS-2Exam-3\Solution.java:148:38: '{' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 35 errors.
+Checkstyle ends with 28 errors.
 Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 18\m18\ADS-2Exam-3\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 18\m18\ADS-2Exam-3\TST.java:46: Line is longer than 80 characters (found 84). [LineLength]
