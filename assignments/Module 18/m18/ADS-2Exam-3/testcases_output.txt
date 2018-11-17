@@ -169,10 +169,10 @@ right
 words
 
 Your Output: 
-MaxPQ@5594a1b5
-MaxPQ@5594a1b5
-MaxPQ@5594a1b5
-MaxPQ@5594a1b5
+words
+within
+rights
+right
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
