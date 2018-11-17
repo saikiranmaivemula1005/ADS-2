@@ -169,10 +169,12 @@ right
 words
 
 Your Output: 
-within
-rights
-right
+hello
 is
+right
+rights
+within
+words
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
