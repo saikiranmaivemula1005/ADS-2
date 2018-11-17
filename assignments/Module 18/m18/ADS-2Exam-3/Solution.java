@@ -73,7 +73,7 @@ public class Solution {
 		// 			System.out.println(each);
 		// 		}
 		// 	}
-			// break;
+		// break;
 
 		default:
 			break;
@@ -131,8 +131,8 @@ class T9 {
 		for (String str : words) {
 			maxpq.insert(str);
 		}
-		for (int i =0;i<k;i++) {
-			System.out.println(maxpq.delMax());
+		for (int i = 0; i < k; i++) {
+			System.out.println(maxpq);
 		}
 	}
 
