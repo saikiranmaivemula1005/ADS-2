@@ -132,7 +132,7 @@ class T9 {
 			maxpq.insert(str);
 		}
 		for (int i =0;i<k;i++) {
-			maxpq.delMax();
+			System.out.println(maxpq.delMax());
 		}
 	}
 
