@@ -23,10 +23,9 @@ public class Solution {
 			T9 t9 = new T9(loadDictionary("/Files/t9.csv"));
 			while (scan.hasNextLine()) {
 				String prefix = scan.nextLine();
-				t9.getAllWords(prefix);
-				// for (String each : t9.getAllWords(prefix)) {
-				// 	System.out.println(each);
-				// }
+				for (String each : t9.getAllWords(prefix)) {
+					System.out.println(each);
+				}
 			}
 			break;
 
@@ -114,10 +113,12 @@ class T9 {
 	}
 
 	// get all the prefixes that match with given prefix.
-	public void getAllWords(String prefix) {
+	public Iterable<String> getAllWords(String prefix) {
+		Queue q = new Queue();
 		for (String str : tst.keysWithPrefix(prefix)) {
-			System.out.println(str);
+			q.enqueue(str);
 		}
+		return q;
 	}
 
 	public Iterable<String> potentialWords(String t9Signature) {
@@ -141,6 +142,7 @@ class T9 {
 		HashMap<Integer, String> hmap = new HashMap<Integer, String>();
 		ArrayList<Integer> arraylist = new ArrayList<Integer>();
 		for (String str : words) {
+			getAllWords(str);
 			hmap.put(tst.get(str), str);
 			arraylist.add(tst.get(str));
 		}
