@@ -60,18 +60,18 @@ public class Solution {
 
 			break;
 
-		// case "t9Signature":
-		// 	// input004.txt and output004.txt
-		// 	t9 = new T9(loadDictionary("/Files/t9.csv"));
-		// 	bag = new Bag<String>();
-		// 	k = Integer.parseInt(scan.nextLine());
-		// 	while (scan.hasNextLine()) {
-		// 		String line = scan.nextLine();
-		// 		for (String each : t9.t9(line, k)) {
-		// 			System.out.println(each);
-		// 		}
-		// 	}
-		// break;
+		case "t9Signature":
+			// input004.txt and output004.txt
+			t9 = new T9(loadDictionary("/Files/t9.csv"));
+			bag = new Bag<String>();
+			k = Integer.parseInt(scan.nextLine());
+			while (scan.hasNextLine()) {
+				String line = scan.nextLine();
+				for (String each : t9.t9(line, k)) {
+					System.out.println(each);
+				}
+			}
+		break;
 
 		default:
 			break;
