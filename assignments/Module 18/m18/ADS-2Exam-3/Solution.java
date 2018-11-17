@@ -138,15 +138,15 @@ class T9 {
 		// 		}
 		// 	}
 		// }
-		HashMap<String, Integer> hmap = new HashMap<String, Integer>();
+		HashMap<Integer, String> hmap = new HashMap<Integer, String>();
 		ArrayList<Integer> arraylist = new ArrayList<Integer>();
 		for (String str : words) {
-			hmap.put(str, tst.get(str));
+			hmap.put(tst.get(str), str);
 			arraylist.add(tst.get(str));
 		}
 		Collections.sort(arraylist);
 		for (int i = 0; i < k; i++) {
-			System.out.println(arraylist.get(i));
+			System.out.println(hmap.get(arraylist.get(i)));
 		}
 
 	}

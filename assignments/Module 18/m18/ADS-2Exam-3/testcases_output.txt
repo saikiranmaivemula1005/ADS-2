@@ -169,10 +169,10 @@ right
 words
 
 Your Output: 
-2701
-3074
-5159
-5162
+hello
+is
+right
+rights
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
