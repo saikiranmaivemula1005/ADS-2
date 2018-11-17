@@ -122,7 +122,6 @@ class T9 {
 
 	public Iterable<String> potentialWords(String t9Signature) {
 		HashMap<Integer, String> hmap = new HashMap<Integer, String>();
-		// hmap.put()
 		return null;
 	}
 
@@ -138,26 +137,24 @@ class T9 {
 		// 			System.out.println(str);
 		// 		}
 		// 	}
-		BinarySearchST<Integer, String> st = new BinarySearchST<Integer, String>();
-		for (String s : words) {
-			Integer frequency = tst.get(s);
-			st.put(frequency, s);
+		BinarySearchST<Integer, String> bst = new BinarySearchST();
+		for (String str : words) {
+			int frequency = tst.get(str);
+			bst.put(frequency, str);
 		}
 		Bag<String> bag = new Bag<String>();
-		String[] arr = new String[k];
-		for (int j = 0; j < k; j++) {
-			Integer i = st.max();
-			arr[j] = st.get(i);
-			// bag.add(st.get(i));
-			st.deleteMax();
+		String[] array = new String[k];
+		for (int i = 0; i < k; i++) {
+			int maxvalue = bst.max();
+			array[i] = bst.get(maxvalue);
+			bst.deleteMax();
 		}
-		Arrays.sort(arr);
+		Arrays.sort(array);
 		for (int i = k; i > 0; i--) {
-			bag.add(arr[i - 1]);
+			bag.add(array[i - 1]);
 		}
 		return bag;
 	}
-
 
 	// final output
 	// Don't modify this method.
@@ -165,4 +162,3 @@ class T9 {
 		return getSuggestions(potentialWords(t9Signature), k);
 	}
 }
-
