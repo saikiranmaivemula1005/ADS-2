@@ -169,12 +169,10 @@ right
 words
 
 Your Output: 
-within
-hello
-Exception in thread "main" java.util.NoSuchElementException: Priority queue underflow
-	at MaxPQ.delMax(MaxPQ.java:174)
-	at T9.getSuggestions(Solution.java:136)
-	at Solution.main(Solution.java:61)
+null
+null
+null
+null
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
