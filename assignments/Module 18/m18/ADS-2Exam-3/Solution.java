@@ -89,7 +89,7 @@ public class Solution {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		String[] words = file.split(" ");
 		for (int i = 0; i < words.length; i++) {
-			st.put(words[i], i);
+			st.put(words[i], 5);
 		}
 		return st;
 	}
