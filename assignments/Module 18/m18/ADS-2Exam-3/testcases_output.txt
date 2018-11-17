@@ -10,9 +10,14 @@ Expected Output:
 149
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 63834
-	at Solution.loadDictionary(Solution.java:92)
-	at Solution.main(Solution.java:14)
+50
+27
+134
+3
+94
+49
+45
+133
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -52,9 +57,8 @@ messagesome
 going
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 63834
-	at Solution.loadDictionary(Solution.java:92)
-	at Solution.main(Solution.java:23)
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:26)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -122,9 +126,8 @@ fine
 seeking
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 63834
-	at Solution.loadDictionary(Solution.java:92)
-	at Solution.main(Solution.java:34)
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:38)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -135,9 +138,8 @@ right
 words
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 63834
-	at Solution.loadDictionary(Solution.java:92)
-	at Solution.main(Solution.java:50)
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:57)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -189,8 +191,7 @@ paper
 keep
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 63834
-	at Solution.loadDictionary(Solution.java:92)
-	at Solution.main(Solution.java:65)
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:70)
 ----------------------------------------
 
