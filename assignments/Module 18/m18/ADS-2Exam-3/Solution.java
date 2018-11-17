@@ -55,24 +55,25 @@ public class Solution {
 				String line = scan.nextLine();
 				bag.add(line);
 			}
-			for (String each : t9.getSuggestions(bag, k)) {
-				System.out.println(each);
-			}
+			// for (String each : t9.getSuggestions(bag, k)) {
+			// 	System.out.println(each);
+			// }
+			t9.getSuggestions(bag, k);
 
 			break;
 
-		case "t9Signature":
-			// input004.txt and output004.txt
-			t9 = new T9(loadDictionary("/Files/t9.csv"));
-			bag = new Bag<String>();
-			k = Integer.parseInt(scan.nextLine());
-			while (scan.hasNextLine()) {
-				String line = scan.nextLine();
-				for (String each : t9.t9(line, k)) {
-					System.out.println(each);
-				}
-			}
-			break;
+		// case "t9Signature":
+		// 	// input004.txt and output004.txt
+		// 	t9 = new T9(loadDictionary("/Files/t9.csv"));
+		// 	bag = new Bag<String>();
+		// 	k = Integer.parseInt(scan.nextLine());
+		// 	while (scan.hasNextLine()) {
+		// 		String line = scan.nextLine();
+		// 		for (String each : t9.t9(line, k)) {
+		// 			System.out.println(each);
+		// 		}
+		// 	}
+			// break;
 
 		default:
 			break;
@@ -125,18 +126,19 @@ class T9 {
 	}
 
 	// return all possibilities(words), find top k with highest frequency.
-	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
-		int i = 0;
+	public void getSuggestions(Iterable<String> words, int k) {
+		MaxPQ<String> maxpq = new MaxPQ<String>();
 		for (String str : words) {
-			System.out.println(str);
-
+			maxpq.insert(str);
 		}
-		return null;
+		for (int i =0;i<k;i++) {
+			maxpq.delMax();
+		}
 	}
 
 	// final output
 	// Don't modify this method.
-	public Iterable<String> t9(String t9Signature, int k) {
-		return getSuggestions(potentialWords(t9Signature), k);
-	}
+	// public Iterable<String> t9(String t9Signature, int k) {
+	// 	return getSuggestions(potentialWords(t9Signature), k);
+	// }
 }

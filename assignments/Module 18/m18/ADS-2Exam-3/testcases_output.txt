@@ -169,14 +169,7 @@ right
 words
 
 Your Output: 
-is
-within
-words
-rights
-right
-hello
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:58)
+
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -228,9 +221,6 @@ paper
 keep
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at T9.getSuggestions(Solution.java:130)
-	at T9.t9(Solution.java:140)
-	at Solution.main(Solution.java:71)
+
 ----------------------------------------
 
