@@ -92,7 +92,7 @@ public class Solution {
 			if (st.contains(words[i])) {
 				st.put(words[i], st.get(words[i]) + 1);
 			} else {
-				st.put(words[i], 0);
+				st.put(words[i], 1);
 			}
 		}
 		return st;
