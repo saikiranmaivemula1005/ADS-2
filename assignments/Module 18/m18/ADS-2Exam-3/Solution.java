@@ -54,10 +54,9 @@ public class Solution {
 				String line = scan.nextLine();
 				bag.add(line);
 			}
-			// for (String each : t9.getSuggestions(bag, k)) {
-			// 	System.out.println(each);
-			// }
-			t9.getSuggestions(bag, k);
+			for (String each : t9.getSuggestions(bag, k)) {
+				System.out.println(each);
+			}
 
 			break;
 
@@ -127,7 +126,7 @@ class T9 {
 	}
 
 	// return all possibilities(words), find top k with highest frequency.
-	public void getSuggestions(Iterable<String> words, int k) {
+	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
 		// MaxPQ<Integer> maxpq = new MaxPQ<Integer>();
 		// for (String str : words) {
 		// 	maxpq.insert(tst.get(str));
@@ -138,24 +137,30 @@ class T9 {
 		// 			System.out.println(str);
 		// 		}
 		// 	}
-		// }
-		HashMap<Integer, String> hmap = new HashMap<Integer, String>();
-		ArrayList<Integer> arraylist = new ArrayList<Integer>();
+		BinarySearchST<Integer, String> bst = new BinarySearchST();
 		for (String str : words) {
-			getAllWords(str);
-			hmap.put(tst.get(str), str);
-			arraylist.add(tst.get(str));
+			int frequency = tst.get(str);
+			bst.put(frequency, str);
 		}
-		Collections.sort(arraylist);
-		for (int i = 0; i < arraylist.size(); i++) {
-			System.out.println(hmap.get(arraylist.get(i))+ " " +arraylist.get(i));
+		Bag<String> bag = new Bag<String>();
+		String[] array = new String[k];
+		for (int i = 0; i < k; i++) {
+			int maxvalue = bst.max();
+			array[i] = bst.get(maxvalue);
+			bst.deleteMax();
 		}
+		Arrays.sort(array);
+		for (int i = k; i > 0; i--) {
+			bag.add(array[i - 1]);
+		}
+		return bag;
+
 
 	}
 
 	// final output
 	// Don't modify this method.
-	// public Iterable<String> t9(String t9Signature, int k) {
-	// 	return getSuggestions(potentialWords(t9Signature), k);
-	// }
+	public Iterable<String> t9(String t9Signature, int k) {
+		return getSuggestions(potentialWords(t9Signature), k);
+	}
 }

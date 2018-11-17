@@ -169,12 +169,10 @@ right
 words
 
 Your Output: 
-hello 2701
-is 3074
-right 5159
-rights 5162
-within 6931
-words 6971
+right
+rights
+within
+words
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
