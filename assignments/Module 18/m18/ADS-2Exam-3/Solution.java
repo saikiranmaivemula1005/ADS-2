@@ -90,10 +90,11 @@ public class Solution {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		String[] words = toReadFile(file);
 		for (int i = 0; i < words.length; i++) {
-			if (st.contains(words[i])) {
-				st.put(words[i], st.get(words[i]) + 1);
+			String word = words[i].toLowerCase();
+			if (st.contains(word)) {
+				st.put(word, st.get(word) + 1);
 			} else {
-				st.put(words[i], 1);
+				st.put(word, 1);
 			}
 		}
 		return st;
@@ -125,7 +126,11 @@ class T9 {
 
 	// return all possibilities(words), find top k with highest frequency.
 	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
-		// your code goes here
+		int i = 0;
+		for (String str : words) {
+			System.out.println(str);
+
+		}
 		return null;
 	}
 
