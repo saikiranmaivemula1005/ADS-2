@@ -90,7 +90,7 @@ public class Solution {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		String[] words = toReadFile(file);
 		for (int i = 0; i < words.length; i++) {
-			if (!st.contains(words[i])) {
+			if (st.contains(words[i])) {
 				st.put(words[i], st.get(words[i]) + 1);
 			} else {
 				st.put(words[i], 1);
