@@ -146,7 +146,7 @@ class T9 {
 		}
 		Collections.sort(arraylist);
 		for (int i = 0; i < arraylist.size(); i++) {
-			System.out.println(hmap.get(arraylist.get(i))+arraylist.get(i));
+			System.out.println(hmap.get(arraylist.get(i))+ " " +arraylist.get(i));
 		}
 
 	}

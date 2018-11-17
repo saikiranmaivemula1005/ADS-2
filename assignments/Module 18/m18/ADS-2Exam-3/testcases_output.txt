@@ -169,12 +169,12 @@ right
 words
 
 Your Output: 
-hello2701
-is3074
-right5159
-rights5162
-within6931
-words6971
+hello 2701
+is 3074
+right 5159
+rights 5162
+within 6931
+words 6971
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########

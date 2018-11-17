@@ -403,9 +403,9 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 18\m18\ADS-2Exam-3\Solution.java:129:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 18\m18\ADS-2Exam-3\Solution.java:129:36: Parameter words should be final. [FinalParameters]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 18\m18\ADS-2Exam-3\Solution.java:129:60: Parameter k should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 18\m18\ADS-2Exam-3\Solution.java:149: Line is longer than 80 characters (found 88). [LineLength]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 18\m18\ADS-2Exam-3\Solution.java:149: Line is longer than 80 characters (found 94). [LineLength]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 18\m18\ADS-2Exam-3\Solution.java:149:70: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 18\m18\ADS-2Exam-3\Solution.java:149:71: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-2\assignments\Module 18\m18\ADS-2Exam-3\Solution.java:149:77: '+' is not followed by whitespace. [WhitespaceAround]
 Audit done.
 Checkstyle ends with 31 errors.
 Starting audit...
