@@ -10,14 +10,9 @@ Expected Output:
 149
 
 Your Output: 
-50
-27
-134
-3
-94
-49
-45
-133
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.loadDictionary(Solution.java:94)
+	at Solution.main(Solution.java:14)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -57,37 +52,9 @@ messagesome
 going
 
 Your Output: 
-wont
-working
-what
-whatever
-whats
-vegetables
-too
-tooLets
-tooPray
-took
-tookplace
-tool
-tooo
-toopray
-toot
-toothpaste
-tootsie
-over
-overa
-overdid
-overemphasiseor
-overheating
-overtime
-message
-messageIts
-messaged
-messageit
-messageno
-messagepandy
-messages
-going
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.loadDictionary(Solution.java:94)
+	at Solution.main(Solution.java:23)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -156,7 +123,8 @@ seeking
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:39)
+	at Solution.loadDictionary(Solution.java:94)
+	at Solution.main(Solution.java:35)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -168,7 +136,8 @@ words
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:58)
+	at Solution.loadDictionary(Solution.java:94)
+	at Solution.main(Solution.java:51)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -221,6 +190,7 @@ keep
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:71)
+	at Solution.loadDictionary(Solution.java:94)
+	at Solution.main(Solution.java:66)
 ----------------------------------------
 
