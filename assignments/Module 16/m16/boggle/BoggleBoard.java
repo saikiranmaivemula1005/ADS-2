@@ -1,39 +1,30 @@
-/******************************************************************************
- *  Compilation:  javac BoggleBoard.java
- *  Execution:    java  BoggleBoard
- *  Dependencies: StdRandom.java In.java StdOut.java
- *
- *  A data type for Boggle boards.
- *
- ******************************************************************************/
 /**
  * Class for boggle board.
  */
 public class BoggleBoard {
     /**
-    * boggle dice of version 1992.
-    **/
-    // the 16 Boggle dice (1992 version)
+     * the 16 Boggle dice (1992 version).
+     */
     private static final String[] BOGGLE_1992 = {
         "LRYTTE", "VTHRWE", "EGHWNE", "SEOTIS",
         "ANAEEG", "IDSYTT", "OATTOW", "MTOICU",
         "AFPKFS", "XLDERI", "HCPOAS", "ENSIEU",
         "YLDEVR", "ZNRNHL", "NMIQHU", "OBBAOJ"
     };
+
     /**
-    * boggle dice versio of 1983.
-    **/
-    // the 16 Boggle dice (1983 version)
+     * the 16 Boggle dice (1983 version).
+     */
     private static final String[] BOGGLE_1983 = {
         "AACIOT", "ABILTY", "ABJMOQ", "ACDEMP",
         "ACELRS", "ADENVZ", "AHMORS", "BIFORX",
         "DENOSW", "DKNOTU", "EEFHIY", "EGINTV",
         "EGKLUY", "EHINPS", "ELPSTU", "GILRUW",
     };
+
     /**
-    * boggle deluxe dice of string array.
-    **/
-    // the 25 Boggle Master / Boggle Deluxe dice
+     * the 25 Boggle Master / Boggle Deluxe dice.
+     */
     private static final String[] BOGGLE_MASTER = {
         "AAAFRS", "AAEEEE", "AAFIRS", "ADENNN", "AEEEEM",
         "AEEGMU", "AEGMNN", "AFIRSY", "BJKQXZ", "CCNSTW",
@@ -41,10 +32,10 @@ public class BoggleBoard {
         "DHHNOT", "DHLNOR", "EIIITT", "EMOTTT", "ENSSSU",
         "FIPRSY", "GORRVW", "HIPRRY", "NOOTUW", "OOOTTU"
     };
+
     /**
-    * boggle dice of string array.
-    **/
-    // the 25 Big Boggle dice
+     * the 25 Big Boggle dice.
+     */
     private static final String[] BOGGLE_BIG = {
         "AAAFRS", "AAEEEE", "AAFIRS", "ADENNN", "AEEEEM",
         "AEEGMU", "AEGMNN", "AFIRSY", "BJKQXZ", "CCENST",
@@ -52,13 +43,14 @@ public class BoggleBoard {
         "DHLNOR", "DHLNOR", "EIIITT", "EMOTTT", "ENSSSU",
         "FIPRSY", "GORRVW", "IPRRRY", "NOOTUW", "OOOTTU"
     };
+
+
     /**
-    * string variable.
-    **/
-    // letters and frequencies of letters in the English alphabet
+     * letters and frequencies of letters in the English alphabet.
+     */
     private static final String ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     /**
-     * frequencies rray of double type.
+     * frequencies.
      */
     private static final double[] FREQUENCIES = {
         0.08167, 0.01492, 0.02782, 0.04253, 0.12703, 0.02228,
@@ -68,24 +60,24 @@ public class BoggleBoard {
         0.01974, 0.00074
     };
     /**
-     * no of rows.
+     * number of rows.
      */
-    private final int m;        // number of rows
+    private final int m;
     /**
-     * no of columns.
+     * number of columns.
      */
-    private final int n;        // number of columns
+    private final int n;
     /**
-     * board matrix of character type.
+     * the m-by-n array of characters.
      */
-    private char[][] board;     // the m-by-n array of characters
+    private char[][] board;
+
     /**
      * Initializes a random 4-by-4 board, by rolling the Hasbro dice.
      */
     public BoggleBoard() {
-        final int fo = 4;
-        m = fo;
-        n = fo;
+        m = 2 + 2;
+        n = 2 + 2;
         StdRandom.shuffle(BOGGLE_1992);
         board = new char[m][n];
         for (int i = 0; i < m; i++) {
@@ -96,6 +88,7 @@ public class BoggleBoard {
             }
         }
     }
+
     /**
      * Initializes a board from the given filename.
      * @param filename the name of the file containing the Boggle board
@@ -106,11 +99,11 @@ public class BoggleBoard {
         n = in.readInt();
         if (m <= 0) {
             throw new IllegalArgumentException(
-            "number of rows must be a positive integer");
+                "number of rows must be a positive integer");
         }
         if (n <= 0) {
             throw new IllegalArgumentException(
-            "number of columns must be a positive integer");
+                "number of columns must be a positive integer");
         }
         board = new char[m][n];
         for (int i = 0; i < m; i++) {
@@ -119,17 +112,18 @@ public class BoggleBoard {
                 if (letter.equals("QU")) {
                     board[i][j] = 'Q';
                 } else if (letter.length() != 1) {
-                    throw new IllegalArgumentException(
-                        "invalid character: " + letter);
+                    throw new IllegalArgumentException("invalid character: "
+                                                       + letter);
                 } else if (!ALPHABET.contains(letter)) {
-                    throw new IllegalArgumentException(
-                        "invalid character: " + letter);
+                    throw new IllegalArgumentException("invalid character: "
+                                                       + letter);
                 } else {
                     board[i][j] = letter.charAt(0);
                 }
             }
         }
     }
+
     /**
      * Initializes a random m-by-n board, according to the frequency
      * of letters in the English language.
@@ -155,6 +149,7 @@ public class BoggleBoard {
             }
         }
     }
+
     /**
      * Initializes a board from the given 2d character array,
      * with 'Q' representing the two-letter sequence "Qu".
@@ -174,7 +169,8 @@ public class BoggleBoard {
         board = new char[m][n];
         for (int i = 0; i < m; i++) {
             if (a[i].length != n) {
-                throw new IllegalArgumentException("char[][] array is ragged");
+                throw new IllegalArgumentException(
+                    "char[][] array is ragged");
             }
             for (int j = 0; j < n; j++) {
                 if (ALPHABET.indexOf(a[i][j]) == -1) {
@@ -185,6 +181,7 @@ public class BoggleBoard {
             }
         }
     }
+
     /**
      * Returns the number of rows.
      * @return number of rows
@@ -192,6 +189,7 @@ public class BoggleBoard {
     public int rows() {
         return m;
     }
+
     /**
      * Returns the number of columns.
      * @return number of columns
@@ -199,6 +197,7 @@ public class BoggleBoard {
     public int cols() {
         return n;
     }
+
     /**
      * Returns the letter in row i and column j,
      * with 'Q' representing the two-letter sequence "Qu".
@@ -210,6 +209,7 @@ public class BoggleBoard {
     public char getLetter(final int i, final int j) {
         return board[i][j];
     }
+
     /**
      * Returns a string representation of the board, replacing 'Q' with "Qu".
      * @return a string representation of the board, replacing 'Q' with "Qu"
@@ -231,30 +231,32 @@ public class BoggleBoard {
     }
 
     /**
-     * Unit tests the BoggleBoard data type.
-     * @param args arguments.
+     * Main Function.
+     *
+     * @param      args  The arguments
      */
     public static void main(final String[] args) {
+
         // initialize a 4-by-4 board using Hasbro dice
-        final int four = 4;
         StdOut.println("Hasbro board:");
         BoggleBoard board1 = new BoggleBoard();
         StdOut.println(board1);
         StdOut.println();
+
         // initialize a 4-by-4 board using letter
         //frequencies in English language
         StdOut.println("Random 4-by-4 board:");
-        BoggleBoard board2 = new BoggleBoard(four, four);
+        BoggleBoard board2 = new BoggleBoard(2 + 2, 2 + 2);
         StdOut.println(board2);
         StdOut.println();
 
         // initialize a 4-by-4 board from a 2d char array
         StdOut.println("4-by-4 board from 2D character array:");
         char[][] a =  {
-            {'D', 'O', 'T', 'Y'},
-            {'T', 'R', 'S', 'F'},
-            {'M', 'X', 'M', 'O'},
-            {'Z', 'A', 'B', 'W'}
+            {'D', 'O', 'T', 'Y' },
+            {'T', 'R', 'S', 'F' },
+            {'M', 'X', 'M', 'O' },
+            {'Z', 'A', 'B', 'W' }
         };
         BoggleBoard board3 = new BoggleBoard(a);
         StdOut.println(board3);
@@ -267,4 +269,6 @@ public class BoggleBoard {
         StdOut.println(board4);
         StdOut.println();
     }
+
 }
+

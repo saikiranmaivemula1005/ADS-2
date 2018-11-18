@@ -1,171 +1,230 @@
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 /**
- * List of .
+ * Queue class for list of items.
  *
  * @param      <Item>  The item
  */
-public class Queue<Item> implements Iterable<Item> {
+class Queue<Item> implements Iterable<Item> {
     /**
-     * integer variable.
+     * { variable for beginning of queue }.
      */
-    private int n;         // number of elements on queue
+    private Node<Item> first;
     /**
-     * node variable.
+     * { variable for end of queue }.
      */
-    private Node first;    // beginning of queue
+    private Node<Item> last;
     /**
-     * node variable.
+     * { variable for number of elements on queue }.
      */
-    private Node last;     // end of queue
+    private int n;
     /**
      * Class for node.
+     * helper linked list class.
+     *
+     * @param      <Item>  The item
      */
-    private class Node {
+    private static class Node<Item> {
         /**
-         * item variable of item type.
+         * { variable for item }.
          */
         private Item item;
         /**
-         * next variable of node type.
+         * { variable for node next }.
          */
-        private Node next;
+        private Node<Item> next;
     }
-
     /**
-      * Create an empty queue.
-      */
-    public Queue() {
+     * Constructs the object.
+     * Initializes an empty queue.
+     */
+    Queue() {
         first = null;
         last  = null;
+        n = 0;
     }
-
     /**
-      * Is the queue empty?
-      * Time Complexity : O(1).
-      * @return boolean.
-      */
+     * Returns true if this queue is empty.
+     *
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
+     *
+     * @return     True if empty, False otherwise.
+     */
     public boolean isEmpty() {
         return first == null;
     }
 
     /**
-      * Return the number of items in the queue.
-      * Time Complexity : O(1).
-      * @return size.
-      */
+     * Returns the number of items in this queue.
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
+     * @return     { int value }
+     */
     public int size() {
         return n;
     }
 
     /**
-      * Return the item least recently added to the queue.
-      * Throw an exception if the queue is empty.
-      * Time Complexity : O(1).
-      * @return item type.
-      */
+     * { Returns the item least recently added to this queue }.
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
+     * @return     { the item least recently added to this queue }
+     */
     public Item peek() {
         if (isEmpty()) {
-            throw new RuntimeException("Queue underflow");
+            throw new NoSuchElementException("Queue underflow");
         }
         return first.item;
     }
 
     /**
-      * Add the item to the queue.
-      * Time Complexity : O(1).
-      * @param item item.
-      */
+     * { Adds the item to this queue }.
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
+     * @param      item  The item
+     */
     public void enqueue(final Item item) {
-        Node x = new Node();
-        x.item = item;
+        Node<Item> oldlast = last;
+        last = new Node<Item>();
+        last.item = item;
+        last.next = null;
         if (isEmpty()) {
-            first = x;
-            last = x;
+            first = last;
         } else {
-            last.next = x;
-            last = x;
+            oldlast.next = last;
         }
         n++;
     }
 
     /**
-      * Remove and return the item on the queue least recently added.
-      * Throw an exception if the queue is empty.
-      * Time Complexity : O(1).
-      * @return item.
-      */
+     * { Removes and returns the item on this queue
+     *   that was least recently added }.
+     *
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
+     *
+     * @return     { the item on this queue that was least recently added }
+     * @throws NoSuchElementException if this queue is empty
+     */
     public Item dequeue() {
         if (isEmpty()) {
-            throw new RuntimeException("Queue underflow");
+            throw new NoSuchElementException("Queue underflow");
         }
         Item item = first.item;
         first = first.next;
         n--;
         if (isEmpty()) {
-            last = null;  // to avoid loitering
+            last = null;
         }
         return item;
     }
 
     /**
-      * Return string representation.
-      * Time Complexity : O(N).
-      * @return string representation.
-      */
+     * Returns a string representation of this queue.
+     *
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
+     *
+     * @return the sequence of items in FIFO order, separated by spaces
+     */
     public String toString() {
         StringBuilder s = new StringBuilder();
         for (Item item : this) {
-            s.append(item + " ");
+            s.append(item);
+            s.append(' ');
         }
         return s.toString();
     }
 
+    /**
+     * { Returns an iterator that iterates over the
+     *   items in this queue in FIFO order }.
+     *
+     * Complexity :
+     *              Best Case : O(1)
+     *              Average Case : O(1)
+     *              Worst Case : O(1)
+     *
+     * @return     { an iterator that iterates over the items
+     *               in this queue in FIFO order}
+     */
+    public Iterator<Item> iterator()  {
+        return new ListIterator<Item>(first);
+    }
 
     /**
-      * Return an iterator that iterates over the
-      *  items on the queue in FIFO order.
-      *  Time Complexity : O(N).
-      *  @return item array.
-      */
-    public Iterator<Item> iterator()  {
-        return new ListIterator();
-    }
-    /**
      * Class for list iterator.
+     *
+     * @param      <Item>  The item
      */
-    private class ListIterator implements Iterator<Item> {
+    private class ListIterator<Item> implements Iterator<Item> {
         /**
-         * node variable.
+         * { variable for current node }.
          */
-        private Node current = first;
+        private Node<Item> current;
+        /**
+         * Constructs the object.
+         *
+         * @param      first1  The first
+         */
+        ListIterator(final Node<Item> first1) {
+            current = first1;
+        }
         /**
          * Determines if it has next.
-         *Time Complexity : O(1).
+         *
          * @return     True if has next, False otherwise.
          */
         public boolean hasNext() {
             return current != null;
         }
         /**
-         * remove method.
-         * Time Complexity : O(1).
+         * { function for remove }.
          */
         public void remove() {
             throw new UnsupportedOperationException();
         }
         /**
-         * next method.
-         *Time Complexity : O(N).
+         * { function for next }.
+         *
          * @return     { description_of_the_return_value }
          */
         public Item next() {
             if (!hasNext()) {
-             throw new NoSuchElementException();
+                throw new NoSuchElementException();
             }
             Item item = current.item;
             current = current.next;
             return item;
         }
     }
+    // /**
+    //  * Unit tests the {@code Queue} data type.
+    //  *
+    //  * @param args the command-line arguments
+    //  */
+    // public static void main(String[] args) {
+    //     Queue<String> queue = new Queue<String>();
+    //     while (!StdIn.isEmpty()) {
+    //         String item = StdIn.readString();
+    //         if (!item.equals("-"))
+    //             queue.enqueue(item);
+    //         else if (!queue.isEmpty())
+    //             StdOut.print(queue.dequeue() + " ");
+    //     }
+    //     StdOut.println("(" + queue.size() + " left on queue)");
+    // }
 }
