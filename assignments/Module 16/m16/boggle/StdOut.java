@@ -13,13 +13,16 @@ import java.io.UnsupportedEncodingException;
 import java.util.Locale;
 
 /**
- *  This class provides methods for printing strings and numbers to standard output.
+ *  This class provides methods for printing
+ *
+ *  strings and numbers to standard output.
  *  <p>
  *  <b>Getting started.</b>
  *  To use this class, you must have {@code StdOut.class} in your
  *  Java classpath. If you used our autoinstaller, you should be all set.
  *  Otherwise, download
- *  <a href = "http://introcs.cs.princeton.edu/java/stdlib/StdOut.java">StdOut.java</a>
+ *  <a href = "http://introcs.cs.princeton.edu/java
+ *  /stdlib/StdOut.java">StdOut.java</a>
  *  and put a copy in your working directory.
  *  <p>
  *  Here is an example program that uses {@code StdOut}:
@@ -58,30 +61,38 @@ import java.util.Locale;
  *  @author Kevin Wayne
  */
 public final class StdOut {
-
     // force Unicode UTF-8 encoding; otherwise it's system dependent
+    /**
+    * charset name variable.
+    **/
     private static final String CHARSET_NAME = "UTF-8";
-
     // assume language = English, country = US for consistency with StdIn
+    /**
+    * locale variable.
+    **/
     private static final Locale LOCALE = Locale.US;
-
     // send output here
+    /**
+    * out variable.
+    **/
     private static PrintWriter out;
 
     // this is called before invoking any methods
     static {
         try {
-            out = new PrintWriter(new OutputStreamWriter(System.out, CHARSET_NAME), true);
-        }
-        catch (UnsupportedEncodingException e) {
+            out = new PrintWriter(new OutputStreamWriter(
+                System.out, CHARSET_NAME), true);
+        } catch (UnsupportedEncodingException e) {
             System.out.println(e);
         }
     }
-
     // don't instantiate
-    private StdOut() { }
-
-   /**
+    /**
+    * constructor.
+    **/
+    private StdOut() {
+    }
+    /**
      * Closes standard output.
      */
     public static void close() {
@@ -100,7 +111,7 @@ public final class StdOut {
      *
      * @param x the object to print
      */
-    public static void println(Object x) {
+    public static void println(final Object x) {
         out.println(x);
     }
 
@@ -109,7 +120,7 @@ public final class StdOut {
      *
      * @param x the boolean to print
      */
-    public static void println(boolean x) {
+    public static void println(final boolean x) {
         out.println(x);
     }
 
@@ -118,7 +129,7 @@ public final class StdOut {
      *
      * @param x the character to print
      */
-    public static void println(char x) {
+    public static void println(final char x) {
         out.println(x);
     }
 
@@ -127,7 +138,7 @@ public final class StdOut {
      *
      * @param x the double to print
      */
-    public static void println(double x) {
+    public static void println(final double x) {
         out.println(x);
     }
 
@@ -136,7 +147,7 @@ public final class StdOut {
      *
      * @param x the integer to print
      */
-    public static void println(float x) {
+    public static void println(final float x) {
         out.println(x);
     }
 
@@ -145,7 +156,7 @@ public final class StdOut {
      *
      * @param x the integer to print
      */
-    public static void println(int x) {
+    public static void println(final int x) {
         out.println(x);
     }
 
@@ -154,7 +165,7 @@ public final class StdOut {
      *
      * @param x the long to print
      */
-    public static void println(long x) {
+    public static void println(final long x) {
         out.println(x);
     }
 
@@ -163,7 +174,7 @@ public final class StdOut {
      *
      * @param x the short to print
      */
-    public static void println(short x) {
+    public static void println(final short x) {
         out.println(x);
     }
 
@@ -174,7 +185,7 @@ public final class StdOut {
      *
      * @param x the byte to print
      */
-    public static void println(byte x) {
+    public static void println(final byte x) {
         out.println(x);
     }
 
@@ -187,80 +198,80 @@ public final class StdOut {
 
    /**
      * Prints an object to standard output and flushes standard output.
-     * 
+     *
      * @param x the object to print
      */
-    public static void print(Object x) {
+    public static void print(final Object x) {
         out.print(x);
         out.flush();
     }
 
    /**
      * Prints a boolean to standard output and flushes standard output.
-     * 
+     *
      * @param x the boolean to print
      */
-    public static void print(boolean x) {
+    public static void print(final boolean x) {
         out.print(x);
         out.flush();
     }
 
    /**
      * Prints a character to standard output and flushes standard output.
-     * 
+     *
      * @param x the character to print
      */
-    public static void print(char x) {
+    public static void print(final char x) {
         out.print(x);
         out.flush();
     }
 
    /**
      * Prints a double to standard output and flushes standard output.
-     * 
+     *
      * @param x the double to print
      */
-    public static void print(double x) {
+    public static void print(final double x) {
         out.print(x);
         out.flush();
     }
 
    /**
      * Prints a float to standard output and flushes standard output.
-     * 
+     *
      * @param x the float to print
      */
-    public static void print(float x) {
+    public static void print(final float x) {
         out.print(x);
         out.flush();
     }
 
    /**
      * Prints an integer to standard output and flushes standard output.
-     * 
+     *
      * @param x the integer to print
      */
-    public static void print(int x) {
+    public static void print(final int x) {
         out.print(x);
         out.flush();
     }
 
    /**
      * Prints a long integer to standard output and flushes standard output.
-     * 
+     *
      * @param x the long integer to print
      */
-    public static void print(long x) {
+    public static void print(final long x) {
         out.print(x);
         out.flush();
     }
 
    /**
      * Prints a short integer to standard output and flushes standard output.
-     * 
+     *
      * @param x the short integer to print
      */
-    public static void print(short x) {
+    public static void print(final short x) {
         out.print(x);
         out.flush();
     }
@@ -270,7 +281,7 @@ public final class StdOut {
      *
      * @param x the byte to print
      */
-    public static void print(byte x) {
+    public static void print(final byte x) {
         out.print(x);
         out.flush();
     }
@@ -280,10 +291,11 @@ public final class StdOut {
      * string and arguments, and then flushes standard output.
      *
      *
-     * @param format the <a href = "http://docs.oracle.com/javase/7/docs/api/java/util/Formatter.html#syntax">format string</a>
+     * @param format the <a href = "http://docs.oracle.com/javase
+     * /7/docs/api/java/util/Formatter.html#syntax">format string</a>
      * @param args   the arguments accompanying the format string
      */
-    public static void printf(String format, Object... args) {
+    public static void printf(final String format, final Object... args) {
         out.printf(LOCALE, format, args);
         out.flush();
     }
@@ -293,10 +305,13 @@ public final class StdOut {
      * the specified format string and arguments; then flushes standard output.
      *
      * @param locale the locale
-     * @param format the <a href = "http://docs.oracle.com/javase/7/docs/api/java/util/Formatter.html#syntax">format string</a>
+     * @param format the <a href = "http://docs.oracle.
+     * com/javase/7/docs/api/java/util/Formatter.html#syntax">
+     * format string</a>
      * @param args   the arguments accompanying the format string
      */
-    public static void printf(Locale locale, String format, Object... args) {
+    public static void printf(final Locale locale,
+        final String format, final Object... args) {
         out.printf(locale, format, args);
         out.flush();
     }
@@ -306,13 +321,13 @@ public final class StdOut {
      *
      * @param args the command-line arguments
      */
-    public static void main(String[] args) {
-
+    public static void main(final String[] args) {
         // write to stdout
+        final float seven = 7.0f;
+        final int sevet = 17;
         StdOut.println("Test");
-        StdOut.println(17);
+        StdOut.println(sevet);
         StdOut.println(true);
-        StdOut.printf("%.6f\n", 1.0/7.0);
+        StdOut.printf("%.6f\n", 1.0 / seven);
     }
-
 }
